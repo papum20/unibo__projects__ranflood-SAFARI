@@ -20,8 +20,8 @@
  ******************************************************************************/
 
 proxmox_api_url = "http://192.168.2.11:8006/api2/json"
-proxmox_api_token_id = "tcompagnucci@pve!terrformPVE"
-proxmox_api_token_secret = "98f3a745-a816-4686-840c-ef1c7f0625d5"
+proxmox_api_token_id = "proxmox-token"
+proxmox_api_token_secret = "secret-token"
 
 vms_count = 1
 
