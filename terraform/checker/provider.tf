@@ -19,95 +19,27 @@
  * For details about the authors of this software, see the AUTHORS file.      *
  ******************************************************************************/
 
-variable "proxmox_api_url" {
-    type = string
-}
-
-variable "proxmox_api_token_id" {
-    type = string
-}
-
-variable "proxmox_api_token_secret" {
-    type = string
-}
-
-variable "vms_count" {
-    type = number
-}
-
-variable "vm_name" {
-    type = string
-}
-
-variable "target_node" {
-    type = string
-}
-
-variable "vm_id" {
-    type = number
-}
-
-variable "template_clone" {
-    type = string
-}
-
-variable "is_full_clone" {
-    type = bool
-}
-
-variable "vm_qemu_agent" {
-    type = number
-}
-
-variable "vm_qemu_agent_timeout" {
-    type = number
-}
-
-variable "vm_memory" {
-    type = number
+terraform {
+  required_providers {
+    proxmox = {
+      source = "Telmate/proxmox"
+      version = "3.0.1-rc4"
+    }
+  }
 }
 
 
-variable "vm_sockets" {
-    type = number
-}
+provider "proxmox" {
 
-variable "vm_cores" {
-    type = number
-}
+    pm_log_enable = true
+    pm_log_file   = "terraform-plugin-proxmox.log"
+    pm_debug      = true
+    pm_log_levels = {
+        _default    = "debug"
+        _capturelog = ""
+    }
+    pm_api_url = var.proxmox_api_url
+    pm_api_token_id = var.proxmox_api_token_id
+    pm_api_token_secret = var.proxmox_api_token_secret
 
-
-variable "vm_scsihw" {
-    type = string
-} 
-
-
-variable "vm_network_card_model" {
-    type = string
-}
-
-variable "vm_bootdisk" {
-    type = string
-}
-
-variable "vm_network_bridge" {
-    type = string
-}
-
-
-variable "vm_disk_storage" {
-    type = string
-}
-
-variable "vm_disk_size" {
-    type = string
-}
-
-
-variable "vm_user" {
-    type = string
-}
-
-variable "vm_password" {
-    type = string
 }

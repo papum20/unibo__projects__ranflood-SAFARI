@@ -19,35 +19,35 @@
  * For details about the authors of this software, see the AUTHORS file.      *
  ******************************************************************************/
 
-proxmox_api_url = "https://192.168.1.129:8006/api2/json"
-proxmox_api_token_id = "root@pam!safari"
-proxmox_api_token_secret = "token_secret"
+proxmox_api_url = "http://192.168.2.11:8006/api2/json"
+proxmox_api_token_id = "tcompagnucci@pve!terrformPVE"
+proxmox_api_token_secret = "98f3a745-a816-4686-840c-ef1c7f0625d5"
 
-vms-count = 1
+vms_count = 1
 
-vm_name = "testEnvVM"
-target_node = "pve"
-vm_id = 152
-template_clone = "finalTemplateWithSnapshots"
+vm_name = "TerraWin"
+target_node = "pve1"
+vm_id = 1111
+template_clone = "windows"
+is_full_clone = false
 
-vm_memory = 6144
+vm_memory = 4096
 
 vm_sockets = 1
 vm_cores = 4
 
-network_card_model = "e1000"
-network_bridge = "vmbr0"
+vm_qemu_agent = 1
+vm_qemu_agent_timeout = 120
 
+vm_network_card_model = "e1000"
+vm_network_bridge = "vmbr0"
 
-vm_disk_type = "ide"
+vm_bootdisk = "ide0"
+
 vm_disk_storage = "local-lvm"
-vm_disk_size = "100G"
+vm_disk_size = "40G"
 
-vm_scsi = "virtio-scsi-pci"
-
-vm_bios = "seabios"
-
-vm_ip = "ip=dhcp"
+vm_scsihw = "virtio-scsi-pci"
 
 vm_user = "IEUser"
 vm_password = "Passw0rd!"

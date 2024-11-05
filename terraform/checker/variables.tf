@@ -79,7 +79,11 @@ variable "vm_cores" {
 
 variable "vm_scsihw" {
     type = string
-} 
+}
+
+variable "vm_ipconfig" {
+    type = string
+}   
 
 
 variable "vm_network_card_model" {
@@ -94,6 +98,9 @@ variable "vm_network_bridge" {
     type = string
 }
 
+variable "vm_disk_type" {
+    type = string
+}
 
 variable "vm_disk_storage" {
     type = string
@@ -103,11 +110,22 @@ variable "vm_disk_size" {
     type = string
 }
 
-
-variable "vm_user" {
+variable "vm_disk_to_check_type" {
     type = string
 }
 
-variable "vm_password" {
+variable "vm_disk_to_check_file" {
+    type = string
+}
+
+variable "vm_disk_to_check_storage" {
+    type = string
+}
+
+variable "vm_disk_to_check_name" {
+    type = string
+}
+
+variable "vm_disk_to_check_size" {
     type = string
 }

@@ -20,46 +20,45 @@
  ******************************************************************************/
 
 resource "proxmox_vm_qemu" "windows_clone" {
-  
-    count = var.vms-count
-    
 
-    //top level block
+    count = var.vms_count
 
     name = "${var.vm_name}-${count.index}"
     target_node = var.target_node
     vmid = sum([var.vm_id, count.index])
     clone = var.template_clone
-    bios = var.vm_bios
-    agent = 1
-    ipconfig0 = var.vm_ip
-    full_clone = false
-
-    sockets = var.vm_sockets
-    cores = var.vm_cores
+    full_clone = var.is_full_clone
     memory = var.vm_memory
+    cores = var.vm_cores
+    sockets = var.vm_sockets
+    agent = var.vm_qemu_agent
+    agent_timeout = var.vm_qemu_agent_timeout
 
-    scsihw = var.vm_scsi
+    scsihw = var.vm_scsihw
 
-    //disk block
+    bootdisk = var.vm_bootdisk
 
-    disk {
-        type = var.vm_disk_type
-        storage = var.vm_disk_storage
-        size = var.vm_disk_size
-        backup = true
+
+    disks {
+        ide {
+            ide0 {
+                disk {
+                    storage = var.vm_disk_storage
+                    size = var.vm_disk_size
+                }
+            }
+        }
     }
-
-    // network block
 
     network {
-        model = var.network_card_model
-        bridge = var.network_bridge
-    }
+        model = var.vm_network_card_model
+        bridge = var.vm_network_bridge
+      }
 
 
     provisioner "local-exec" {
       command = "echo ${self.ssh_host} >> vm_ip_address.txt"
     }
+
 
 }

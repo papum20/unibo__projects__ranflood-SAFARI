@@ -19,95 +19,38 @@
  * For details about the authors of this software, see the AUTHORS file.      *
  ******************************************************************************/
 
-variable "proxmox_api_url" {
-    type = string
-}
+proxmox_api_url = "http://192.168.2.11:8006/api2/json"
+proxmox_api_token_id = "proxmox_token"
+proxmox_api_token_secret = "secret-token"
 
-variable "proxmox_api_token_id" {
-    type = string
-}
+vms_count = 1
 
-variable "proxmox_api_token_secret" {
-    type = string
-}
+vm_name = "Checker"
+target_node = "pve1"
+vm_id = 3112
+template_clone = "checker"
+is_full_clone = false
 
-variable "vms_count" {
-    type = number
-}
+vm_memory = 4096
 
-variable "vm_name" {
-    type = string
-}
+vm_sockets = 1
+vm_cores = 2
 
-variable "target_node" {
-    type = string
-}
+vm_qemu_agent = 1
+vm_qemu_agent_timeout = 120
 
-variable "vm_id" {
-    type = number
-}
+vm_network_card_model = "virtio"
+vm_network_bridge = "vmbr0"
 
-variable "template_clone" {
-    type = string
-}
+vm_bootdisk = "scsi0"
 
-variable "is_full_clone" {
-    type = bool
-}
+vm_disk_type = "disk"
+vm_disk_storage = "local-lvm"
+vm_disk_size = "32G"
 
-variable "vm_qemu_agent" {
-    type = number
-}
-
-variable "vm_qemu_agent_timeout" {
-    type = number
-}
-
-variable "vm_memory" {
-    type = number
-}
+vm_disk_to_check_name = "local-lvm:vm-1111-disk-0"
 
 
-variable "vm_sockets" {
-    type = number
-}
+vm_scsihw = "virtio-scsi-pci"
 
-variable "vm_cores" {
-    type = number
-}
-
-
-variable "vm_scsihw" {
-    type = string
-} 
-
-
-variable "vm_network_card_model" {
-    type = string
-}
-
-variable "vm_bootdisk" {
-    type = string
-}
-
-variable "vm_network_bridge" {
-    type = string
-}
-
-
-variable "vm_disk_storage" {
-    type = string
-}
-
-variable "vm_disk_size" {
-    type = string
-}
-
-
-variable "vm_user" {
-    type = string
-}
-
-variable "vm_password" {
-    type = string
-}
+vm_ipconfig = "ip=dhcp"

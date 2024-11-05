@@ -19,95 +19,61 @@
  * For details about the authors of this software, see the AUTHORS file.      *
  ******************************************************************************/
 
-variable "proxmox_api_url" {
-    type = string
-}
+resource "proxmox_vm_qemu" "Checker" {
 
-variable "proxmox_api_token_id" {
-    type = string
-}
+    count = var.vms_count
 
-variable "proxmox_api_token_secret" {
-    type = string
-}
+    name = "${var.vm_name}-${count.index}"
+    target_node = var.target_node
+    vmid = sum([var.vm_id, count.index])
+    clone = var.template_clone
+    full_clone = var.is_full_clone
+    memory = var.vm_memory
+    cores = var.vm_cores
+    sockets = var.vm_sockets
+    agent = var.vm_qemu_agent
+    agent_timeout = var.vm_qemu_agent_timeout
 
-variable "vms_count" {
-    type = number
-}
+    scsihw = var.vm_scsihw
 
-variable "vm_name" {
-    type = string
-}
+    ipconfig0 = var.vm_ipconfig
 
-variable "target_node" {
-    type = string
-}
-
-variable "vm_id" {
-    type = number
-}
-
-variable "template_clone" {
-    type = string
-}
-
-variable "is_full_clone" {
-    type = bool
-}
-
-variable "vm_qemu_agent" {
-    type = number
-}
-
-variable "vm_qemu_agent_timeout" {
-    type = number
-}
-
-variable "vm_memory" {
-    type = number
-}
+    bootdisk = var.vm_bootdisk
 
 
-variable "vm_sockets" {
-    type = number
-}
+    disks {
+        scsi {
+            scsi0 {
+                disk {
+                    storage = var.vm_disk_storage
+                    size = var.vm_disk_size
+                }
+            }
+        }
 
-variable "vm_cores" {
-    type = number
-}
+        ide {
+          ide0 {
+            passthrough {
+              file = var.vm_disk_to_check_name
+            }
+          }
+        }
+
+        sata {
+          sata0 {
+            disk {
+              storage = "storage-condiviso"
+              size = "1G"
+            }
+          }
+        }
+
+    }
+
+    network {
+        model = var.vm_network_card_model
+        bridge = var.vm_network_bridge
+      }
 
 
-variable "vm_scsihw" {
-    type = string
-} 
-
-
-variable "vm_network_card_model" {
-    type = string
-}
-
-variable "vm_bootdisk" {
-    type = string
-}
-
-variable "vm_network_bridge" {
-    type = string
-}
-
-
-variable "vm_disk_storage" {
-    type = string
-}
-
-variable "vm_disk_size" {
-    type = string
-}
-
-
-variable "vm_user" {
-    type = string
-}
-
-variable "vm_password" {
-    type = string
 }

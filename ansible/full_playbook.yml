@@ -55,15 +55,15 @@
       ansible.windows.win_command: wsl ansible-playbook -i {{ remote_linux_user_directory }}{{ internal_inventory_name }} {{ remote_linux_user_directory }}{{ internal_playbook_name }} --extra-vars "@{{ remote_linux_user_directory }}{{ ansible_variables_path }}"
       async: 3600
       poll: 0
-
-
-- hosts: proxmox
-  tasks:
-
-  - name: Attendi
-    ansible.builtin.pause:
-      seconds: "{{ attesa_spegnimento }}"
-
-  - name: spegni vm
-    ansible.builtin.command: qm shutdown {{ item }}
-    loop: "{{ vm_id }}"
+#
+#
+#- hosts: proxmox
+#  tasks:
+#
+#  - name: Attendi
+#    ansible.builtin.pause:
+#      seconds: "{{ attesa_spegnimento }}"
+#
+#  - name: spegni vm
+#    ansible.builtin.command: qm shutdown {{ item }}
+#    loop: "{{ vm_id }}"
