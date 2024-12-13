@@ -61,6 +61,11 @@
       password: infected
       delete_archive: true
 
+  - name : Riempi disco con ranflood
+    ansible.windows.win_command:
+      argv :
+      - " {{ ranflood_prepopulate_batch }} "
+
   - name: avvia ransomware
     ansible.windows.win_command: 
       argv:

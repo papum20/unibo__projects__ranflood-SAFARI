@@ -55,3 +55,8 @@ unzipped_ransomware_destination_path: C:\Users\rnsmwr
 execution_ransomware_path: C:\Users\rnsmwr\*
 
 attesa_programma_contrasto: 60
+
+
+# Ranflood test
+
+ranflood_prepopulate_batch: prepopulate.bat
