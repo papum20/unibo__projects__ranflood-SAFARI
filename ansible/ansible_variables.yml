@@ -20,9 +20,9 @@
 # ******************************************************************************/
 
 new_ip: 
-  - 192.168.2.139
+  - 192.168.2.30
 
-local_working_directory: /mnt/c/Users/tomma/CODING/SAFARI/ansible/
+local_working_directory: /home/papum/programm/unibo/projects/SAFARI/ansible/
 
 remote_windows_user_directory: C:\Users\
 
