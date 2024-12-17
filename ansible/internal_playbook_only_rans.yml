@@ -38,14 +38,14 @@
 
   - name: Decomprimi ransomware
     community.windows.win_unzip:
-      src: "{{ remote_windows_user_directory }}{{ ransomware_name }}"
-      dest: "{{ unzipped_ransomware_destination_path }}"
+      src: "{{ remote_working_directory }}{{ name_ransomware_zip }}"
+      dest: "{{ path_ransomware }}"
       password: infected
       delete_archive: true
 
-  - name: avvia rnsmwr
+  - name: avvia ransomware
     ansible.windows.win_command: 
       argv:
-        - "{{ execution_ransomware_path }}"
+        - "{{ path_ransomware }}"
     async: 1800
-    poll: 0
+    poll: 0   

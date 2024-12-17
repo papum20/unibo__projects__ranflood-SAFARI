@@ -21,45 +21,42 @@
 
 - hosts: localhost
   tasks:
-
     - name: Aggiungi VM all'inventario
       ansible.builtin.add_host:
         name: "{{ item }}"
         groups: windows
       loop: "{{ new_ip }}"
 
+    - name: debug local working 
+      ansible.builtin.debug:
+        msg: "local_working_directory: {{ ansible_env }}"
+
+    - name: debug local working 
+      ansible.builtin.debug:
+        msg: "local_working_directory: {{ ansible_env.local_working_directory }}"
+
+    - name: debug local working directory
+      ansible.builtin.debug:
+        msg: "local_working_directory: {{ local_working_directory }}"
+
+
 - hosts: windows
   tasks:
 
-    - name: Hello world
-      ansible.builtin.debug:
-        msg: "Hello world!"
+    - name: Trasferisci file
+      ansible.windows.win_copy:
+        src: "{{ local_files_dir }}{{ item }}"
+        dest: "{{ remote_working_directory }}{{ item }}"
+      loop:
+        - "{{ name_internal_playbook }}"
+        - "{{ name_internal_inventory }}"
+        - "{{ name_ansible_variables }}"
+        - "{{ local_ranflood_files_dir }}{{ name_ranflood }}"
+        - "{{ local_ranflood_files_dir }}{{ name_ranfloodd }}"
+        - "{{ local_ranflood_files_dir }}{{ name_ransomware_zip }}"
+        - "{{ local_ranflood_files_dir }}{{ name_prepopulate_script }}"
 
-#    - name: Trasferisci ransomware compresso
-#      ansible.windows.win_copy:
-#        src: "{{ local_working_directory }}{{ ransomware_name }}"
-#        dest: "{{ remote_windows_user_directory }}{{ ransomware_name }}"
-#
-#    - name: Trasferisci playbook interno
-#      ansible.windows.win_copy:
-#        src: "{{ local_working_directory }}{{ internal_playbook_name }}"
-#        dest: "{{ remote_windows_user_directory }}{{ internal_playbook_name }}"
-#
-#    - name: Trasferisci inventario Ansible
-#      ansible.windows.win_copy:
-#        src: "{{ local_working_directory }}{{ internal_inventory_name }}"
-#        dest: "{{ remote_windows_user_directory }}{{ internal_inventory_name }}"
-#
-#    - name: Trasferisci file variabili ansible
-#      ansible.windows.win_copy:
-#        src: "{{ local_working_directory }}{{ ansible_variables_path }}"
-#        dest: "{{ remote_windows_user_directory }}{{ ansible_variables_path }}"
-#
-#    - name: Trasferisci script prepopulate
-#      ansible.windows.win_copy:
-#        src: "{{ local_working_directory }}{{ ranflood_prepopulate_batch }}"
-#        dest: "{{ remote_windows_user_directory }}{{ ranflood_prepopulate_batch }}"
-#
+
 #    - name: Avvia playbook interno
 #      ansible.windows.win_command: wsl ansible-playbook -i {{ remote_linux_user_directory }}{{ internal_inventory_name }} {{ remote_linux_user_directory }}{{ internal_playbook_name }} --extra-vars "@{{ remote_linux_user_directory }}{{ ansible_variables_path }}"
 #      async: 3600

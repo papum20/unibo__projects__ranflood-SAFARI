@@ -22,41 +22,51 @@
 new_ip: 
   - 192.168.2.30
 
-local_working_directory: /home/papum/programm/unibo/projects/SAFARI/ansible/
 
-remote_windows_user_directory: C:\Users\
+# Directories
 
-remote_linux_user_directory: /mnt/c/Users/
+local_working_directory: "{{ lookup('env', 'local_working_directory') }}"
+
+# subdirectory of `local_working_directory` containing ranflood files to transfer
+local_ranflood_files_dir: "{{ ansible_env.local_ranflood_files_dir }}"
+
+# where all files will be transferred
+remote_working_directory: "{{ ansible_env.remote_working_directory }}"
+#remote_linux_user_directory: /mnt/c/Users/
 
 
-ransomware_name: Ransomware.WannaCry.zip
+# Files to transfer (ansible)
 
-internal_playbook_name: internal_playbook.yml
+name_internal_playbook: "{{ ansible_env.internal_playbook.yml }}"
+name_internal_inventory: "{{ ansible_env.internal_inventory }}"
+name_ansible_variables: "{{ ansible_env.ansible_variables.yml }}"
 
-internal_inventory_name: internal_inventory
 
-ansible_variables_path: ansible_variables.yml
+# Files to transfer (ranflood, ransomwares)
 
-attesa_spegnimento: 320
+name_ranflood: "{{ ansible_env.ranflood.exe }}"
+name_ranfloodd: "{{ ansible_env.ranfloodd.exe }}"
+name_ransomware_zip: "{{ ansible_env.Ransomware.WannaCry.zip }}"
+
+name_prepopulate_script: "{{ ansible_env.prepopulate.bat }}"
+name_settings_ini: "{{ ansible_env.settings.ini }}"
+
+
+# Config, execution
+
+shutdown_timer: 320
 vm_id:
   - 1111
-
-path_demone_programma_contrasto: C:\PROGRA~1\Ranflood\ranfloodd.exe
-
+  
+path_ranflood: "{{ remote_working_directory }}{{ name_ranflooddd }}"
+path_ranfloodd: "{{ remote_working_directory }}{{ name_ranflood }}"
+path_ransomware: "{{ remote_working_directory }}{{ name_ransomware }}"
 path_settings_ini: C:\PROGRA~1\Ranflood\settings.ini
 
-path_programma_contrasto: C:\PROGRA~1\Ranflood\ranflood.exe
-
-strategia_programma_contrasto: random
-
-directory_target_programma_contrasto: C:\Users\IEUser\
-
-unzipped_ransomware_destination_path: C:\Users\rnsmwr
-execution_ransomware_path: C:\Users\rnsmwr\*
-
-attesa_programma_contrasto: 60
+ranflood_strategy: random
+ranflood_target_dir: C:\Users\IEUser\
+ranflood_wait: 60
 
 
-# Ranflood test
 
-ranflood_prepopulate_batch: prepopulate.bat
+

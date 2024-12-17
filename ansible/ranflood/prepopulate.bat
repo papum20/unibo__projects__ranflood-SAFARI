@@ -20,7 +20,7 @@ for /f "tokens=* delims= " %%A in (C:\path\to\task_list.log) do (
 set "lastLine=%%A"
 )
 
-:: Estrai l ’ ultimo toke , ovvero l ’ ID del task
+:: Estrai l ’ ultimo token, ovvero l ’ ID del task
 for /f "tokens=3 delims=| " %%A in ("!lastLine!") do (
 set "taskID=%%A"
 )

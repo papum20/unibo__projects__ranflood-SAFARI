@@ -39,7 +39,7 @@
   - name: Avvia ranflood daemon
     ansible.windows.win_command: 
       argv:
-        - "{{ path_demone_programma_contrasto }}"
+        - "{{ path_ranfloodd }}"
         - "{{ path_settings_ini }}"
     async: 1800
     poll: 0
@@ -47,43 +47,43 @@
   - name: Snapshot ranflood
     ansible.windows.win_command:
       argv:
-        - "{{ path_programma_contrasto }}"
+        - "{{ path_ranflood }}"
         - snapshot
         - take
-        - "{{ strategia_programma_contrasto }}"
-        - "{{ directory_target_programma_constrasto }}"
-    when: "'on-the-fly' in strategia_programma_constrasto or 'shadow_copy' in strategia_programma_constrasto"
+        - "{{ ranflood_strategy }}"
+        - "{{ ranflood_target_dir }}"
+    when: "'on-the-fly' in ranflood_strategy or 'shadow_copy' in ranflood_strategy"
 
   - name: Decomprimi ransomware
     community.windows.win_unzip:
-      src: "{{ remote_windows_user_directory }}{{ ransomware_name }}"
-      dest: "{{ unzipped_ransomware_destination_path }}"
+      src: "{{ remote_working_directory }}{{ name_ransomware_zip }}"
+      dest: "{{ path_ransomware }}"
       password: infected
       delete_archive: true
 
   - name : Riempi disco con ranflood
     ansible.windows.win_command:
       argv :
-      - " {{ ranflood_prepopulate_batch }} "
+      - "{{ remote_working_directory }}{{ prepopulate_script }}"
 
   - name: avvia ransomware
     ansible.windows.win_command: 
       argv:
-        - "{{ execution_ransomware_path }}"
+        - "{{ path_ransomware }}"
     async: 1800
     poll: 0   
 
   - name: Aspetta ranflood client
     ansible.builtin.pause:
-      seconds: "{{ attesa_programma_contrasto }}"
+      seconds: "{{ ranflood_wait }}"
 
   - name: Avvia ranflood client
     ansible.windows.win_command: 
       argv:
-        - "{{ path_programma_contrasto }}"
+        - "{{ path_ranflood }}"
         - flood 
         - start
-        - "{{ strategia_programma_contrasto }}"
-        - "{{ directory_target_programma_contrasto }}"
+        - "{{ ranflood_strategy }}"
+        - "{{ ranflood_target_dir }}"
 
   
