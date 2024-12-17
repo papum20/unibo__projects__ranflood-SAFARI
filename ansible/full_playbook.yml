@@ -27,15 +27,7 @@
         groups: windows
       loop: "{{ new_ip }}"
 
-    - name: debug local working 
-      ansible.builtin.debug:
-        msg: "local_working_directory: {{ ansible_env }}"
-
-    - name: debug local working 
-      ansible.builtin.debug:
-        msg: "local_working_directory: {{ ansible_env.local_working_directory }}"
-
-    - name: debug local working directory
+    - name: Debug local working directory
       ansible.builtin.debug:
         msg: "local_working_directory: {{ local_working_directory }}"
 
@@ -43,33 +35,47 @@
 - hosts: windows
   tasks:
 
-    - name: Trasferisci file
+    - name: Transfer ansible files
       ansible.windows.win_copy:
-        src: "{{ local_files_dir }}{{ item }}"
+        src: "{{ local_working_directory }}{{ item }}"
         dest: "{{ remote_working_directory }}{{ item }}"
+        force: "{{ transfer_force }}"
       loop:
         - "{{ name_internal_playbook }}"
         - "{{ name_internal_inventory }}"
         - "{{ name_ansible_variables }}"
-        - "{{ local_ranflood_files_dir }}{{ name_ranflood }}"
-        - "{{ local_ranflood_files_dir }}{{ name_ranfloodd }}"
-        - "{{ local_ranflood_files_dir }}{{ name_ransomware_zip }}"
-        - "{{ local_ranflood_files_dir }}{{ name_prepopulate_script }}"
 
+    - name: Transfer executable files and scripts
+      ansible.windows.win_copy:
+        src: "{{ local_working_directory }}{{ local_ranflood_files_dir }}{{ item }}"
+        dest: "{{ remote_working_directory }}{{ item }}"
+        force: "{{ transfer_force }}"
+      loop:
+        - "{{ name_ranflood_zip }}"
+        #- "{{ name_ransomware_zip }}"
+        #- "{{ name_prepopulate_script }}"
 
-#    - name: Avvia playbook interno
-#      ansible.windows.win_command: wsl ansible-playbook -i {{ remote_linux_user_directory }}{{ internal_inventory_name }} {{ remote_linux_user_directory }}{{ internal_playbook_name }} --extra-vars "@{{ remote_linux_user_directory }}{{ ansible_variables_path }}"
-#      async: 3600
-#      poll: 0
+    - name: Launch internal playbook
+      ansible.windows.win_command:
+        argv:
+          - wsl
+          - ansible-playbook
+          - -i
+          - "{{ remote_linux_user_directory }}{{ internal_inventory_name }}"
+          - "{{ remote_linux_user_directory }}{{ internal_playbook_name }}"
+          - --extra-vars
+          - "@{{ remote_linux_user_directory }}{{ ansible_variables_path }}"
+      async: 3600
+      poll: 0
 #
 #
 #- hosts: proxmox
 #  tasks:
 #
-#  - name: Attendi
+#  - name: Shutdown delay
 #    ansible.builtin.pause:
-#      seconds: "{{ attesa_spegnimento }}"
+#      seconds: "{{ shutdown_delay }}"
 #
-#  - name: spegni vm
+#  - name: Shutdown VM
 #    ansible.builtin.command: qm shutdown {{ item }}
 #    loop: "{{ vm_id }}"

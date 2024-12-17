@@ -25,34 +25,31 @@ new_ip:
 
 # Directories
 
-local_working_directory: "{{ playbook_dir }}/"
+local_working_directory: "{{ lookup('env', 'local_working_directory') }}"
 
 # subdirectory of `local_working_directory` containing ranflood files to transfer
-local_ranflood_files_dir: "ranflood/"
+local_ranflood_files_dir: "{{ ansible_env.local_ranflood_files_dir }}"
 
 # where all files will be transferred
-remote_working_directory: 'C:\Users\'
+remote_working_directory: "{{ ansible_env.remote_working_directory }}"
 #remote_linux_user_directory: /mnt/c/Users/
 
 
 # Files to transfer (ansible)
 
-# avoid transfers if already exists
-transfer_force: false
-
-name_internal_playbook: "internal_playbook.yml"
-name_internal_inventory: "internal_inventory"
-name_ansible_variables: "ansible_variables.yml"
+name_internal_playbook: "{{ ansible_env.internal_playbook.yml }}"
+name_internal_inventory: "{{ ansible_env.internal_inventory }}"
+name_ansible_variables: "{{ ansible_env.ansible_variables.yml }}"
 
 
 # Files to transfer (ranflood, ransomwares)
 
-name_ranflood: "ranflood.exe"
-name_ranfloodd: "ranfloodd.exe"
-name_ransomware_zip: "Ransomware.WannaCry.zip"
+name_ranflood: "{{ ansible_env.ranflood.exe }}"
+name_ranfloodd: "{{ ansible_env.ranfloodd.exe }}"
+name_ransomware_zip: "{{ ansible_env.Ransomware.WannaCry.zip }}"
 
-name_prepopulate_script: "prepopulate.bat"
-name_settings_ini: "settings.ini"
+name_prepopulate_script: "{{ ansible_env.prepopulate.bat }}"
+name_settings_ini: "{{ ansible_env.settings.ini }}"
 
 
 # Config, execution
@@ -61,17 +58,15 @@ shutdown_timer: 320
 vm_id:
   - 1111
   
-path_ranflood: "{{ remote_working_directory }}{{ name_ranfloodd }}"
+path_ranflood: "{{ remote_working_directory }}{{ name_ranflooddd }}"
 path_ranfloodd: "{{ remote_working_directory }}{{ name_ranflood }}"
 path_ransomware: "{{ remote_working_directory }}{{ name_ransomware }}"
-path_settings_ini: "{{ remote_working_directory }}{{ name_settings_ini }}"
+path_settings_ini: C:\PROGRA~1\Ranflood\settings.ini
 
-# seconds for which to run ranflood random to prepopulate the disk
-ranflood_random_duration: 3
 ranflood_strategy: random
-# seconds between the start of ransomware and ranflood (client)
-ranflood_start_delay: 60
 ranflood_target_dir: C:\Users\IEUser\
+# seconds between the start of ransomware and ranflood (client)
+ranflood_delay: 60
 
 
 

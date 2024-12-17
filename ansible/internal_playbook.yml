@@ -36,6 +36,10 @@
         - ms_msclient
         - ms_pacer
 
+  #
+  # Ranfloodd
+  #
+
   - name: Avvia ranflood daemon
     ansible.windows.win_command: 
       argv:
@@ -43,6 +47,36 @@
         - "{{ path_settings_ini }}"
     async: 1800
     poll: 0
+
+  #
+  # Prepopulate
+  #
+
+#    - name: Wait for ranflood daemon
+#    ansible.builtin.pause:
+#      seconds: "{{ ranflood_start_delay }}"
+#
+#  - name: Prepopulate the disk using Ranflood Random
+#    ansible.windows.win_command: 
+#      argv:
+#        - "{{ path_ranflood }}"
+#        - flood 
+#        - start
+#        - random
+#        - "{{ ranflood_target_dir }}"
+#
+#  - name: Let Random run
+#    ansible.builtin.pause:
+#      seconds: "{{ ranflood_random_duration }}"
+#
+#  - name: Stop Ranflood Random
+#    ansible.windows.win_command: 
+#      argv:
+#        - "{{ path_ranflood }}"
+#        - flood 
+#        - start
+#        - random
+#        - "{{ ranflood_target_dir }}"
 
   - name: Snapshot ranflood
     ansible.windows.win_command:
@@ -54,17 +88,16 @@
         - "{{ ranflood_target_dir }}"
     when: "'on-the-fly' in ranflood_strategy or 'shadow_copy' in ranflood_strategy"
 
+  #
+  # Ransomware
+  #
+
   - name: Decomprimi ransomware
     community.windows.win_unzip:
       src: "{{ remote_working_directory }}{{ name_ransomware_zip }}"
       dest: "{{ path_ransomware }}"
       password: infected
       delete_archive: true
-
-  - name : Riempi disco con ranflood
-    ansible.windows.win_command:
-      argv :
-      - "{{ remote_working_directory }}{{ prepopulate_script }}"
 
   - name: avvia ransomware
     ansible.windows.win_command: 
@@ -73,9 +106,13 @@
     async: 1800
     poll: 0   
 
+  #
+  # Ranflood client
+  #
+
   - name: Aspetta ranflood client
     ansible.builtin.pause:
-      seconds: "{{ ranflood_wait }}"
+      seconds: "{{ ranflood_start_delay }}"
 
   - name: Avvia ranflood client
     ansible.windows.win_command: 

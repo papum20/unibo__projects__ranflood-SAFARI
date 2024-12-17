@@ -3,6 +3,16 @@
 set -a
 
 
+# Script
+
+# for downloading binaries
+ranflood_download=https://github.com/Flooding-against-Ransomware/ranflood/releases/download/
+ranflood_version=v.0.7-beta
+ranflood_zip_win=ranflood-v.0.7-beta_Windows.zip
+
+
+# Ansible
+
 local_working_directory=$(pwd)
 
 # subdirectory of `local_working_directory` containing ranflood files to transfer
@@ -22,6 +32,7 @@ name_ansible_variables=ansible_variables.yml
 
 # Files to transfer (ranflood, ransomwares)
 
+name_ranflood_zip=ranflood.zip
 name_ranflood=ranflood.exe
 name_ranfloodd=ranfloodd.exe
 name_ransomware_zip=Ransomware.WannaCry.zip
@@ -33,7 +44,7 @@ name_settings_ini=settings.ini
 
 # Config, execution
 
-path_ranflood="${remote_working_directory}${name_ranflooddd}"
+path_ranflood="${remote_working_directory}${name_ranfloodd}"
 path_ranfloodd="${remote_working_directory}${name_ranflood}"
 path_ransomware="${remote_working_directory}${name_ransomware}"
 path_settings_ini="${remote_working_directory}${name_settings_ini}"

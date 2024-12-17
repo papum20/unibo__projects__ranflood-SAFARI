@@ -19,60 +19,56 @@
 # * For details about the authors of this software, see the AUTHORS file.      *
 # ******************************************************************************/
 
-new_ip: 
-  - 192.168.2.30
+- hosts: windows
+  tasks:
 
+  - name: Remove network adapter
+    community.windows.win_net_adapter_feature:
+      interface: '*'
+      state: disabled
+      component_id:
+        - ms_tcpip
+        - ms_tcpip6
+        - ms_implat
+        - ms_lltdio
+        - ms_rspndr
+        - ms_lldp
+        - ms_msclient
+        - ms_pacer
 
-# Directories
+  - name: Start ranflood daemon
+    ansible.windows.win_command: 
+      argv:
+        - "{{ path_ranfloodd }}"
+        - "{{ path_settings_ini }}"
+    async: 1800
+    poll: 0
 
-local_working_directory: "{{ playbook_dir }}/"
+  - name: Wait for ranflood daemon
+    ansible.builtin.pause:
+      seconds: "{{ ranflood_start_delay }}"
 
-# subdirectory of `local_working_directory` containing ranflood files to transfer
-local_ranflood_files_dir: "ranflood/"
+  - name: Prepopulate the disk using Ranflood Random
+    ansible.windows.win_command: 
+      argv:
+        - "{{ path_ranflood }}"
+        - flood 
+        - start
+        - random
+        - "{{ ranflood_target_dir }}"
 
-# where all files will be transferred
-remote_working_directory: 'C:\Users\'
-#remote_linux_user_directory: /mnt/c/Users/
+  - name: Let Random run
+    ansible.builtin.pause:
+      seconds: "{{ ranflood_random_duration }}"
 
+  - name: Stop Ranflood Random
+    ansible.windows.win_command: 
+      argv:
+        - "{{ path_ranflood }}"
+        - flood 
+        - start
+        - random
+        - "{{ ranflood_target_dir }}"
 
-# Files to transfer (ansible)
-
-# avoid transfers if already exists
-transfer_force: false
-
-name_internal_playbook: "internal_playbook.yml"
-name_internal_inventory: "internal_inventory"
-name_ansible_variables: "ansible_variables.yml"
-
-
-# Files to transfer (ranflood, ransomwares)
-
-name_ranflood: "ranflood.exe"
-name_ranfloodd: "ranfloodd.exe"
-name_ransomware_zip: "Ransomware.WannaCry.zip"
-
-name_prepopulate_script: "prepopulate.bat"
-name_settings_ini: "settings.ini"
-
-
-# Config, execution
-
-shutdown_timer: 320
-vm_id:
-  - 1111
   
-path_ranflood: "{{ remote_working_directory }}{{ name_ranfloodd }}"
-path_ranfloodd: "{{ remote_working_directory }}{{ name_ranflood }}"
-path_ransomware: "{{ remote_working_directory }}{{ name_ransomware }}"
-path_settings_ini: "{{ remote_working_directory }}{{ name_settings_ini }}"
-
-# seconds for which to run ranflood random to prepopulate the disk
-ranflood_random_duration: 3
-ranflood_strategy: random
-# seconds between the start of ransomware and ranflood (client)
-ranflood_start_delay: 60
-ranflood_target_dir: C:\Users\IEUser\
-
-
-
 
