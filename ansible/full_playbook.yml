@@ -45,15 +45,15 @@
         - "{{ name_internal_inventory }}"
         - "{{ name_ansible_variables }}"
 
-    - name: Transfer executable files and scripts
-      ansible.windows.win_copy:
-        src: "{{ local_working_directory }}{{ local_ranflood_files_dir }}{{ item }}"
-        dest: "{{ remote_working_directory }}{{ item }}"
-        force: "{{ transfer_force }}"
-      loop:
-        - "{{ name_ranflood_zip }}"
-        #- "{{ name_ransomware_zip }}"
-        #- "{{ name_prepopulate_script }}"
+    #- name: Transfer executable files and scripts
+    #  ansible.windows.win_copy:
+    #    src: "{{ local_working_directory }}{{ local_ranflood_files_dir }}{{ item }}"
+    #    dest: "{{ remote_working_directory }}{{ item }}"
+    #    force: "{{ transfer_force }}"
+    #  loop:
+    #    - "{{ name_ranflood_zip }}"
+    #    #- "{{ name_ransomware_zip }}"
+    #    #- "{{ name_prepopulate_script }}"
 
     - name: Launch internal playbook
       ansible.windows.win_command:

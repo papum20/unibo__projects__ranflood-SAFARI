@@ -1,6 +1,7 @@
 # binaries
 
-ansible/ranflood/
+ansible/ranflood/*.exe
+ansible/ranflood/*.zip
 
 
 # editor
