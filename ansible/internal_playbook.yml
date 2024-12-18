@@ -43,45 +43,19 @@
   - name: Avvia ranflood daemon
     ansible.windows.win_command: 
       argv:
-        - "{{ path_ranfloodd }}"
-        - "{{ path_settings_ini }}"
+        - "{{ path_ranfloodd_linux }}"
+        - "{{ path_settings_ini_linux }}"
     async: 1800
     poll: 0
 
-  #
-  # Prepopulate
-  #
-
-#    - name: Wait for ranflood daemon
-#    ansible.builtin.pause:
-#      seconds: "{{ ranflood_start_delay }}"
-#
-#  - name: Prepopulate the disk using Ranflood Random
-#    ansible.windows.win_command: 
-#      argv:
-#        - "{{ path_ranflood }}"
-#        - flood 
-#        - start
-#        - random
-#        - "{{ ranflood_target_dir }}"
-#
-#  - name: Let Random run
-#    ansible.builtin.pause:
-#      seconds: "{{ ranflood_random_duration }}"
-#
-#  - name: Stop Ranflood Random
-#    ansible.windows.win_command: 
-#      argv:
-#        - "{{ path_ranflood }}"
-#        - flood 
-#        - start
-#        - random
-#        - "{{ ranflood_target_dir }}"
+  - name: Wait for ranflood daemon
+    ansible.builtin.pause:
+      seconds: "{{ ranflood_daemon_delay }}"
 
   - name: Snapshot ranflood
     ansible.windows.win_command:
       argv:
-        - "{{ path_ranflood }}"
+        - "{{ path_ranflood_linux }}"
         - snapshot
         - take
         - "{{ ranflood_strategy }}"
@@ -95,14 +69,14 @@
   - name: Decomprimi ransomware
     community.windows.win_unzip:
       src: "{{ remote_working_directory }}{{ name_ransomware_zip }}"
-      dest: "{{ path_ransomware }}"
+      dest: "{{ path_ransomware_linux }}"
       password: infected
       delete_archive: true
 
   - name: avvia ransomware
     ansible.windows.win_command: 
       argv:
-        - "{{ path_ransomware }}"
+        - "{{ path_ransomware_linux }}"
     async: 1800
     poll: 0   
 
@@ -123,4 +97,4 @@
         - "{{ ranflood_strategy }}"
         - "{{ ranflood_target_dir }}"
 
-  
+    

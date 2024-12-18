@@ -1,0 +1,12 @@
+Requesting the list of the running floods.  
+| [main] INFO org.ranflood.client.subcommands.Flood$List.call  
+| Connecting to address: tcp://localhost:7890
+
+| [main] INFO org.ranflood.client.subcommands.Flood$List.call  
+| Setting request timeout to: 10000
+
+| [pool-3-thread-4] INFO java.util.concurrent.Executors$RunnableAdapter.call 
+                                                                            | Server received [{"command":"flood","subco
+mmand":"list"}]
+
+RANDOM | C:\mnt\c\Users\IEUser\Documents | d0c07298-5c84-462c-a655-a246486df364

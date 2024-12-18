@@ -1,45 +1,48 @@
-@echo off
+::@echo off
 setlocal enabledelayedexpansion
 
-:: Passo 1 a : Avvia il demone di Ranflood
-start " " C:\path\to\ranfloodd C:\path\to\settings.ini
+:: Source variables
+call .\variables.bat
 
-:: Passo 1 b : Aspetta qualche secondo in modo che il demone sia pronto
-timeout /t 3 /nobreak
+mkdir %ranflood_target_dir%
+set path_tasks_list=%remote_working_directory%tasks_list.log
+
+:: Passo 1 : Start daemon
+call start "" %path_ranflood_win% %path_settings_ini_win%
+call timeout /t 3 /nobreak
 
 :: Passo 2: Avvia il task di flooding
-C:\path\to\ranflood flood start random C:\path\to\target-folder
+call %path_ranflood_win% flood start random 
 
 :: Passo 3: Usa il comando list del client per ottenere l ’ ID del task
-C:\path\to\ranflood flood list > C:\path\to\task_list.log
+call %path_ranflood_win% flood list > %path_tasks_list%
 
 :: Passo 4: Estrai l ’ ID del task dall ’ output del comando list
 :: Estrai l ’ ultima riga
-set "taskID="
-for /f "tokens=* delims= " %%A in (C:\path\to\task_list.log) do (
-set "lastLine=%%A"
+call set "taskID="
+for /f "tokens=* delims= " %%A in (%path_tasks_list%) do (
+	set "lastLine=%%A"
 )
 
-:: Estrai l ’ ultimo token, ovvero l ’ ID del task
+:: Extract task ID (last token) to stop the flooding later
 for /f "tokens=3 delims=| " %%A in ("!lastLine!") do (
-set "taskID=%%A"
+	set "taskID=%%A"
 )
 
-:: Passo 5: Controlla lo spazio , se inferiore a 1 MB ferma il flooding usando l’ID
-:: check_space
-for /f "tokens=*" %%A in (’powershell -command "$drive=Get-PSDrive -Name C; $drive.Free"’) do (
-	set "freeBytes=%%A"
+:: Passo 5: fill until target dir takes up enough space
+:check_space
+for /f "tokens=*" %%A in ('wsl -e sh -c "du -s -BK %ranflood_target_dir% | sed -r 's/([0-9]+).*/\1/'"') do (
+	set "usedKB=%%A"
 )
-set /a freeKB=!freeBytes!/1024
 
-if !freeKB! geq 1024 (
-	timeout /t 2 /nobreak
+if !usedKB! geq %ranflood_random_remaining_space_kb% (
+	timeout /t 1 /nobreak
 	goto check_space
 )
 
-C:\path\to\ranflood flood stop random %taskID%
+call %path_ranflood_win% flood stop random %taskID%
 
-:: Passo 7: Ferma il demone
-taskkill /f /im ranfloodd.exe
+:: Passo 7: Stop daemon
+taskkill /f /im %path_ranfloodd_win%
 
 endlocal
