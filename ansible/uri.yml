@@ -19,13 +19,42 @@
 # * For details about the authors of this software, see the AUTHORS file.      *
 # ******************************************************************************/
 
-- hosts: localhost
 
-  - name: Create a JIRA issue
-    ansible.builtin.uri:
-      url: https://192.168.2.14:8006/api2/json/nodes/pve4/qemu/402/status/shutdown
-      method: POST
-      body: "{{ lookup('ansible.builtin.file','issue.json') }}"
-      force_basic_auth: true
-      status_code: 201
-      body_format: json
+- hosts: localhost
+  tasks:
+  #- name: Create a JIRA issue
+  #  ansible.builtin.uri:
+  #    url: https://192.168.2.14:8006/api2/json/nodes/pve4/qemu/402/status/shutdown
+  #    method: POST
+  #    body: "{{ lookup('ansible.builtin.file','issue.json') }}"
+  #    force_basic_auth: true
+  #    status_code: 201
+  #    body_format: json
+
+    # requirements:
+    # ansible-galaxy collection install community.general
+    # apt install python3-proxmoxer
+    #- name: Stop container with force
+    #  community.general.proxmox:
+    #    vmid: 110
+    #    api_host: 192.168.2.17
+    #    api_port: 8006
+    #    api_user: 
+    #    api_token_id: 
+    #    api_token_secret:
+    #    node: pve7
+    #    #force: true
+    #    state: started
+
+
+    - name: Create new container automatically selecting the next available vmid.
+      community.general.proxmox_kvm:
+        vmid: 110
+        node: 'pve7'
+        api_user: 
+        api_token_id: 
+        api_token_secret: 
+        api_host: 192.168.2.17
+        api_port: 8006
+        state: stopped
+        force: true

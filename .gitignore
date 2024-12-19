@@ -3,13 +3,17 @@
 ansible/ranflood/*.exe
 ansible/ranflood/*.zip
 
+# editor
+
+.vscode
+
 # logs
 
 terraform/*.log
 
-# editor
+# variables
 
-.vscode
+scripts/variables.sh
 
 
 #
