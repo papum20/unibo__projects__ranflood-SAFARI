@@ -3,6 +3,9 @@
 ansible/ranflood/*.exe
 ansible/ranflood/*.zip
 
+# logs
+
+terraform/*.log
 
 # editor
 
