@@ -15,7 +15,7 @@ ranflood_zip_win=ranflood-v.0.7-beta_Windows.zip
 local_working_directory="${PWD}/"
 
 # subdirectory of `local_working_directory` containing ranflood files to transfer
-local_ranflood_files_dir="ranflood/"
+local_ranflood_files_dir="files/"
 
 # where all files will be transferred
 remote_working_directory_win='C:\Users\'

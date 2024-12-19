@@ -28,6 +28,7 @@ resource "proxmox_vm_qemu" "windows_clone" {
     vmid = sum([var.vm_id, count.index])
     clone = var.template_clone
     full_clone = var.is_full_clone
+
     memory = var.vm_memory
     cores = var.vm_cores
     sockets = var.vm_sockets
@@ -35,8 +36,10 @@ resource "proxmox_vm_qemu" "windows_clone" {
     agent_timeout = var.vm_qemu_agent_timeout
 
     scsihw = var.vm_scsihw
-
     bootdisk = var.vm_bootdisk
+
+    # assign an automatic ip for ssh (readable from self.ssh_host)
+    ipconfig0 = "ip=dhcp"
 
 
     disks {
@@ -57,7 +60,7 @@ resource "proxmox_vm_qemu" "windows_clone" {
 
 
     provisioner "local-exec" {
-      command = "echo ${self.ssh_host} >> vm_ip_address.txt"
+        command = "echo \"vm_ip=${self.ssh_host} vm_id=${self.vmid}\" >> vm.txt"
     }
 
 

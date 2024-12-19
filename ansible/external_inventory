@@ -30,10 +30,3 @@ ansible_winrm_transport=basic
 ansible_winrm_server_cert_validation=ignore
 ansible_winrm_operation_timeout_sec= 800
 ansible_winrm_read_timeout_sec=900
-
-[proxmox]
-192.168.1.129
-
-[proxmox:vars]
-ansible_user=root
-ansible_password=root

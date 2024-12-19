@@ -32,6 +32,11 @@
         msg: "local_working_directory: {{ local_working_directory }}"
 
 
+    - name: Shutdown VM
+      ansible.builtin.include_role:
+        name: vm-shutdown
+
+
 - hosts: windows
   tasks:
 
@@ -83,14 +88,3 @@
 #      async: 3600
 #      poll: 0
 
-
-#- hosts: proxmox
-#  tasks:
-#
-#  - name: Shutdown delay
-#    ansible.builtin.pause:
-#      seconds: "{{ shutdown_delay }}"
-#
-#  - name: Shutdown VM
-#    ansible.builtin.command: qm shutdown {{ item }}
-#    loop: "{{ vm_id }}"

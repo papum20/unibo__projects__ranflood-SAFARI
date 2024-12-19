@@ -32,8 +32,6 @@ terraform {
 provider "proxmox" {
 
     pm_api_url = var.proxmox_api_url
-    //pm_user = var.vm_user
-    //pm_password = var.vm_password
     pm_api_token_id = var.proxmox_api_token_id
     pm_api_token_secret = var.proxmox_api_token_secret
 

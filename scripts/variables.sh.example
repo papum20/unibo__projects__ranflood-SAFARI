@@ -1,8 +1,0 @@
-#!/bin/bash
-
-proxmox_ip=192.168.2.11
-proxmox_node=pve1
-
-proxmox_user_pam=user@pam
-proxmox_status_token_id=tokenName
-proxmox_status_token_secret=1234-5678

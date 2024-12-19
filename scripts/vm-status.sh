@@ -26,10 +26,10 @@ fi
 echo $endpoint
 
 set -a
-source variables.sh
+source variables.secret.sh
 
 echo "https://${proxmox_ip}:8006/api2/json/nodes/${proxmox_node}/qemu/${vm_id}/status/${endpoint}"
-echo "Authorization: PVEAPIToken=${proxmox_user_pam}!${proxmox_status_token_id}=${proxmox_status_token_secret}"
+echo "Authorization: PVEAPIToken=${proxmox_status_user}!${proxmox_status_token_id}=${proxmox_status_token_secret}"
 
 curl -k -X POST "https://${proxmox_ip}:8006/api2/json/nodes/${proxmox_node}/qemu/${vm_id}/status/${endpoint}" \
-  -H "Authorization: PVEAPIToken=${proxmox_user_pam}!${proxmox_status_token_id}=${proxmox_status_token_secret}"
+  -H "Authorization: PVEAPIToken=${proxmox_status_user}!${proxmox_status_token_id}=${proxmox_status_token_secret}"

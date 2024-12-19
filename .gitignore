@@ -1,7 +1,7 @@
 # binaries
 
-ansible/ranflood/*.exe
-ansible/ranflood/*.zip
+**/*.exe
+**/*.zip
 
 # editor
 
@@ -9,11 +9,12 @@ ansible/ranflood/*.zip
 
 # logs
 
-terraform/*.log
+terraform/**/*.log
 
 # variables
 
-scripts/variables.sh
+*.secret.sh
+*.secret.yml
 
 
 #
