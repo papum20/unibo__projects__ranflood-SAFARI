@@ -67,4 +67,4 @@
 
  - name: spegni vm
    ansible.builtin.command: qm shutdown {{ item }}
-   loop: "{{ vm_id }}"
+   loop: "{{ vm_ids }}"

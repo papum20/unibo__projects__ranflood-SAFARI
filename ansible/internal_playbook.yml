@@ -22,79 +22,79 @@
 - hosts: windows
   tasks:
 
-  - name: Stacca scheda di rete
-    community.windows.win_net_adapter_feature:
-      interface: '*'
-      state: disabled
-      component_id:
-        - ms_tcpip
-        - ms_tcpip6
-        - ms_implat
-        - ms_lltdio
-        - ms_rspndr
-        - ms_lldp
-        - ms_msclient
-        - ms_pacer
+    - name: Disable network adapters
+      community.windows.win_net_adapter_feature:
+        interface: '*'
+        state: disabled
+        component_id:
+          - ms_tcpip
+          - ms_tcpip6
+          - ms_implat
+          - ms_lltdio
+          - ms_rspndr
+          - ms_lldp
+          - ms_msclient
+          - ms_pacer
 
-  #
-  # Ranfloodd
-  #
+    #
+    # Ranfloodd
+    #
 
-  - name: Avvia ranflood daemon
-    ansible.windows.win_command: 
-      argv:
-        - "{{ path_ranfloodd_linux }}"
-        - "{{ path_settings_ini_linux }}"
-    async: 1800
-    poll: 0
+    - name: Start ranflood daemon
+      ansible.windows.win_command:
+        argv:
+          - "{{ path_ranfloodd_linux }}"
+          - "{{ path_settings_ini_linux }}"
+      async: 1800
+      poll: 0
 
-  - name: Wait for ranflood daemon
-    ansible.builtin.pause:
-      seconds: "{{ ranflood_daemon_delay }}"
+    - name: Wait for ranflood daemon to start
+      ansible.builtin.pause:
+        seconds: "{{ ranflood_daemon_delay }}"
 
-  - name: Snapshot ranflood
-    ansible.windows.win_command:
-      argv:
-        - "{{ path_ranflood_linux }}"
-        - snapshot
-        - take
-        - "{{ ranflood_strategy }}"
-        - "{{ ranflood_target_dir }}"
-    when: "'on-the-fly' in ranflood_strategy or 'shadow_copy' in ranflood_strategy"
+    - name: Snapshot ranflood
+      ansible.windows.win_command:
+        argv:
+          - "{{ path_ranflood_linux }}"
+          - snapshot
+          - take
+          - "{{ ranflood_strategy }}"
+          - "{{ item }}"
+      loop: "{{ ranflood_target_dirs }}"
+      when: take_snapshot
 
-  #
-  # Ransomware
-  #
+    #
+    # Ransomware
+    #
+#
+    #- name: Decompress ransomware
+    #  community.windows.win_unzip:
+    #    src: "{{ remote_working_directory }}{{ name_ransomware_zip }}"
+    #    dest: "{{ path_ransomware_linux }}"
+    #    password: infected
+    #    delete_archive: true
 
-  - name: Decomprimi ransomware
-    community.windows.win_unzip:
-      src: "{{ remote_working_directory }}{{ name_ransomware_zip }}"
-      dest: "{{ path_ransomware_linux }}"
-      password: infected
-      delete_archive: true
+    #- name: Start ransomware
+    #  ansible.windows.win_command:
+    #    argv:
+    #      - "{{ path_ransomware_linux }}"
+    #  async: 1800
+    #  poll: 0
 
-  - name: avvia ransomware
-    ansible.windows.win_command: 
-      argv:
-        - "{{ path_ransomware_linux }}"
-    async: 1800
-    poll: 0   
+    #
+    # Ranflood client
+    #
 
-  #
-  # Ranflood client
-  #
-
-  - name: Aspetta ranflood client
-    ansible.builtin.pause:
-      seconds: "{{ ranflood_start_delay }}"
-
-  - name: Avvia ranflood client
-    ansible.windows.win_command: 
-      argv:
-        - "{{ path_ranflood }}"
-        - flood 
-        - start
-        - "{{ ranflood_strategy }}"
-        - "{{ ranflood_target_dir }}"
-
-    
+    #- name: Wait between ransomware and ranflood client
+    #  ansible.builtin.pause:
+    #    seconds: "{{ ranflood_start_delay }}"
+#
+    #- name: Start ranflood cliento on target dirs
+    #  ansible.windows.win_command:
+    #    argv:
+    #      - "{{ path_ranflood }}"
+    #      - flood
+    #      - start
+    #      - "{{ ranflood_strategy }}"
+    #      - "{{ item }}"
+    #  loop: "{{ ranflood_target_dirs }}"

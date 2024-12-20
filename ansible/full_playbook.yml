@@ -21,20 +21,12 @@
 
 - hosts: localhost
   tasks:
-    - name: Aggiungi VM all'inventario
-      ansible.builtin.add_host:
-        name: "{{ item }}"
-        groups: windows
-      loop: "{{ new_ip }}"
 
-    - name: Debug local working directory
-      ansible.builtin.debug:
-        msg: "local_working_directory: {{ local_working_directory }}"
+    - name: Add VMs to inventory
+      import_tasks: playbooks/tasks/inventory-add-vms.yml
 
-
-    - name: Shutdown VM
-      ansible.builtin.include_role:
-        name: vm-shutdown
+    - name: Make sure VMs are running
+      import_tasks: playbooks/tasks/vm-started.yml
 
 
 - hosts: windows
@@ -48,7 +40,8 @@
       loop:
         - "{{ name_internal_playbook }}"
         - "{{ name_internal_inventory }}"
-        - "{{ name_ansible_variables }}"
+        - "${{ dir_variables }}{{ name_ansible_variables }}"
+        - "${{ dir_variables }}{{ name_ansible_variables_external }}"
 
     - name: Transfer executable files and scripts
       ansible.windows.win_copy:
@@ -57,9 +50,9 @@
         force: "true"
       loop:
         - "{{ name_settings_ini }}"
-        - "{{ name_prepopulate_script }}"
-        - "{{ name_env_linux }}"
-        - "{{ name_env_windows }}"
+        #- "{{ name_prepopulate_script }}"
+        #- "{{ name_env_linux }}"
+        #- "{{ name_env_windows }}"
 
     - name: Transfer (heavy) executable files and scripts
       ansible.windows.win_copy:
@@ -68,23 +61,40 @@
         force: "{{ transfer_force }}"
       loop:
         - "{{ name_ranflood_zip }}"
-        #- "{{ name_ransomware_zip }}"
+        - "{{ name_ransomware_zip }}"
 
     - name: Prepopulate the disk
-      ansible.windows.win_command: 
+      ansible.windows.win_command:
         argv:
           - "{{ remote_working_directory_win }}{{ name_prepopulate_script }}"
+      when: prepopulate_wsl
 
-#    - name: Launch internal playbook
-#      ansible.windows.win_command:
-#        argv:
-#          - wsl
-#          - ansible-playbook
-#          - -i
-#          - "{{ remote_working_directory_linux }}{{ internal_inventory_name }}"
-#          - "{{ remote_working_directory_linux }}{{ internal_playbook_name }}"
-#          - --extra-vars
-#          - "@{{ remote_working_directory_linux }}{{ name_ansible_variables }}"
-#      async: 3600
-#      poll: 0
+    - name: Launch internal playbook
+      ansible.windows.win_command:
+        argv:
+          - wsl
+          - ansible-playbook
+          - -i
+          - "{{ remote_working_directory_linux }}{{ name_internal_inventory }}"
+          - "{{ remote_working_directory_linux }}{{ name_internal_playbook }}"
+          - --extra-vars
+          - "@{{ remote_working_directory_linux }}{{ name_ansible_variables }}"
+          - --extra-vars
+          - "@{{ remote_working_directory_linux }}{{ name_ansible_variables_external }}"
+          - ">"
+          - "{{ path_log_linux }}"
+      async: 3600
+      poll: 0
+      register: command_output
+
+    - name: Display the output of the command
+      ansible.builtin.debug:
+        msg: "{{ command_output }}"
+
+
+- hosts: localhost
+  tasks:
+    - name: Shutdown VMs
+      import_tasks: playbooks/tasks/vm-shutdown.yml
+      when: shutdown
 

@@ -1,0 +1,49 @@
+#/******************************************************************************
+# * Copyright 2021 (C) by Tommaso Compagnucci <tommasocompagnucci1@gmail.com>  *
+# *                                                                            *
+# * This program is free software; you can redistribute it and/or modify       *
+# * it under the terms of the GNU Library General Public License as            *
+# * published by the Free Software Foundation; either version 2 of the         *
+# * License, or (at your option) any later version.                            *
+# *                                                                            *
+# * This program is distributed in the hope that it will be useful,            *
+# * but WITHOUT ANY WARRANTY; without even the implied warranty of             *
+# * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the              *
+# * GNU General Public License for more details.                               *
+# *                                                                            *
+# * You should have received a copy of the GNU Library General Public          *
+# * License along with this program; if not, write to the                      *
+# * Free Software Foundation, Inc.,                                            *
+# * 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.                  *
+# *                                                                            *
+# * For details about the authors of this software, see the AUTHORS file.      *
+# ******************************************************************************/
+
+# target dirs for flooding against ransomware
+ranflood_target_dirs:
+  - 'C:\Users\IEUser\DOCUMENT'
+  - 'C:\Users\IEUser\DOWNLOAD'
+  - 'C:\Users\IEUser\Desktop'
+  - 'C:\Users\IEUser\Documents'
+  - 'C:\Users\IEUser\Downloads'
+  - 'C:\Users\IEUser\Music'
+  - 'C:\Users\IEUser\My Documents'
+  - 'C:\Users\IEUser\OneDrive'
+  - 'C:\Users\IEUser\Pictures'
+  - 'C:\Users\IEUser\PrintHood'
+  - 'C:\Users\IEUser\SAVED_GA'
+  - 'C:\Users\IEUser\SendTo'
+  - 'C:\Users\IEUser\Videos'
+
+
+ranflood_strategy: on-the-fly
+ranflood_snapshot_strategy: on-the-fly
+# seconds between daemon and client
+ranflood_daemon_delay: 3
+# seconds between the start of ransomware and ranflood (client)
+ranflood_start_delay: 60
+
+# optional tasks
+
+## snapshots already taken in the used VMs
+take_snapshot: false

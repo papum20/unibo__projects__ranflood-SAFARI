@@ -35,10 +35,9 @@ resource "proxmox_vm_qemu" "Checker" {
     agent_timeout = var.vm_qemu_agent_timeout
 
     scsihw = var.vm_scsihw
+    bootdisk = var.vm_bootdisk
 
     ipconfig0 = var.vm_ipconfig
-
-    bootdisk = var.vm_bootdisk
 
 
     disks {
@@ -75,5 +74,9 @@ resource "proxmox_vm_qemu" "Checker" {
         bridge = var.vm_network_bridge
       }
 
+
+    provisioner "local-exec" {
+        command = "echo \"vm_ip=${self.ssh_host} vm_id=${self.vmid}\" >> vm.txt"
+    }
 
 }

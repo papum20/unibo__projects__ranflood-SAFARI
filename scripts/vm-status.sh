@@ -1,10 +1,18 @@
 #!/bin/bash
 
 function usage() {
-  echo "Change proxmox vm status."
+  echo "vm-status: Change proxmox vm status."
   echo "Usage: $0 <start|shutdown> <vm_id>"
   exit 1
 }
+
+if [[ ! -f scripts/variables.secret.sh ]]; then
+  echo "variables.secret.sh not found. Make sure to run this script from the project's root directory."
+  usage
+fi
+
+cd scripts
+
 
 # Check if action and VM ID are provided as arguments
 if [ -z "$1" ] || [ -z "$2" ]; then
