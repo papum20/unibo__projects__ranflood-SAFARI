@@ -14,7 +14,7 @@ set ransomware_download_link=https://github.com/Flooding-against-Ransomware/ranf
 
 :: Ansible
 
-set local_working_directory=/home/papum/programm/unibo/projects/SAFARI/ansible/
+set local_working_directory=/home/danie/programm/unibo/projects/SAFARI/ansible/
 
 :: subdirectory of `local_working_directory` containing ranflood files to transfer
 set local_ranflood_files_dir=files/
@@ -35,7 +35,7 @@ set name_internal_playbook=internal_playbook.yml
 set name_internal_inventory=internal_inventory
 set name_internal_variables=internal_inventory
 set name_ansible_variables=variables.generated.yml
-set name_ansible_variables_external=external_variables.yml
+set name_ansible_variables_internal=variables_internal.yml
 
 
 :: Files to transfer (ranflood, ransomwares)
@@ -70,7 +70,7 @@ set path_ransomware_linux=/mnt/c/Users/Ransomware.WannaCry
 set path_settings_ini_linux=/mnt/c/Users/settings.ini
 
 :: where output of internal playbook is saved
-set path_log_linux=/mnt/c/Users/log20241220-17_32_25.txt
+set path_log_linux=/mnt/c/Users/log20241222-15_42_21.txt
 
 :: seconds for which to run ranflood random to prepopulate the disk
 set ranflood_random_duration=3

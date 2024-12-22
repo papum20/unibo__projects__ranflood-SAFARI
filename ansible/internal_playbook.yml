@@ -43,8 +43,8 @@
     - name: Start ranflood daemon
       ansible.windows.win_command:
         argv:
-          - "{{ path_ranfloodd_linux }}"
-          - "{{ path_settings_ini_linux }}"
+          - "{{ path_ranfloodd_win }}"
+          - "{{ path_settings_ini_win }}"
       async: 1800
       poll: 0
 
@@ -55,10 +55,10 @@
     - name: Snapshot ranflood
       ansible.windows.win_command:
         argv:
-          - "{{ path_ranflood_linux }}"
+          - "{{ path_ranflood_win }}"
           - snapshot
           - take
-          - "{{ ranflood_strategy }}"
+          - "{{ ranflood_snapshot_strategy }}"
           - "{{ item }}"
       loop: "{{ ranflood_target_dirs }}"
       when: take_snapshot
@@ -66,18 +66,18 @@
     #
     # Ransomware
     #
-#
+
     #- name: Decompress ransomware
     #  community.windows.win_unzip:
-    #    src: "{{ remote_working_directory }}{{ name_ransomware_zip }}"
-    #    dest: "{{ path_ransomware_linux }}"
+    #    src: "{{ remote_working_directory_win }}{{ name_ransomware_zip }}"
+    #    dest: "{{ path_ransomware_win }}"
     #    password: infected
     #    delete_archive: true
 
     #- name: Start ransomware
     #  ansible.windows.win_command:
     #    argv:
-    #      - "{{ path_ransomware_linux }}"
+    #      - "{{ path_ransomware_win }}"
     #  async: 1800
     #  poll: 0
 
@@ -92,7 +92,7 @@
     #- name: Start ranflood cliento on target dirs
     #  ansible.windows.win_command:
     #    argv:
-    #      - "{{ path_ranflood }}"
+    #      - "{{ path_ranflood_win }}"
     #      - flood
     #      - start
     #      - "{{ ranflood_strategy }}"

@@ -19,7 +19,7 @@
  * For details about the authors of this software, see the AUTHORS file.      *
  ******************************************************************************/
 
-resource "proxmox_vm_qemu" "Checker" {
+resource "proxmox_vm_qemu" "checker" {
 
     count = var.vms_count
 
@@ -28,6 +28,7 @@ resource "proxmox_vm_qemu" "Checker" {
     vmid = sum([var.vm_id, count.index])
     clone = var.template_clone
     full_clone = var.is_full_clone
+
     memory = var.vm_memory
     cores = var.vm_cores
     sockets = var.vm_sockets
@@ -41,8 +42,8 @@ resource "proxmox_vm_qemu" "Checker" {
 
 
     disks {
-        scsi {
-            scsi0 {
+        ide {
+            ide0 {
                 disk {
                     storage = var.vm_disk_storage
                     size = var.vm_disk_size
@@ -50,22 +51,22 @@ resource "proxmox_vm_qemu" "Checker" {
             }
         }
 
-        ide {
-          ide0 {
-            passthrough {
-              file = var.vm_disk_to_check_name
-            }
-          }
-        }
+        #ide {
+        #  ide0 {
+        #    passthrough {
+        #      file = var.vm_disk_to_check_name
+        #    }
+        #  }
+        #}
 
-        sata {
-          sata0 {
-            disk {
-              storage = "storage-condiviso"
-              size = "1G"
-            }
-          }
-        }
+        #sata {
+        #  sata0 {
+        #    disk {
+        #      storage = "storage-condiviso"
+        #      size = "1G"
+        #    }
+        #  }
+        #}
 
     }
 

@@ -35,7 +35,7 @@ name_internal_playbook=internal_playbook.yml
 name_internal_inventory=internal_inventory
 name_internal_variables=internal_inventory
 name_ansible_variables=variables.generated.yml
-name_ansible_variables_external=external_variables.yml
+name_ansible_variables_internal=variables_internal.yml
 
 
 # Files to transfer (ranflood, ransomwares)

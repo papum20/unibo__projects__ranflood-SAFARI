@@ -1,3 +1,13 @@
+- hosts: localhost
+  tasks:
+
+    - name: Add VMs to inventory
+      import_tasks: ../playbooks/tasks/inventory-add-vms.yml
+
+    - name: Make sure VMs are running
+      import_tasks: ../playbooks/tasks/vm-started.yml
+
+
 - hosts: checker
   become: true
   tasks:
@@ -37,10 +47,23 @@
         state: mounted
         fstype: ext4
 
-    - name: Esegui filechecker
+    - name: Filechecker check
       ansible.builtin.command:
-        cmd: java -jar filechecker.jar check /home/checker/cleanWindowsChecksum /home/checker/report /mnt/win10/Users/IEUser
-        chdir: /home/checker/ranflood-master/build/libs
+        cmd: java -jar {{ path_filechecker }} check /home/checker/cleanWindowsChecksum /home/checker/report /mnt/win10/{{ target_dir_c }}
+        chdir: dir_filechecker
+      when: do_check
+
+    - name: Filechecker sss restore
+      ansible.builtin.command:
+        cmd: java -jar {{ path_filechecker }} restore /home/checker/cleanWindowsChecksum /home/checker/report /mnt/win10/{{ target_dir_c }}
+        chdir: "{{ dir_filechecker }}"
+      when: do_restore and not restore_delete
+
+    - name: Filechecker sss restore with delete
+      ansible.builtin.command:
+        cmd: java -jar {{ path_filechecker }} restore /home/checker/cleanWindowsChecksum /home/checker/report /mnt/win10/{{ target_dir_c }} --delete
+        chdir: "{{ dir_filechecker }}"
+      when: do_restore and restore_delete
 
     - name: Trasferisci report nello storage condiviso
       ansible.builtin.copy:
@@ -58,13 +81,3 @@
         path: /mnt/shared
         state: unmounted
 
-  hosts: proxmox
-  tasks:
-
- - name: Attendi
-   ansible.builtin.pause:
-     seconds: "{{ attesa_spegnimento }}"
-
- - name: spegni vm
-   ansible.builtin.command: qm shutdown {{ item }}
-   loop: "{{ vm_ids }}"

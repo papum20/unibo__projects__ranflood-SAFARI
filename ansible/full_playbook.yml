@@ -40,8 +40,15 @@
       loop:
         - "{{ name_internal_playbook }}"
         - "{{ name_internal_inventory }}"
-        - "${{ dir_variables }}{{ name_ansible_variables }}"
-        - "${{ dir_variables }}{{ name_ansible_variables_external }}"
+
+    - name: Transfer ansible variables
+      ansible.windows.win_copy:
+        src: "{{ local_working_directory }}{{ dir_variables }}{{ item }}"
+        dest: "{{ remote_working_directory_win }}{{ item }}"
+        force: "true"
+      loop:
+        - "{{ name_ansible_variables }}"
+        - "{{ name_ansible_variables_internal }}"
 
     - name: Transfer executable files and scripts
       ansible.windows.win_copy:
@@ -80,7 +87,7 @@
           - --extra-vars
           - "@{{ remote_working_directory_linux }}{{ name_ansible_variables }}"
           - --extra-vars
-          - "@{{ remote_working_directory_linux }}{{ name_ansible_variables_external }}"
+          - "@{{ remote_working_directory_linux }}{{ name_ansible_variables_internal }}"
           - ">"
           - "{{ path_log_linux }}"
       async: 3600

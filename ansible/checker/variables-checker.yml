@@ -25,9 +25,20 @@ shutdown_timer: 320
 vm_node: 'pve7'
 
 proxmox_ip: '192.168.2.17'
-  
 
-# optional tasks
 
-prepopulate_wsl: false
-shutdown: true
+# Paths
+
+dir_filechecker: /home/checker/ranflood-master/build/libs
+name_filechecker: filechecker.jar
+
+target_dir_c: /Users/IEUser
+
+
+# Options
+
+do_check: false
+do_restore: true
+
+restore_delete: false
+

@@ -2,7 +2,7 @@
 
 
 # timestamp, can be used as "unique" id
-timestamp: '20241220-17_32_25'
+timestamp: '20241222-15_42_21'
 
 
 # Script
@@ -14,7 +14,7 @@ ransomware_download_link: 'https://github.com/Flooding-against-Ransomware/ranflo
 
 # Ansible
 
-local_working_directory: '/home/papum/programm/unibo/projects/SAFARI/ansible/'
+local_working_directory: '/home/danie/programm/unibo/projects/SAFARI/ansible/'
 
 # subdirectory of `local_working_directory` containing ranflood files to transfer
 local_ranflood_files_dir: 'files/'
@@ -35,7 +35,7 @@ name_internal_playbook: 'internal_playbook.yml'
 name_internal_inventory: 'internal_inventory'
 name_internal_variables: 'internal_inventory'
 name_ansible_variables: 'variables.generated.yml'
-name_ansible_variables_external: 'external_variables.yml'
+name_ansible_variables_internal: 'variables_internal.yml'
 
 
 # Files to transfer (ranflood, ransomwares)
@@ -70,7 +70,7 @@ path_ransomware_linux: '/mnt/c/Users/Ransomware.WannaCry'
 path_settings_ini_linux: '/mnt/c/Users/settings.ini'
 
 # where output of internal playbook is saved
-path_log_linux: '/mnt/c/Users/log20241220-17_32_25.txt'
+path_log_linux: '/mnt/c/Users/log20241222-15_42_21.txt'
 
 # seconds for which to run ranflood random to prepopulate the disk
 ranflood_random_duration: '3'
