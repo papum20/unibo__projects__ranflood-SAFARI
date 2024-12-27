@@ -42,8 +42,8 @@ resource "proxmox_vm_qemu" "checker" {
 
 
     disks {
-        ide {
-            ide0 {
+        scsi {
+            scsi0 {
                 disk {
                     storage = var.vm_disk_storage
                     size = var.vm_disk_size
@@ -51,22 +51,22 @@ resource "proxmox_vm_qemu" "checker" {
             }
         }
 
-        #ide {
-        #  ide0 {
-        #    passthrough {
-        #      file = var.vm_disk_to_check_name
-        #    }
-        #  }
-        #}
+        ide {
+          ide0 {
+            passthrough {
+              file = var.vm_disk_to_check_name
+            }
+          }
+        }
 
-        #sata {
-        #  sata0 {
-        #    disk {
-        #      storage = "storage-condiviso"
-        #      size = "1G"
-        #    }
-        #  }
-        #}
+        sata {
+          sata0 {
+            disk {
+              storage = "storage-condiviso"
+              size = "1G"
+            }
+          }
+        }
 
     }
 

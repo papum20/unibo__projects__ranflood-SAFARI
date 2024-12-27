@@ -40,6 +40,7 @@ name_ansible_variables_internal=variables_internal.yml
 
 # Files to transfer (ranflood, ransomwares)
 
+name_filechecker_jar=filechecker.jar
 name_ranflood=ranflood.exe
 name_ranfloodd=ranfloodd.exe
 name_ranflood_zip=ranflood-v.0.7-beta_Windows.zip

@@ -20,11 +20,14 @@
 # ******************************************************************************/
 
 
-shutdown_timer: 320
-
-vm_node: 'pve7'
 
 proxmox_ip: '192.168.2.17'
+vm_node: 'pve21'
+
+inventory_groups: 'windows'
+
+#shutdown_timer: 320
+shutdown_timer: 120
   
 
 # optional tasks

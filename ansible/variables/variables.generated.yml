@@ -2,7 +2,7 @@
 
 
 # timestamp, can be used as "unique" id
-timestamp: '20241222-15_42_21'
+timestamp: '20241227-12_59_35'
 
 
 # Script
@@ -70,7 +70,7 @@ path_ransomware_linux: '/mnt/c/Users/Ransomware.WannaCry'
 path_settings_ini_linux: '/mnt/c/Users/settings.ini'
 
 # where output of internal playbook is saved
-path_log_linux: '/mnt/c/Users/log20241222-15_42_21.txt'
+path_log_linux: '/mnt/c/Users/log20241227-12_59_35.txt'
 
 # seconds for which to run ranflood random to prepopulate the disk
 ranflood_random_duration: '3'

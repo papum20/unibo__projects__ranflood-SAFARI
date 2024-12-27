@@ -23,5 +23,6 @@
 - name: Add VMs to the inventory
   ansible.builtin.add_host:
     name: "{{ item }}"
-    groups: windows
+    groups: "{{ inventory_groups }}"
   loop: "{{ vm_ips }}"
+  

@@ -35,7 +35,7 @@ while [[ "$#" -gt 0 ]]; do
     -c|--checker)
       dir_ansible=${dir_ansible}checker/
       dir_ansible_variables=${dir_ansible}
-      dir_terraform=${dir_terraform}checker/
+      dir_terraform=terraform/checker/
       script_ansible=launch-ansible-checker.sh
       mode=checker
       shift
@@ -82,12 +82,13 @@ fi
 
 cd $dir_terraform
 
-# clean previous VMs data
-rm ${out_terraform_filename}
 
 echo "[Terraform] Launching terraform"
 
 if [[ $terraform_delete == true ]]; then
+  # clean previous VMs data
+  rm ${out_terraform_filename}
+  
   echo "[Terraform] Deleting previous VMs"
   terraform destroy -auto-approve
 fi
@@ -119,6 +120,6 @@ source scripts/read-vms.sh ${dir_terraform}
 #
 
 echo "[Ansible] Launching ansible"
-"./${dir_scripts}${script_ansible}" -y
+"./scripts/${script_ansible}" -y
 
 

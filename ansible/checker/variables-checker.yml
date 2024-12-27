@@ -20,22 +20,29 @@
 # ******************************************************************************/
 
 
-shutdown_timer: 320
-
-vm_node: 'pve7'
 
 proxmox_ip: '192.168.2.17'
+vm_node: 'pve21'
+
+inventory_groups: 'checker'
+
+shutdown_timer: 320
 
 
 # Paths
 
-dir_filechecker: /home/checker/ranflood-master/build/libs
-name_filechecker: filechecker.jar
+path_mnt_win: "/mnt/win10"
 
-target_dir_c: /Users/IEUser
+dir_filechecker: "/home/checker/ranflood-master/build/libs/"
+name_filechecker: "filechecker.jar"
+path_filechecker: "{{ dir_filechecker }}/{{ name_filechecker }}"
+
+target_dir: "{{ path_mnt_win }}/Users/IEUser"
 
 
 # Options
+
+transfer_force_filechecker: true
 
 do_check: false
 do_restore: true

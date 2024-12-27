@@ -85,16 +85,16 @@
     # Ranflood client
     #
 
-    #- name: Wait between ransomware and ranflood client
-    #  ansible.builtin.pause:
-    #    seconds: "{{ ranflood_start_delay }}"
-#
-    #- name: Start ranflood cliento on target dirs
-    #  ansible.windows.win_command:
-    #    argv:
-    #      - "{{ path_ranflood_win }}"
-    #      - flood
-    #      - start
-    #      - "{{ ranflood_strategy }}"
-    #      - "{{ item }}"
-    #  loop: "{{ ranflood_target_dirs }}"
+    - name: Wait between ransomware and ranflood client
+      ansible.builtin.pause:
+        seconds: "{{ ranflood_start_delay }}"
+
+    - name: Start ranflood cliento on target dirs
+      ansible.windows.win_command:
+        argv:
+          - "{{ path_ranflood_win }}"
+          - flood
+          - start
+          - "{{ ranflood_strategy }}"
+          - "{{ item }}"
+      loop: "{{ ranflood_target_dirs }}"

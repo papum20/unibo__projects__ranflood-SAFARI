@@ -1,6 +1,10 @@
 - hosts: localhost
   tasks:
 
+    - name: debug vms ips
+      debug:
+        msg: "{{ vm_ips }}"
+
     - name: Add VMs to inventory
       import_tasks: ../playbooks/tasks/inventory-add-vms.yml
 
@@ -12,9 +16,15 @@
   become: true
   tasks:
 
+    - name: Trasferisci filechecker jar
+      ansible.builtin.copy:
+        src: "{{ local_working_directory }}{{ local_ranflood_files_dir }}{{ name_filechecker_jar }}"
+        dest: "{{ path_filechecker }}"
+        force: transfer_filechecker
+
     - name: Crea mounting point per Windows
       ansible.builtin.file:
-        path: /mnt/win10
+        path: "{{ path_mnt_win }}"
         state: directory
 
     - name: Crea mounting point storage condiviso
@@ -24,7 +34,7 @@
 
     - name: Monta disco Windows
       ansible.posix.mount:
-        path: /mnt/win10
+        path: "{{ path_mnt_win }}"
         src: /dev/sdb1
         state: mounted
         fstype: ntfs
@@ -49,19 +59,19 @@
 
     - name: Filechecker check
       ansible.builtin.command:
-        cmd: java -jar {{ path_filechecker }} check /home/checker/cleanWindowsChecksum /home/checker/report /mnt/win10/{{ target_dir_c }}
+        cmd: java -jar {{ path_filechecker }} check /home/checker/cleanWindowsChecksum /home/checker/report {{ target_dir }}
         chdir: dir_filechecker
       when: do_check
 
     - name: Filechecker sss restore
       ansible.builtin.command:
-        cmd: java -jar {{ path_filechecker }} restore /home/checker/cleanWindowsChecksum /home/checker/report /mnt/win10/{{ target_dir_c }}
+        cmd: java -jar {{ path_filechecker }} restore /home/checker/cleanWindowsChecksum /home/checker/report {{ target_dir }}
         chdir: "{{ dir_filechecker }}"
       when: do_restore and not restore_delete
 
     - name: Filechecker sss restore with delete
       ansible.builtin.command:
-        cmd: java -jar {{ path_filechecker }} restore /home/checker/cleanWindowsChecksum /home/checker/report /mnt/win10/{{ target_dir_c }} --delete
+        cmd: java -jar {{ path_filechecker }} restore /home/checker/cleanWindowsChecksum /home/checker/report {{ target_dir }} --delete
         chdir: "{{ dir_filechecker }}"
       when: do_restore and restore_delete
 
@@ -70,10 +80,11 @@
         src: /home/checker/report
         dest: /mnt/shared/
         remote_src: true
+      when: do_check or do_restore
 
     - name: Smonta disco Windows
       ansible.posix.mount:
-        path: /mnt/win10
+        path: "{{ path_mnt_win }}"
         state: unmounted
 
     - name: Smonta storage condiviso
