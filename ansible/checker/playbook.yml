@@ -20,7 +20,7 @@
       ansible.builtin.copy:
         src: "{{ local_working_directory }}{{ local_ranflood_files_dir }}{{ name_filechecker_jar }}"
         dest: "{{ path_filechecker }}"
-        force: transfer_filechecker
+        force: "{{ transfer_force_filechecker }}"
 
     - name: Crea mounting point per Windows
       ansible.builtin.file:
@@ -65,13 +65,13 @@
 
     - name: Filechecker sss restore
       ansible.builtin.command:
-        cmd: java -jar {{ path_filechecker }} restore /home/checker/cleanWindowsChecksum /home/checker/report {{ target_dir }}
+        cmd: java -jar {{ path_filechecker }} restore /home/checker/cleanWindowsChecksum /home/checker/report {{ target_dir }} --debug --logfile={{ path_log_filechecker }}
         chdir: "{{ dir_filechecker }}"
       when: do_restore and not restore_delete
 
     - name: Filechecker sss restore with delete
       ansible.builtin.command:
-        cmd: java -jar {{ path_filechecker }} restore /home/checker/cleanWindowsChecksum /home/checker/report {{ target_dir }} --delete
+        cmd: java -jar {{ path_filechecker }} restore /home/checker/cleanWindowsChecksum /home/checker/report {{ target_dir }}  --debug --logfile={{ path_log_filechecker }} --delete
         chdir: "{{ dir_filechecker }}"
       when: do_restore and restore_delete
 

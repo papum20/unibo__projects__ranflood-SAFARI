@@ -40,6 +40,7 @@ name_ansible_variables_internal=variables_internal.yml
 
 # Files to transfer (ranflood, ransomwares)
 
+name_filechecker_jar=filechecker.jar
 name_ranflood=ranflood.exe
 name_ranfloodd=ranfloodd.exe
 name_ranflood_zip=ranflood-v.0.7-beta_Windows.zip
@@ -71,6 +72,8 @@ path_settings_ini_linux="${remote_working_directory_linux}${name_settings_ini}"
 
 # where output of internal playbook is saved
 path_log_linux="${remote_working_directory_linux}log${timestamp}.txt"
+# log of filechecker restore command
+path_log_filechecker="/home/checker/log${timestamp}.txt"
 
 # seconds for which to run ranflood random to prepopulate the disk
 ranflood_random_duration=3

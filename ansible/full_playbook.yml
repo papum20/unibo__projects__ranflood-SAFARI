@@ -61,35 +61,29 @@
         #- "{{ name_env_linux }}"
         #- "{{ name_env_windows }}"
 
-    - name: Transfer (heavy) executable files and scripts
-      ansible.windows.win_copy:
-        src: "{{ local_working_directory }}{{ local_ranflood_files_dir }}{{ item }}"
-        dest: "{{ remote_working_directory_win }}{{ item }}"
-        force: "{{ transfer_force }}"
-      loop:
-        - "{{ name_ranflood_zip }}"
-        - "{{ name_ransomware_zip }}"
+    #- name: Transfer (heavy) executable files and scripts
+    #  ansible.windows.win_copy:
+    #    src: "{{ local_working_directory }}{{ local_ranflood_files_dir }}{{ item }}"
+    #    dest: "{{ remote_working_directory_win }}{{ item }}"
+    #    force: "{{ transfer_force }}"
+    #  loop:
+    #    - "{{ name_ranflood_zip }}"
+    #    - "{{ name_ransomware_zip }}"
 
     - name: Prepopulate the disk
       ansible.windows.win_command:
-        argv:
-          - "{{ remote_working_directory_win }}{{ name_prepopulate_script }}"
+        cmd: "{{ remote_working_directory_win }}{{ name_prepopulate_script }}"
       when: prepopulate_wsl
 
     - name: Launch internal playbook
       ansible.windows.win_command:
-        argv:
-          - wsl
-          - ansible-playbook
-          - -i
-          - "{{ remote_working_directory_linux }}{{ name_internal_inventory }}"
-          - "{{ remote_working_directory_linux }}{{ name_internal_playbook }}"
-          - --extra-vars
-          - "@{{ remote_working_directory_linux }}{{ name_ansible_variables }}"
-          - --extra-vars
-          - "@{{ remote_working_directory_linux }}{{ name_ansible_variables_internal }}"
-          - ">"
-          - "{{ path_log_linux }}"
+        cmd: >
+          wsl ansible-playbook -vvv
+          -i "{{ remote_working_directory_linux }}{{ name_internal_inventory }}"
+          "{{ remote_working_directory_linux }}{{ name_internal_playbook }}"
+          --extra-vars "@{{ remote_working_directory_linux }}{{ name_ansible_variables }}"
+          --extra-vars "@{{ remote_working_directory_linux }}{{ name_ansible_variables_internal }}"
+          > "{{ path_log_linux }}"
       async: 3600
       poll: 0
       register: command_output

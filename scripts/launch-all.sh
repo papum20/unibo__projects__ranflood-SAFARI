@@ -4,7 +4,7 @@ function usage() {
   echo "launch-all.sh: Launch the full SAFARI project (destroy and re-deploy with terraform, run with ansible)."
   echo "	Destroy is needed because the VMs, after infecting them (and disabling its network interfaces), would be hard to access and also dangerous, "
   echo "	but also in order to provision them again, and getting their new IPs."
-  echo "Usage: $0 [--c|-checker] [-d|--delete] [-h|--help]"
+  echo "Usage: ./scripts/launch-all.sh [--c|-checker] [-d|--delete] [-h|--help]"
   echo "  -c, --checker: Provision and run the filechecker VM."
   echo "  -d, --delete: Delete the VMs first (useful to re-run provisioning, in case VMs IPs and IDs weren't saved)."
   echo "  -h, --help: Show this help message."

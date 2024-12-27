@@ -2,7 +2,7 @@
 
 
 # timestamp, can be used as "unique" id
-timestamp: '20241227-12_59_35'
+timestamp: '20241227-21_34_57'
 
 
 # Script
@@ -40,6 +40,7 @@ name_ansible_variables_internal: 'variables_internal.yml'
 
 # Files to transfer (ranflood, ransomwares)
 
+name_filechecker_jar: 'filechecker.jar'
 name_ranflood: 'ranflood.exe'
 name_ranfloodd: 'ranfloodd.exe'
 name_ranflood_zip: 'ranflood-v.0.7-beta_Windows.zip'
@@ -70,7 +71,9 @@ path_ransomware_linux: '/mnt/c/Users/Ransomware.WannaCry'
 path_settings_ini_linux: '/mnt/c/Users/settings.ini'
 
 # where output of internal playbook is saved
-path_log_linux: '/mnt/c/Users/log20241227-12_59_35.txt'
+path_log_linux: '/mnt/c/Users/log20241227-21_34_57.txt'
+# log of filechecker restore command
+path_log_filechecker: '/home/checker/log20241227-21_34_57.txt'
 
 # seconds for which to run ranflood random to prepopulate the disk
 ranflood_random_duration: '3'

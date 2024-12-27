@@ -59,8 +59,8 @@ name_env_linux=variables.generated.sh
 # Config, execution
 
 path_ranflood_dir_win='C:/Program Files/Ranflood/'
-path_ranflood_win="${path_ranflood_dir}${name_ranflood}"
-path_ranfloodd_win="${path_ranflood_dir}${name_ranflood}"
+path_ranflood_win="${path_ranflood_dir_win}${name_ranflood}"
+path_ranfloodd_win="${path_ranflood_dir_win}${name_ranfloodd}"
 path_ransomware_win="${remote_working_directory_win}${name_ransomware}"
 path_settings_ini_win="${remote_working_directory_win}${name_settings_ini}"
 
@@ -72,6 +72,8 @@ path_settings_ini_linux="${remote_working_directory_linux}${name_settings_ini}"
 
 # where output of internal playbook is saved
 path_log_linux="${remote_working_directory_linux}log${timestamp}.txt"
+# log of filechecker restore command
+path_log_filechecker="/home/checker/log${timestamp}.txt"
 
 # seconds for which to run ranflood random to prepopulate the disk
 ranflood_random_duration=3
