@@ -2,7 +2,7 @@
 
 
 # timestamp, can be used as "unique" id
-timestamp: '20241227-21_34_57'
+timestamp: '20241228-22_43_04'
 
 
 # Script
@@ -58,9 +58,9 @@ name_env_linux: 'variables.generated.sh'
 
 # Config, execution
 
-path_ranflood_dir_win: 'C:/Program Files/Ranflood/'
-path_ranflood_win: 'ranflood.exe'
-path_ranfloodd_win: 'ranflood.exe'
+path_ranflood_dir_win: 'C:\Program Files\Ranflood\'
+path_ranflood_win: 'C:\Program Files\Ranflood\ranflood.exe'
+path_ranfloodd_win: 'C:\Program Files\Ranflood\ranfloodd.exe'
 path_ransomware_win: 'C:\Users\Ransomware.WannaCry'
 path_settings_ini_win: 'C:\Users\settings.ini'
 
@@ -71,9 +71,10 @@ path_ransomware_linux: '/mnt/c/Users/Ransomware.WannaCry'
 path_settings_ini_linux: '/mnt/c/Users/settings.ini'
 
 # where output of internal playbook is saved
-path_log_linux: '/mnt/c/Users/log20241227-21_34_57.txt'
+path_log_linux: '/mnt/c/Users/log20241228-22_43_04.txt'
 # log of filechecker restore command
-path_log_filechecker: '/home/checker/log20241227-21_34_57.txt'
+path_log_filechecker: '/home/checker/log20241228-22_43_04.txt'
+path_log_internal_daemon: 'C:\Users\log_daemon20241228-22_43_04.txt'
 
 # seconds for which to run ranflood random to prepopulate the disk
 ranflood_random_duration: '3'

@@ -58,9 +58,9 @@ set name_env_linux=variables.generated.sh
 
 :: Config, execution
 
-set path_ranflood_dir_win=C:/Program Files/Ranflood/
-set path_ranflood_win=ranflood.exe
-set path_ranfloodd_win=ranflood.exe
+set path_ranflood_dir_win=C:\Program Files\Ranflood\
+set path_ranflood_win=C:\Program Files\Ranflood\ranflood.exe
+set path_ranfloodd_win=C:\Program Files\Ranflood\ranfloodd.exe
 set path_ransomware_win=C:\Users\Ransomware.WannaCry
 set path_settings_ini_win=C:\Users\settings.ini
 
@@ -71,9 +71,10 @@ set path_ransomware_linux=/mnt/c/Users/Ransomware.WannaCry
 set path_settings_ini_linux=/mnt/c/Users/settings.ini
 
 :: where output of internal playbook is saved
-set path_log_linux=/mnt/c/Users/log20241227-21_34_57.txt
+set path_log_linux=/mnt/c/Users/log20241228-22_43_04.txt
 :: log of filechecker restore command
-set path_log_filechecker=/home/checker/log20241227-21_34_57.txt
+set path_log_filechecker=/home/checker/log20241228-22_43_04.txt
+set path_log_internal_daemon=C:\Users\log_daemon20241228-22_43_04.txt
 
 :: seconds for which to run ranflood random to prepopulate the disk
 set ranflood_random_duration=3

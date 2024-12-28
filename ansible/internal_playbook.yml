@@ -22,19 +22,19 @@
 - hosts: windows
   tasks:
 
-    - name: Disable network adapters
-      community.windows.win_net_adapter_feature:
-        interface: '*'
-        state: disabled
-        component_id:
-          - ms_tcpip
-          - ms_tcpip6
-          - ms_implat
-          - ms_lltdio
-          - ms_rspndr
-          - ms_lldp
-          - ms_msclient
-          - ms_pacer
+    #- name: Disable network adapters
+    #  community.windows.win_net_adapter_feature:
+    #    interface: '*'
+    #    state: disabled
+    #    component_id:
+    #      - ms_tcpip
+    #      - ms_tcpip6
+    #      - ms_implat
+    #      - ms_lltdio
+    #      - ms_rspndr
+    #      - ms_lldp
+    #      - ms_msclient
+    #      - ms_pacer
 
     #
     # Ranfloodd
@@ -42,9 +42,16 @@
 
     - name: Start ranflood daemon
       ansible.windows.win_command:
-        cmd: "{{ path_ranfloodd_win }} {{ path_settings_ini_win }}"
+        argv:
+          - "{{ path_ranfloodd_win }}"
+          - "{{ path_settings_ini_win }}"
       async: 1800
       poll: 0
+      register: command_output
+
+    - name: Display the output of the command
+      ansible.builtin.debug:
+        msg: "{{ command_output }}"
 
     - name: Wait for ranflood daemon to start
       ansible.builtin.pause:
@@ -52,9 +59,12 @@
 
     - name: Snapshot ranflood
       ansible.windows.win_command:
-        cmd: >
-          {{ path_ranflood_win }} snapshot take
-          {{ ranflood_snapshot_strategy }} {{ item }}
+        argv:
+          - "{{ path_ranflood_win }}"
+          - snapshot
+          - take
+          - "{{ ranflood_snapshot_strategy }}"
+          - "{{ item }}"
       loop: "{{ ranflood_target_dirs }}"
       when: take_snapshot
 
@@ -79,13 +89,16 @@
     # Ranflood client
     #
 
-    - name: Wait between ransomware and ranflood client
-      ansible.builtin.pause:
-        seconds: "{{ ranflood_start_delay }}"
+    #- name: Wait between ransomware and ranflood client
+    #  ansible.builtin.pause:
+    #    seconds: "{{ ranflood_start_delay }}"
 
-    - name: Start ranflood cliento on target dirs
+    - name: Start ranflood client on target dirs
       ansible.windows.win_command:
-        cmd: >
-          {{ path_ranflood_win }} flood start
-          {{ ranflood_strategy }} {{ item }}
+        argv:
+          - "{{ path_ranflood_win }}"
+          - flood
+          - start
+          - "{{ ranflood_strategy }}"
+          - "{{ item }}"
       loop: "{{ ranflood_target_dirs }}"

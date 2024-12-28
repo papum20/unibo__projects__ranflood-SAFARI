@@ -37,7 +37,7 @@ ranflood_target_dirs:
 
 
 ranflood_strategy: on-the-fly
-ranflood_snapshot_strategy: on-the-fly
+ranflood_snapshot_strategy: sss-ransomware
 # seconds between daemon and client
 ranflood_daemon_delay: 3
 # seconds between the start of ransomware and ranflood (client)
