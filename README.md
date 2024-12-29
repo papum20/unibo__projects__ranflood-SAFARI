@@ -25,6 +25,8 @@ This will destroy previous VMs, create new ones and launch the tests, with ansib
 
 When launching ansible alone, if the playbook is stuck on some hosts (e.g. `windows` group), it may be due to the fact that their network interfaces were disabled previously by the playbook: connect from proxmox or recreate them.  
 
+Ranflood 0.7-beta will throw an error for missing `vcruntime140_1.dll` : run the installer from https://learn.microsoft.com/it-it/cpp/windows/latest-supported-vc-redist?view=msvc-170
+
 ## Files
 
 *	`ansible/` : ansible playbooks executed on the remote machines

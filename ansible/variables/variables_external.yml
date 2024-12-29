@@ -33,4 +33,4 @@ shutdown_timer: 120
 # optional tasks
 
 prepopulate_wsl: false
-shutdown: true
+shutdown: false

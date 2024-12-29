@@ -2,7 +2,7 @@
 
 
 # timestamp, can be used as "unique" id
-timestamp: '20241228-22_43_04'
+timestamp: '20241229-17_21_28'
 
 
 # Script
@@ -43,6 +43,8 @@ name_ansible_variables_internal: 'variables_internal.yml'
 name_filechecker_jar: 'filechecker.jar'
 name_ranflood: 'ranflood.exe'
 name_ranfloodd: 'ranfloodd.exe'
+name_ranflood_jar: 'ranflood.jar'
+name_ranfloodd_jar: 'ranfloodd.jar'
 name_ranflood_zip: 'ranflood-v.0.7-beta_Windows.zip'
 name_ransomware: 'Ransomware.WannaCry'
 name_ransomware_zip: 'Ransomware.WannaCry.zip'
@@ -67,14 +69,16 @@ path_settings_ini_win: 'C:\Users\settings.ini'
 path_ranflood_dir_linux: '/mnt/c/Program Files/Ranflood/'
 path_ranflood_linux: '/mnt/c/Program Files/Ranflood/ranflood.exe'
 path_ranfloodd_linux: '/mnt/c/Program Files/Ranflood/ranfloodd.exe'
+path_ranflood_jar_linux: '/mnt/c/Program Files/Ranflood/ranflood.jar'
+path_ranfloodd_jar_linux: '/mnt/c/Program Files/Ranflood/ranfloodd.jar'
 path_ransomware_linux: '/mnt/c/Users/Ransomware.WannaCry'
 path_settings_ini_linux: '/mnt/c/Users/settings.ini'
 
 # where output of internal playbook is saved
-path_log_linux: '/mnt/c/Users/log20241228-22_43_04.txt'
+path_log_linux: '/mnt/c/Users/log20241229-17_21_28.txt'
 # log of filechecker restore command
-path_log_filechecker: '/home/checker/log20241228-22_43_04.txt'
-path_log_internal_daemon: 'C:\Users\log_daemon20241228-22_43_04.txt'
+path_log_filechecker: '/home/checker/log20241229-17_21_28.txt'
+path_log_internal_daemon: 'C:\Users\log_daemon20241229-17_21_28.txt'
 
 # seconds for which to run ranflood random to prepopulate the disk
 ranflood_random_duration: '3'

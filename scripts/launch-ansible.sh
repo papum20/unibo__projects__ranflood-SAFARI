@@ -114,9 +114,6 @@ cd ${local_working_directory}
 
 # Run ansible
 
-## sometimes it won't connect, try to wait first
-sleep 3
-
 ## debug up to -vvvvvv (x6)
 ansible-playbook -vvv -i external_inventory full_playbook.yml \
 	--extra-vars "@${dir_variables}${name_ansible_variables}" \

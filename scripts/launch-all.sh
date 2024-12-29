@@ -119,6 +119,9 @@ source scripts/read-vms.sh ${dir_terraform}
 # Ansible
 #
 
+## sometimes it won't connect, try to wait first
+sleep 10
+
 echo "[Ansible] Launching ansible"
 "./scripts/${script_ansible}" -y
 

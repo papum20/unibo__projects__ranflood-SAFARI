@@ -40,11 +40,26 @@
     # Ranfloodd
     #
 
+    - name: Ensure old ranflood zip files are removed
+      ansible.windows.win_file:
+        state: absent
+        path: "{{ item }}"
+      loop:
+        - "{{ path_ranflood_win }}"
+        - "{{ path_ranfloodd_win }}"
+
+    - name: Decompress ranflood
+      community.windows.win_unzip:
+        src: "{{ remote_working_directory_win }}{{ name_ranflood_zip }}"
+        dest: "{{ path_ranflood_dir_win }}"
+        delete_archive: "{{ delete_archives }}"
+
     - name: Start ranflood daemon
       ansible.windows.win_command:
-        argv:
-          - "{{ path_ranfloodd_win }}"
-          - "{{ path_settings_ini_win }}"
+        cmd: >
+          "{{ path_ranfloodd_win }}" {{ path_settings_ini_win }}
+          > {{ path_log_internal_daemon }}
+      become: true
       async: 1800
       poll: 0
       register: command_output
@@ -72,12 +87,17 @@
     # Ransomware
     #
 
+    - name: Ensure old ransomware zip files are removed
+      ansible.windows.win_file:
+        state: absent
+        path: "{{ path_ransomware_win }}"
+
     #- name: Decompress ransomware
     #  community.windows.win_unzip:
     #    src: "{{ remote_working_directory_win }}{{ name_ransomware_zip }}"
     #    dest: "{{ path_ransomware_win }}"
     #    password: infected
-    #    delete_archive: true
+    #    delete_archive: "{{ delete_archives }}˝
 
     #- name: Start ransomware
     #  ansible.windows.win_command:

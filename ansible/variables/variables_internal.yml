@@ -19,6 +19,7 @@
 # * For details about the authors of this software, see the AUTHORS file.      *
 # ******************************************************************************/
 
+
 # target dirs for flooding against ransomware
 ranflood_target_dirs:
   - 'C:\Users\IEUser\DOCUMENT'
@@ -46,4 +47,5 @@ ranflood_start_delay: 60
 # optional tasks
 
 ## snapshots already taken in the used VMs
-take_snapshot: false
+delete_archives: false
+take_snapshot: true

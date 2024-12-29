@@ -43,11 +43,15 @@ name_ansible_variables_internal=variables_internal.yml
 name_filechecker_jar=filechecker.jar
 name_ranflood=ranflood.exe
 name_ranfloodd=ranfloodd.exe
-name_ranflood_zip=ranflood-v.0.7-beta_Windows.zip
+name_ranflood_jar=ranflood.jar
+name_ranfloodd_jar=ranfloodd.jar
+name_ranflood_zip=ranflood-v.0.6-beta_Windows.zip
 name_ransomware=Ransomware.WannaCry
 name_ransomware_zip=${name_ransomware}.zip
 
 name_settings_ini=settings.ini
+
+name_vcruntime140_1_dll=vcruntime140_1.dll
 
 ## for scripts to execute on the remote hosts
 name_prepopulate_script=prepopulate.sh
@@ -67,6 +71,8 @@ path_settings_ini_win="${remote_working_directory_win}${name_settings_ini}"
 path_ranflood_dir_linux='/mnt/c/Program Files/Ranflood/'
 path_ranflood_linux="${path_ranflood_dir_linux}${name_ranflood}"
 path_ranfloodd_linux="${path_ranflood_dir_linux}${name_ranfloodd}"
+path_ranflood_jar_linux="${path_ranflood_dir_linux}${name_ranflood_jar}"
+path_ranfloodd_jar_linux="${path_ranflood_dir_linux}${name_ranfloodd_jar}"
 path_ransomware_linux="${remote_working_directory_linux}${name_ransomware}"
 path_settings_ini_linux="${remote_working_directory_linux}${name_settings_ini}"
 

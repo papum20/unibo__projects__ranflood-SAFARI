@@ -57,18 +57,30 @@
         force: "true"
       loop:
         - "{{ name_settings_ini }}"
+        - "{{ name_vcruntime140_1_dll }}"
         #- "{{ name_prepopulate_script }}"
         #- "{{ name_env_linux }}"
         #- "{{ name_env_windows }}"
 
-    #- name: Transfer (heavy) executable files and scripts
+    - name: Transfer (heavy) executable files and scripts
+      ansible.windows.win_copy:
+        src: "{{ local_working_directory }}{{ local_ranflood_files_dir }}{{ item }}"
+        dest: "{{ remote_working_directory_win }}{{ item }}"
+        force: "{{ transfer_force }}"
+      loop:
+        - "{{ name_ranflood_zip }}"
+        #- "{{ name_ransomware_zip }}"
+
+    #- name: Transfer (heavy) ranflood executables (replace)
     #  ansible.windows.win_copy:
     #    src: "{{ local_working_directory }}{{ local_ranflood_files_dir }}{{ item }}"
-    #    dest: "{{ remote_working_directory_win }}{{ item }}"
+    #    dest: "{{ path_ranflood_dir_win }}{{ item }}"
     #    force: "{{ transfer_force }}"
     #  loop:
-    #    - "{{ name_ranflood_zip }}"
-    #    - "{{ name_ransomware_zip }}"
+    #    - "{{ name_ranflood }}"
+    #    - "{{ name_ranfloodd }}"
+    #    #- "{{ name_ranflood_jar }}"
+    #    #- "{{ name_ranfloodd_jar }}"
 
     - name: Prepopulate the disk
       ansible.windows.win_command:
