@@ -45,11 +45,14 @@ set name_ranflood=ranflood.exe
 set name_ranfloodd=ranfloodd.exe
 set name_ranflood_jar=ranflood.jar
 set name_ranfloodd_jar=ranfloodd.jar
-set name_ranflood_zip=ranflood-v.0.7-beta_Windows.zip
+set #name_ranflood_zip=ranflood-v.0.6-beta_Windows.zip
+set name_ranflood_zip=ranflood-v.0.6-beta_Windows_client.zip
 set name_ransomware=Ransomware.WannaCry
 set name_ransomware_zip=Ransomware.WannaCry.zip
 
 set name_settings_ini=settings.ini
+
+set name_vcruntime140_1_dll=vcruntime140_1.dll
 
 ::# for scripts to execute on the remote hosts
 set name_prepopulate_script=prepopulate.sh
@@ -63,6 +66,8 @@ set name_env_linux=variables.generated.sh
 set path_ranflood_dir_win=C:\Program Files\Ranflood\
 set path_ranflood_win=C:\Program Files\Ranflood\ranflood.exe
 set path_ranfloodd_win=C:\Program Files\Ranflood\ranfloodd.exe
+set path_ranflood_jar_win=C:\Program Files\Ranflood\ranflood.jar
+set path_ranfloodd_jar_win=C:\Program Files\Ranflood\ranfloodd.jar
 set path_ransomware_win=C:\Users\Ransomware.WannaCry
 set path_settings_ini_win=C:\Users\settings.ini
 
@@ -75,10 +80,10 @@ set path_ransomware_linux=/mnt/c/Users/Ransomware.WannaCry
 set path_settings_ini_linux=/mnt/c/Users/settings.ini
 
 :: where output of internal playbook is saved
-set path_log_linux=/mnt/c/Users/log20241229-17_21_28.txt
+set path_log_linux=/mnt/c/Users/log20241230-19_35_26.txt
 :: log of filechecker restore command
-set path_log_filechecker=/home/checker/log20241229-17_21_28.txt
-set path_log_internal_daemon=C:\Users\log_daemon20241229-17_21_28.txt
+set path_log_filechecker=/home/checker/log20241230-19_35_26.txt
+set path_log_internal_daemon=C:\Users\log_daemon20241230-19_35_26.txt
 
 :: seconds for which to run ranflood random to prepopulate the disk
 set ranflood_random_duration=3

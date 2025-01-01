@@ -29,10 +29,10 @@ proxmox_api_token_secret = "secret-token"
 
 vms_count = 1
 
-vm_name = "TerraWin"
+vm_name = "WindowsInfected"
 target_node = "pve1"
 vm_id = 1111
-template_clone = "windows"
+template_clone = "windows-java"
 is_full_clone = false
 
 vm_memory = 4096

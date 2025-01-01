@@ -45,11 +45,14 @@ name_ranflood=ranflood.exe
 name_ranfloodd=ranfloodd.exe
 name_ranflood_jar=ranflood.jar
 name_ranfloodd_jar=ranfloodd.jar
-name_ranflood_zip=ranflood-v.0.7-beta_Windows.zip
+#name_ranflood_zip=ranflood-v.0.6-beta_Windows.zip
+name_ranflood_zip=ranflood-v.0.6-beta_Windows_client.zip
 name_ransomware=Ransomware.WannaCry
 name_ransomware_zip=${name_ransomware}.zip
 
 name_settings_ini=settings.ini
+
+name_vcruntime140_1_dll=vcruntime140_1.dll
 
 ## for scripts to execute on the remote hosts
 name_prepopulate_script=prepopulate.sh
@@ -63,6 +66,8 @@ name_env_linux=variables.generated.sh
 path_ranflood_dir_win='C:\Program Files\Ranflood\'
 path_ranflood_win="${path_ranflood_dir_win}${name_ranflood}"
 path_ranfloodd_win="${path_ranflood_dir_win}${name_ranfloodd}"
+path_ranflood_jar_win="${path_ranflood_dir_win}${name_ranflood_jar}"
+path_ranfloodd_jar_win="${path_ranflood_dir_win}${name_ranfloodd_jar}"
 path_ransomware_win="${remote_working_directory_win}${name_ransomware}"
 path_settings_ini_win="${remote_working_directory_win}${name_settings_ini}"
 

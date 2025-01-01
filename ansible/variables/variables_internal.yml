@@ -37,7 +37,7 @@ ranflood_target_dirs:
   - 'C:\Users\IEUser\Videos'
 
 
-ranflood_strategy: on-the-fly
+ranflood_strategy: sss-ransomware
 ranflood_snapshot_strategy: sss-ransomware
 # seconds between daemon and client
 ranflood_daemon_delay: 3
@@ -46,6 +46,6 @@ ranflood_start_delay: 60
 
 # optional tasks
 
-## snapshots already taken in the used VMs
 delete_archives: false
-take_snapshot: true
+## snapshots already present in the used VMs
+take_snapshot: false

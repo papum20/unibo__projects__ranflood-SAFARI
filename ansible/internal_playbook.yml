@@ -45,8 +45,9 @@
         state: absent
         path: "{{ item }}"
       loop:
+        # zip only contains client - the used daemon is a jar
         - "{{ path_ranflood_win }}"
-        - "{{ path_ranfloodd_win }}"
+        #- "{{ path_ranfloodd_win }}"
 
     - name: Decompress ranflood
       community.windows.win_unzip:
@@ -54,12 +55,9 @@
         dest: "{{ path_ranflood_dir_win }}"
         delete_archive: "{{ delete_archives }}"
 
-    - name: Start ranflood daemon
+    - name: Start ranflood daemon (jar)
       ansible.windows.win_command:
-        cmd: >
-          "{{ path_ranfloodd_win }}" {{ path_settings_ini_win }}
-          > {{ path_log_internal_daemon }}
-      become: true
+        cmd: 'java -jar "{{ path_ranfloodd_jar_win }}" {{ path_settings_ini_win }} > {{ path_log_internal_daemon }}'
       async: 1800
       poll: 0
       register: command_output
@@ -74,12 +72,7 @@
 
     - name: Snapshot ranflood
       ansible.windows.win_command:
-        argv:
-          - "{{ path_ranflood_win }}"
-          - snapshot
-          - take
-          - "{{ ranflood_snapshot_strategy }}"
-          - "{{ item }}"
+        cmd: '"{{ path_ranflood_win }}" snapshot take {{ ranflood_snapshot_strategy }} "{{ item }}"'
       loop: "{{ ranflood_target_dirs }}"
       when: take_snapshot
 
@@ -115,10 +108,5 @@
 
     - name: Start ranflood client on target dirs
       ansible.windows.win_command:
-        argv:
-          - "{{ path_ranflood_win }}"
-          - flood
-          - start
-          - "{{ ranflood_strategy }}"
-          - "{{ item }}"
+        cmd: '"{{ path_ranflood_win }}" flood start {{ ranflood_strategy }} "{{ item }}"'
       loop: "{{ ranflood_target_dirs }}"
