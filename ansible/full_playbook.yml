@@ -57,7 +57,13 @@
         force: "true"
       loop:
         - "{{ name_settings_ini }}"
-        - "{{ name_vcruntime140_1_dll }}"
+        # convenience link to executable
+        - "{{ name_ranflood_bat }}"
+        # launches daemon through java - a bat script allows to identify and kill the process
+        - "{{ name_ranfloodd_bat }}"
+        # vc_runtime140_1.dll already present on VM windows-java-21
+        #- "{{ name_vcruntime140_1_dll }}"
+        # the following are needed to prepopulate the system
         #- "{{ name_prepopulate_script }}"
         #- "{{ name_env_linux }}"
         #- "{{ name_env_windows }}"
@@ -95,7 +101,7 @@
           "{{ remote_working_directory_linux }}{{ name_internal_playbook }}"
           --extra-vars "@{{ remote_working_directory_linux }}{{ name_ansible_variables }}"
           --extra-vars "@{{ remote_working_directory_linux }}{{ name_ansible_variables_internal }}"
-          > "{{ path_log_linux }}"
+          > "{{ path_log_linux }}" 2>&1
       async: 3600
       poll: 0
       register: command_output

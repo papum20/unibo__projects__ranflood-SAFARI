@@ -14,7 +14,7 @@ set ransomware_download_link=https://github.com/Flooding-against-Ransomware/ranf
 
 :: Ansible
 
-set local_working_directory=/home/danie/programm/unibo/projects/SAFARI/ansible/
+set local_working_directory=/home/papum/programm/unibo/projects/SAFARI/ansible/
 
 :: subdirectory of `local_working_directory` containing ranflood files to transfer
 set local_ranflood_files_dir=files/
@@ -27,7 +27,7 @@ set remote_working_directory_linux=/mnt/c/Users/
 :: Files to transfer (ansible)
 
 :: avoid transfers if already exists
-set transfer_force=false
+set transfer_force=true
 
 set dir_variables=variables/
 
@@ -43,6 +43,8 @@ set name_ansible_variables_internal=variables_internal.yml
 set name_filechecker_jar=filechecker.jar
 set name_ranflood=ranflood.exe
 set name_ranfloodd=ranfloodd.exe
+set name_ranflood_bat=ranflood.bat
+set name_ranfloodd_bat=ranfloodd.bat
 set name_ranflood_jar=ranflood.jar
 set name_ranfloodd_jar=ranfloodd.jar
 set #name_ranflood_zip=ranflood-v.0.6-beta_Windows.zip
@@ -66,6 +68,8 @@ set name_env_linux=variables.generated.sh
 set path_ranflood_dir_win=C:\Program Files\Ranflood\
 set path_ranflood_win=C:\Program Files\Ranflood\ranflood.exe
 set path_ranfloodd_win=C:\Program Files\Ranflood\ranfloodd.exe
+set path_ranflood_bat=C:\Users\ranflood.bat
+set path_ranfloodd_bat=C:\Users\ranfloodd.bat
 set path_ranflood_jar_win=C:\Program Files\Ranflood\ranflood.jar
 set path_ranfloodd_jar_win=C:\Program Files\Ranflood\ranfloodd.jar
 set path_ransomware_win=C:\Users\Ransomware.WannaCry
@@ -80,10 +84,10 @@ set path_ransomware_linux=/mnt/c/Users/Ransomware.WannaCry
 set path_settings_ini_linux=/mnt/c/Users/settings.ini
 
 :: where output of internal playbook is saved
-set path_log_linux=/mnt/c/Users/log20241230-19_35_26.txt
+set path_log_linux=/mnt/c/Users/log20250102-17_54_49.txt
 :: log of filechecker restore command
-set path_log_filechecker=/home/checker/log20241230-19_35_26.txt
-set path_log_internal_daemon=C:\Users\log_daemon20241230-19_35_26.txt
+set path_log_filechecker=/home/checker/log20250102-17_54_49.txt
+set path_log_internal_daemon=C:\Users\log_daemon20250102-17_54_49.txt
 
 :: seconds for which to run ranflood random to prepopulate the disk
 set ranflood_random_duration=3

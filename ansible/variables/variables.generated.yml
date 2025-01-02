@@ -2,7 +2,7 @@
 
 
 # timestamp, can be used as "unique" id
-timestamp: '20241230-19_35_26'
+timestamp: '20250102-17_54_49'
 
 
 # Script
@@ -14,7 +14,7 @@ ransomware_download_link: 'https://github.com/Flooding-against-Ransomware/ranflo
 
 # Ansible
 
-local_working_directory: '/home/danie/programm/unibo/projects/SAFARI/ansible/'
+local_working_directory: '/home/papum/programm/unibo/projects/SAFARI/ansible/'
 
 # subdirectory of `local_working_directory` containing ranflood files to transfer
 local_ranflood_files_dir: 'files/'
@@ -27,7 +27,7 @@ remote_working_directory_linux: '/mnt/c/Users/'
 # Files to transfer (ansible)
 
 # avoid transfers if already exists
-transfer_force: 'false'
+transfer_force: 'true'
 
 dir_variables: 'variables/'
 
@@ -43,6 +43,8 @@ name_ansible_variables_internal: 'variables_internal.yml'
 name_filechecker_jar: 'filechecker.jar'
 name_ranflood: 'ranflood.exe'
 name_ranfloodd: 'ranfloodd.exe'
+name_ranflood_bat: 'ranflood.bat'
+name_ranfloodd_bat: 'ranfloodd.bat'
 name_ranflood_jar: 'ranflood.jar'
 name_ranfloodd_jar: 'ranfloodd.jar'
 #name_ranflood_zip: '${#name_ranflood_zip}'
@@ -66,6 +68,8 @@ name_env_linux: 'variables.generated.sh'
 path_ranflood_dir_win: 'C:\Program Files\Ranflood\'
 path_ranflood_win: 'C:\Program Files\Ranflood\ranflood.exe'
 path_ranfloodd_win: 'C:\Program Files\Ranflood\ranfloodd.exe'
+path_ranflood_bat: 'C:\Users\ranflood.bat'
+path_ranfloodd_bat: 'C:\Users\ranfloodd.bat'
 path_ranflood_jar_win: 'C:\Program Files\Ranflood\ranflood.jar'
 path_ranfloodd_jar_win: 'C:\Program Files\Ranflood\ranfloodd.jar'
 path_ransomware_win: 'C:\Users\Ransomware.WannaCry'
@@ -80,10 +84,10 @@ path_ransomware_linux: '/mnt/c/Users/Ransomware.WannaCry'
 path_settings_ini_linux: '/mnt/c/Users/settings.ini'
 
 # where output of internal playbook is saved
-path_log_linux: '/mnt/c/Users/log20241230-19_35_26.txt'
+path_log_linux: '/mnt/c/Users/log20250102-17_54_49.txt'
 # log of filechecker restore command
-path_log_filechecker: '/home/checker/log20241230-19_35_26.txt'
-path_log_internal_daemon: 'C:\Users\log_daemon20241230-19_35_26.txt'
+path_log_filechecker: '/home/checker/log20250102-17_54_49.txt'
+path_log_internal_daemon: 'C:\Users\log_daemon20250102-17_54_49.txt'
 
 # seconds for which to run ranflood random to prepopulate the disk
 ranflood_random_duration: '3'

@@ -22,19 +22,19 @@
 - hosts: windows
   tasks:
 
-    #- name: Disable network adapters
-    #  community.windows.win_net_adapter_feature:
-    #    interface: '*'
-    #    state: disabled
-    #    component_id:
-    #      - ms_tcpip
-    #      - ms_tcpip6
-    #      - ms_implat
-    #      - ms_lltdio
-    #      - ms_rspndr
-    #      - ms_lldp
-    #      - ms_msclient
-    #      - ms_pacer
+    - name: Disable network adapters
+      community.windows.win_net_adapter_feature:
+        interface: '*'
+        state: disabled
+        component_id:
+          - ms_tcpip
+          - ms_tcpip6
+          - ms_implat
+          - ms_lltdio
+          - ms_rspndr
+          - ms_lldp
+          - ms_msclient
+          - ms_pacer
 
     #
     # Ranfloodd
@@ -56,8 +56,12 @@
         delete_archive: "{{ delete_archives }}"
 
     - name: Start ranflood daemon (jar)
-      ansible.windows.win_command:
-        cmd: 'java -jar "{{ path_ranfloodd_jar_win }}" {{ path_settings_ini_win }} > {{ path_log_internal_daemon }}'
+      # win_shell, unlike win_command, also allows <>|
+      ansible.windows.win_shell: >
+        {{ path_ranfloodd_bat }} {{ ranflood_jvm_mem_max }} {{ path_settings_ini_win }}
+        > {{ path_log_internal_daemon }} 2>&1
+      args:
+        executable: cmd
       async: 1800
       poll: 0
       register: command_output
@@ -85,28 +89,28 @@
         state: absent
         path: "{{ path_ransomware_win }}"
 
-    #- name: Decompress ransomware
-    #  community.windows.win_unzip:
-    #    src: "{{ remote_working_directory_win }}{{ name_ransomware_zip }}"
-    #    dest: "{{ path_ransomware_win }}"
-    #    password: infected
-    #    delete_archive: "{{ delete_archives }}˝
+    - name: Decompress ransomware
+      community.windows.win_unzip:
+        src: "{{ remote_working_directory_win }}{{ name_ransomware_zip }}"
+        dest: "{{ path_ransomware_win }}"
+        password: infected
+        delete_archive: "{{ delete_archives }}˝
 
-    #- name: Start ransomware
-    #  ansible.windows.win_command:
-    #    cmd: "{{ path_ransomware_win }}"
-    #  async: 1800
-    #  poll: 0
+    - name: Start ransomware
+      ansible.windows.win_command:
+        cmd: "{{ path_ransomware_win }}"
+      async: 1800
+      poll: 0
 
     #
     # Ranflood client
     #
 
-    #- name: Wait between ransomware and ranflood client
-    #  ansible.builtin.pause:
-    #    seconds: "{{ ranflood_start_delay }}"
+    - name: Wait between ransomware and ranflood client
+      ansible.builtin.pause:
+        seconds: "{{ ranflood_start_delay }}"
 
-    - name: Start ranflood client on target dirs
-      ansible.windows.win_command:
-        cmd: '"{{ path_ranflood_win }}" flood start {{ ranflood_strategy }} "{{ item }}"'
-      loop: "{{ ranflood_target_dirs }}"
+    #- name: Start ranflood client on target dirs
+    #  ansible.windows.win_command:
+    #    cmd: '"{{ path_ranflood_win }}" flood start {{ ranflood_strategy }} "{{ item }}"'
+    #  loop: "{{ ranflood_target_dirs }}"

@@ -31,11 +31,11 @@ vms_count = 1
 
 vm_name = "WindowsInfected"
 target_node = "pve1"
-vm_id = 1111
-template_clone = "windows-java"
+vm_id = 2000
+template_clone = "windows-java-21"
 is_full_clone = false
 
-vm_memory = 4096
+vm_memory = 8192
 
 vm_sockets = 1
 vm_cores = 4
