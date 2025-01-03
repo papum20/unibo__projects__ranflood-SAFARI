@@ -51,7 +51,7 @@
 
     - name: Decompress ranflood
       community.windows.win_unzip:
-        src: "{{ remote_working_directory_win }}{{ name_ranflood_zip }}"
+        src: "{{ path_ranflood_dir_win }}{{ name_ranflood_zip }}"
         dest: "{{ path_ranflood_dir_win }}"
         delete_archive: "{{ delete_archives }}"
 
@@ -94,7 +94,7 @@
         src: "{{ remote_working_directory_win }}{{ name_ransomware_zip }}"
         dest: "{{ path_ransomware_win }}"
         password: infected
-        delete_archive: "{{ delete_archives }}˝
+        delete_archive: "{{ delete_archives }}"
 
     - name: Start ransomware
       ansible.windows.win_command:
@@ -106,9 +106,9 @@
     # Ranflood client
     #
 
-    - name: Wait between ransomware and ranflood client
-      ansible.builtin.pause:
-        seconds: "{{ ranflood_start_delay }}"
+    #- name: Wait between ransomware and ranflood client
+    #  ansible.builtin.pause:
+    #    seconds: "{{ ranflood_start_delay }}"
 
     #- name: Start ranflood client on target dirs
     #  ansible.windows.win_command:

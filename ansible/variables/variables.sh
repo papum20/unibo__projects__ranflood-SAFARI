@@ -9,7 +9,10 @@ timestamp=$(date +'%Y%m%d-%H_%M_%S')
 
 # for downloading binaries
 ranflood_download=https://github.com/Flooding-against-Ransomware/ranflood/releases/download/v.0.7-beta/ranflood-v.0.7-beta_Windows.zip
-ransomware_download_link=https://github.com/Flooding-against-Ransomware/ranflood/blob/master/resources/ransomwares/Ransomware.WannaCry/Ransomware.WannaCry.zip
+# WannaCry
+#ransomware_download_link=https://github.com/Flooding-against-Ransomware/ranflood/blob/master/resources/ransomwares/Ransomware.WannaCry/Ransomware.WannaCry.zip
+# Phobos
+#ransomware_download_link=https://github.com/Flooding-against-Ransomware/ranflood/blob/master/resources/ransomwares/phobos.bin.zip
 
 
 # Ansible
@@ -17,7 +20,11 @@ ransomware_download_link=https://github.com/Flooding-against-Ransomware/ranflood
 local_working_directory="${PWD}/"
 
 # subdirectory of `local_working_directory` containing ranflood files to transfer
-local_ranflood_files_dir="files/"
+local_path_files_checker="files/checker"
+local_path_files_prepopulate="files/prepopulate"
+local_path_files_ranflood="files/ranflood"
+local_path_files_ransomwares="files/ransomwares"
+local_path_files_transfer="files/transfer"
 
 # where all files will be transferred
 remote_working_directory_win='C:\Users\'
@@ -27,7 +34,7 @@ remote_working_directory_linux=/mnt/c/Users/
 # Files to transfer (ansible)
 
 # avoid transfers if already exists
-transfer_force=true
+transfer_force=false
 
 dir_variables=variables/
 
@@ -49,7 +56,12 @@ name_ranflood_jar=ranflood.jar
 name_ranfloodd_jar=ranfloodd.jar
 #name_ranflood_zip=ranflood-v.0.6-beta_Windows.zip
 name_ranflood_zip=ranflood-v.0.6-beta_Windows_client.zip
-name_ransomware=Ransomware.WannaCry
+
+# WannaCry
+#name_ransomware=Ransomware.WannaCry
+# Phobos
+name_ransomware=phobos.bin
+
 name_ransomware_zip=${name_ransomware}.zip
 
 name_settings_ini=settings.ini

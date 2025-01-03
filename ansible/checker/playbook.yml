@@ -18,8 +18,8 @@
 
     - name: Trasferisci filechecker jar
       ansible.builtin.copy:
-        src: "{{ local_working_directory }}{{ local_ranflood_files_dir }}{{ name_filechecker_jar }}"
-        dest: "{{ path_filechecker }}"
+        src: "{{ local_working_directory }}{{ local_path_files_checker }}/"
+        dest: "{{ remote_working_dir_filechecker }}"
         force: "{{ transfer_force_filechecker }}"
 
     - name: Crea mounting point per Windows
@@ -60,19 +60,19 @@
     - name: Filechecker check
       ansible.builtin.command:
         cmd: java -jar {{ path_filechecker }} check /home/checker/cleanWindowsChecksum /home/checker/report {{ target_dir }}
-        chdir: dir_filechecker
+        chdir: "{{ remote_working_dir_filechecker }}"
       when: do_check
 
     - name: Filechecker sss restore
       ansible.builtin.command:
-        cmd: java -jar {{ path_filechecker }} restore /home/checker/cleanWindowsChecksum /home/checker/report {{ target_dir }} --debug --logfile={{ path_log_filechecker }}
-        chdir: "{{ dir_filechecker }}"
+        cmd: java -jar {{ path_filechecker }} restore --debug -l={{ path_log_filechecker }} /home/checker/cleanWindowsChecksum /home/checker/report-shards /home/checker/report {{ target_dir }}
+        chdir: "{{ remote_working_dir_filechecker }}"
       when: do_restore and not restore_delete
 
     - name: Filechecker sss restore with delete
       ansible.builtin.command:
-        cmd: java -jar {{ path_filechecker }} restore /home/checker/cleanWindowsChecksum /home/checker/report {{ target_dir }}  --debug --logfile={{ path_log_filechecker }} --delete
-        chdir: "{{ dir_filechecker }}"
+        cmd: java -jar {{ path_filechecker }} restore --debug -l={{ path_log_filechecker }} --delete /home/checker/cleanWindowsChecksum /home/checker/report-shards /home/checker/report {{ target_dir }}
+        chdir: "{{ remote_working_dir_filechecker }}"
       when: do_restore and restore_delete
 
     - name: Trasferisci report nello storage condiviso
@@ -81,6 +81,13 @@
         dest: /mnt/shared/
         remote_src: true
       when: do_check or do_restore
+
+    - name: Trasferisci report-shards nello storage condiviso
+      ansible.builtin.copy:
+        src: /home/checker/report-shards
+        dest: /mnt/shared/
+        remote_src: true
+      when: do_restore
 
     - name: Smonta disco Windows
       ansible.posix.mount:

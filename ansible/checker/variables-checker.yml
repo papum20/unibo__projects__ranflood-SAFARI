@@ -33,9 +33,9 @@ shutdown_timer: 320
 
 path_mnt_win: "/mnt/win10"
 
-dir_filechecker: "/home/checker/ranflood-master/build/libs/"
+remote_working_dir_filechecker: "/home/checker/"
 name_filechecker: "filechecker.jar"
-path_filechecker: "{{ dir_filechecker }}/{{ name_filechecker }}"
+path_filechecker: "{{ remote_working_dir_filechecker }}/{{ name_filechecker }}"
 
 target_dir: "{{ path_mnt_win }}/Users/IEUser"
 

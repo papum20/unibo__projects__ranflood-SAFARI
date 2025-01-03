@@ -7,6 +7,7 @@ function usage() {
   echo "Usage: ./scripts/launch-all.sh [--c|-checker] [-d|--delete] [-h|--help]"
   echo "  -c, --checker: Provision and run the filechecker VM."
   echo "  -d, --delete: Delete the VMs first (useful to re-run provisioning, in case VMs IPs and IDs weren't saved)."
+  echo "  -m, --manual: Don't run terraform plan (but can run destroy) - useful after manualli editing vm.txt, if it wasn't edited by terraform."
   echo "  -h, --help: Show this help message."
   exit 1
 }
@@ -29,6 +30,7 @@ name_variables_ips=variables-vm-ips.generated.yml
 
 mode=flood
 terraform_delete=false
+terraform_manual=false
 
 while [[ "$#" -gt 0 ]]; do
   case $1 in
@@ -46,6 +48,10 @@ while [[ "$#" -gt 0 ]]; do
       ;;
     -h|--help)
       usage
+      ;;
+    -m|--manual)
+      terraform_manual=true
+      shift
       ;;
     *)
       echo "Unknown option: $1"
@@ -93,7 +99,10 @@ if [[ $terraform_delete == true ]]; then
   terraform destroy -auto-approve
 fi
 
-terraform apply -auto-approve
+if [[ $terraform_manual == false ]]; then
+  echo "[Terraform] Provisioning new VMs"
+  terraform apply -auto-approve
+fi
 
 cd $dir_current
 

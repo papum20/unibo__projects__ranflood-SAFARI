@@ -32,7 +32,7 @@ vms_count = 1
 vm_name = "Checker"
 target_node = "pve7"
 vm_id = 2100
-template_clone = "checker"
+template_clone = "checker-sss"
 is_full_clone = false
 
 vm_memory = 4096

@@ -72,9 +72,9 @@ sed -r 's/([^=]*)=.*/\1: '\''${\1}'\''/g' ${dir_variables}${variables_credential
 ## remote windows host
 ## set with `set` command; remove `"`, `'` wrapping variables values; replace comments using `::`
 sed -r 's/(.*=.*)/set \1/; s/(.*)=["'\''](.*)["'\'']$/\1=\2/; s/^#(.*)/::\1/g' ${dir_variables}${variables_user} | \
-	envsubst > ${local_working_directory}${local_ranflood_files_dir}${name_env_windows}
+	envsubst > ${local_working_directory}${local_path_files_transfer}/${name_env_windows}
 
 ## remote windows host, wsl
-cp ${dir_variables}${variables_user} ${local_working_directory}${local_ranflood_files_dir}${name_env_linux}
+cp ${dir_variables}${variables_user} ${local_working_directory}${local_path_files_transfer}/${name_env_linux}
 
 

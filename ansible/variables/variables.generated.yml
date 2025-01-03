@@ -2,14 +2,17 @@
 
 
 # timestamp, can be used as "unique" id
-timestamp: '20250102-17_54_49'
+timestamp: '20250103-17_44_45'
 
 
 # Script
 
 # for downloading binaries
 ranflood_download: 'https://github.com/Flooding-against-Ransomware/ranflood/releases/download/v.0.7-beta/ranflood-v.0.7-beta_Windows.zip'
-ransomware_download_link: 'https://github.com/Flooding-against-Ransomware/ranflood/blob/master/resources/ransomwares/Ransomware.WannaCry/Ransomware.WannaCry.zip'
+# WannaCry
+#ransomware_download_link: '${#ransomware_download_link}'
+# Phobos
+#ransomware_download_link: '${#ransomware_download_link}'
 
 
 # Ansible
@@ -17,7 +20,11 @@ ransomware_download_link: 'https://github.com/Flooding-against-Ransomware/ranflo
 local_working_directory: '/home/papum/programm/unibo/projects/SAFARI/ansible/'
 
 # subdirectory of `local_working_directory` containing ranflood files to transfer
-local_ranflood_files_dir: 'files/'
+local_path_files_checker: 'files/checker'
+local_path_files_prepopulate: 'files/prepopulate'
+local_path_files_ranflood: 'files/ranflood'
+local_path_files_ransomwares: 'files/ransomwares'
+local_path_files_transfer: 'files/transfer'
 
 # where all files will be transferred
 remote_working_directory_win: 'C:\Users\'
@@ -27,7 +34,7 @@ remote_working_directory_linux: '/mnt/c/Users/'
 # Files to transfer (ansible)
 
 # avoid transfers if already exists
-transfer_force: 'true'
+transfer_force: 'false'
 
 dir_variables: 'variables/'
 
@@ -49,8 +56,13 @@ name_ranflood_jar: 'ranflood.jar'
 name_ranfloodd_jar: 'ranfloodd.jar'
 #name_ranflood_zip: '${#name_ranflood_zip}'
 name_ranflood_zip: 'ranflood-v.0.6-beta_Windows_client.zip'
-name_ransomware: 'Ransomware.WannaCry'
-name_ransomware_zip: 'Ransomware.WannaCry.zip'
+
+# WannaCry
+#name_ransomware: '${#name_ransomware}'
+# Phobos
+name_ransomware: 'phobos.bin'
+
+name_ransomware_zip: 'phobos.bin.zip'
 
 name_settings_ini: 'settings.ini'
 
@@ -72,7 +84,7 @@ path_ranflood_bat: 'C:\Users\ranflood.bat'
 path_ranfloodd_bat: 'C:\Users\ranfloodd.bat'
 path_ranflood_jar_win: 'C:\Program Files\Ranflood\ranflood.jar'
 path_ranfloodd_jar_win: 'C:\Program Files\Ranflood\ranfloodd.jar'
-path_ransomware_win: 'C:\Users\Ransomware.WannaCry'
+path_ransomware_win: 'C:\Users\phobos.bin'
 path_settings_ini_win: 'C:\Users\settings.ini'
 
 path_ranflood_dir_linux: '/mnt/c/Program Files/Ranflood/'
@@ -80,14 +92,14 @@ path_ranflood_linux: '/mnt/c/Program Files/Ranflood/ranflood.exe'
 path_ranfloodd_linux: '/mnt/c/Program Files/Ranflood/ranfloodd.exe'
 path_ranflood_jar_linux: '/mnt/c/Program Files/Ranflood/ranflood.jar'
 path_ranfloodd_jar_linux: '/mnt/c/Program Files/Ranflood/ranfloodd.jar'
-path_ransomware_linux: '/mnt/c/Users/Ransomware.WannaCry'
+path_ransomware_linux: '/mnt/c/Users/phobos.bin'
 path_settings_ini_linux: '/mnt/c/Users/settings.ini'
 
 # where output of internal playbook is saved
-path_log_linux: '/mnt/c/Users/log20250102-17_54_49.txt'
+path_log_linux: '/mnt/c/Users/log20250103-17_44_45.txt'
 # log of filechecker restore command
-path_log_filechecker: '/home/checker/log20250102-17_54_49.txt'
-path_log_internal_daemon: 'C:\Users\log_daemon20250102-17_54_49.txt'
+path_log_filechecker: '/home/checker/log20250103-17_44_45.txt'
+path_log_internal_daemon: 'C:\Users\log_daemon20250103-17_44_45.txt'
 
 # seconds for which to run ranflood random to prepopulate the disk
 ranflood_random_duration: '3'

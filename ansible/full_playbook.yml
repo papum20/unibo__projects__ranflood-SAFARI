@@ -32,6 +32,11 @@
 - hosts: windows
   tasks:
 
+    # From documentation:
+    # If path is a directory, it is copied (including the source folder name) recursively to dest.
+    # If path is a directory and ends with “/”, only the inside contents of that directory are copied to the destination.
+    # Otherwise, if it does not end with “/”, the directory itself with all contents is copied.
+
     - name: Transfer ansible files
       ansible.windows.win_copy:
         src: "{{ local_working_directory }}{{ item }}"
@@ -52,41 +57,25 @@
 
     - name: Transfer executable files and scripts
       ansible.windows.win_copy:
-        src: "{{ local_working_directory }}{{ local_ranflood_files_dir }}{{ item }}"
-        dest: "{{ remote_working_directory_win }}{{ item }}"
+        src: "{{ local_working_directory }}{{ local_path_files_transfer }}/"
+        dest: "{{ remote_working_directory_win }}"
         force: "true"
-      loop:
-        - "{{ name_settings_ini }}"
-        # convenience link to executable
-        - "{{ name_ranflood_bat }}"
-        # launches daemon through java - a bat script allows to identify and kill the process
-        - "{{ name_ranfloodd_bat }}"
-        # vc_runtime140_1.dll already present on VM windows-java-21
-        #- "{{ name_vcruntime140_1_dll }}"
-        # the following are needed to prepopulate the system
-        #- "{{ name_prepopulate_script }}"
-        #- "{{ name_env_linux }}"
-        #- "{{ name_env_windows }}"
 
-    - name: Transfer (heavy) executable files and scripts
+    - name: Transfer prepopulate files and scripts
       ansible.windows.win_copy:
-        src: "{{ local_working_directory }}{{ local_ranflood_files_dir }}{{ item }}"
-        dest: "{{ remote_working_directory_win }}{{ item }}"
+        src: "{{ local_working_directory }}{{ local_path_files_prepopulate }}/"
+        dest: "{{ remote_working_directory_win }}"
+        force: "true"
+      when: prepopulate_wsl
+
+    - name: Transfer (heavy) executable files and scripts (ranflood, ransomware)
+      ansible.windows.win_copy:
+        src: "{{ local_working_directory }}{{ item.src }}"
+        dest: "{{ item.dst }}"
         force: "{{ transfer_force }}"
       loop:
-        - "{{ name_ranflood_zip }}"
-        #- "{{ name_ransomware_zip }}"
-
-    - name: Transfer (heavy) ranflood executables (replace)
-      ansible.windows.win_copy:
-        src: "{{ local_working_directory }}{{ local_ranflood_files_dir }}{{ item }}"
-        dest: "{{ path_ranflood_dir_win }}{{ item }}"
-        force: "{{ transfer_force }}"
-      loop:
-        #- "{{ name_ranflood }}"
-        #- "{{ name_ranfloodd }}"
-        #- "{{ name_ranflood_jar }}"
-        - "{{ name_ranfloodd_jar }}"
+        - { src: "{{ local_path_files_ranflood }}/", dst: "{{ path_ranflood_dir_win }}" }
+        - { src: "{{ local_path_files_ransomwares }}/{{ name_ransomware_zip }}", dst: "{{ remote_working_directory_win }}" }
 
     - name: Prepopulate the disk
       ansible.windows.win_command:
@@ -95,13 +84,14 @@
 
     - name: Launch internal playbook
       ansible.windows.win_command:
+        # escape special chars with ^
         cmd: >
           wsl ansible-playbook -vvv
           -i "{{ remote_working_directory_linux }}{{ name_internal_inventory }}"
           "{{ remote_working_directory_linux }}{{ name_internal_playbook }}"
           --extra-vars "@{{ remote_working_directory_linux }}{{ name_ansible_variables }}"
           --extra-vars "@{{ remote_working_directory_linux }}{{ name_ansible_variables_internal }}"
-          > "{{ path_log_linux }}" 2>&1
+          ^> "{{ path_log_linux }}" 2^>^&1
       async: 3600
       poll: 0
       register: command_output

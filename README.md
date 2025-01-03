@@ -23,15 +23,31 @@ This will destroy previous VMs, create new ones and launch the tests, with ansib
 
 ### Troubleshooting
 
-When launching ansible alone, if the playbook is stuck on some hosts (e.g. `windows` group), it may be due to the fact that their network interfaces were disabled previously by the playbook: connect from proxmox or recreate them.  
-
-Ranflood 0.7-beta will throw an error for missing `vcruntime140_1.dll` : run the installer from https://learn.microsoft.com/it-it/cpp/windows/latest-supported-vc-redist?view=msvc-170
+*	Terraform doesn't execute provider completely, so `vm.txt` doesn't contain the VM's ip or id:
+	either retry `./scripts/launch-all.sh -d` or manually edit `vm.txt` and launch `./scripts/launch-all.sh -m`
+*	When launching ansible alone, if the playbook is stuck on some hosts (e.g. `windows` group), it may be due to the fact that their network interfaces were disabled previously by the playbook: connect from proxmox or recreate them.  
+*	Ranflood 0.7-beta will throw an error for missing `vcruntime140_1.dll` : run the installer from https://learn.microsoft.com/it-it/cpp/windows/latest-supported-vc-redist?view=msvc-170
+*	Error in ansible (checker) :  
+	```
+	fatal: [192.168.2.235]: FAILED! => {"msg": "to use the 'ssh' connection type with passwords or pkcs11_provider, you must install the sshpass program"}
+	```
+	Install `sshpass` :  
+	```
+	sudo apt install sshpass
+	```
 
 ## Files
 
 *	`ansible/` : ansible playbooks executed on the remote machines
 	*	`checker/` : checker playbooks
 	*	`files/` : files to transfer to the hosts
+		*	`other/` : other files, currently unused
+			*	`vc_runtime140_1.dll` : already present on VM windows-java-21
+		*	`prepopulate/` : files needed to prepopulate the system
+		*	`ranflood/` : files to transfer to the hosts, in the ranflood dir
+		*	`transfer/` : files to transfer to the hosts, in the remote working dir
+			*	`ranflood.bat` : convenience link to executable
+			*	`ranfloodd.bat` : launches daemon through java - a bat script allows to identify and kill the process
 	*	`playbooks/` : example playbooks for some uses
 		*	`tasks/` : lists of tasks used in the (external) playbooks
 *	`scripts/` : convenience scripts for interacting with proxmox

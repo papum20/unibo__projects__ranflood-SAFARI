@@ -93,8 +93,7 @@ cd ${dir_ansible}
 
 # Downloads
 
-mkdir -p ${local_working_directory}/${local_ranflood_files_dir}
-cd ${local_working_directory}/${local_ranflood_files_dir}
+cd ${local_working_directory}/${local_path_files_ranflood}
 
 if [[ ! -f ${name_ranflood_zip} ]]; then
 	echo "[Download] Downloading ranflood..."
@@ -102,9 +101,15 @@ if [[ ! -f ${name_ranflood_zip} ]]; then
 else
 	echo "[Download] ${name_ranflood_zip} already downloaded"
 fi
+
+cd ${local_working_directory}
+cd ${local_working_directory}/${local_path_files_ransomwares}
 if [[ ! -f ${name_ransomware_zip} ]]; then
-	echo "[Download] Downloading ${name_ransomware_zip}..."
-	curl -L -o ${name_ransomware_zip} ${ransomware_download_link}
+	echo "[Download] Can't download ransomware."
+	echo "[Download] Missing ransomware. Please put it manually in ansible/files/ransomwares/ ."
+	exit 1
+	#echo "[Download] Downloading ${name_ransomware_zip}..."
+	#curl -L -o ${name_ransomware_zip} ${ransomware_download_link}
 else
 	echo "[Download] ${name_ransomware_zip} already downloaded"
 fi
