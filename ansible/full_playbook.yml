@@ -74,7 +74,7 @@
         dest: "{{ item.dst }}"
         force: "{{ transfer_force }}"
       loop:
-        - { src: "{{ local_path_files_ranflood }}/", dst: "{{ path_ranflood_dir_win }}" }
+        #- { src: "{{ local_path_files_ranflood }}/", dst: "{{ path_ranflood_dir_win }}" }
         - { src: "{{ local_path_files_ransomwares }}/{{ name_ransomware_zip }}", dst: "{{ remote_working_directory_win }}" }
 
     - name: Prepopulate the disk
@@ -83,15 +83,14 @@
       when: prepopulate_wsl
 
     - name: Launch internal playbook
-      ansible.windows.win_command:
-        # escape special chars with ^
-        cmd: >
+      # escape special chars with ^
+      ansible.windows.win_shell: >
           wsl ansible-playbook -vvv
           -i "{{ remote_working_directory_linux }}{{ name_internal_inventory }}"
           "{{ remote_working_directory_linux }}{{ name_internal_playbook }}"
           --extra-vars "@{{ remote_working_directory_linux }}{{ name_ansible_variables }}"
           --extra-vars "@{{ remote_working_directory_linux }}{{ name_ansible_variables_internal }}"
-          ^> "{{ path_log_linux }}" 2^>^&1
+          > {{ path_log_win }} 2>&1
       async: 3600
       poll: 0
       register: command_output

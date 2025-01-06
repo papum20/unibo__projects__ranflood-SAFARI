@@ -65,13 +65,13 @@
 
     - name: Filechecker sss restore
       ansible.builtin.command:
-        cmd: java -jar {{ path_filechecker }} restore --debug -l={{ path_log_filechecker }} /home/checker/cleanWindowsChecksum /home/checker/report-shards /home/checker/report {{ target_dir }}
+        cmd: java -jar {{ path_filechecker }} restore --debug -l={{ path_log_filechecker }} -e={{ target_dir }}/AppData /home/checker/cleanWindowsChecksum /home/checker/report-shards /home/checker/report {{ target_dir }}
         chdir: "{{ remote_working_dir_filechecker }}"
       when: do_restore and not restore_delete
 
     - name: Filechecker sss restore with delete
       ansible.builtin.command:
-        cmd: java -jar {{ path_filechecker }} restore --debug -l={{ path_log_filechecker }} --delete /home/checker/cleanWindowsChecksum /home/checker/report-shards /home/checker/report {{ target_dir }}
+        cmd: java -jar {{ path_filechecker }} restore --debug -l={{ path_log_filechecker }} -e={{ target_dir }}/AppData --delete /home/checker/cleanWindowsChecksum /home/checker/report-shards /home/checker/report {{ target_dir }}
         chdir: "{{ remote_working_dir_filechecker }}"
       when: do_restore and restore_delete
 

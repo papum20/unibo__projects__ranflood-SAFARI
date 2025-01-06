@@ -57,16 +57,20 @@ name_ranfloodd_jar=ranfloodd.jar
 #name_ranflood_zip=ranflood-v.0.6-beta_Windows.zip
 name_ranflood_zip=ranflood-v.0.6-beta_Windows_client.zip
 
-# WannaCry
-#name_ransomware=Ransomware.WannaCry
+name_settings_ini=settings.ini
+name_vcruntime140_1_dll=vcruntime140_1.dll
+
+# Locbkit
+#name_ransomware=lockbit
 # Phobos
 name_ransomware=phobos.bin
+# WannaCry
+#name_ransomware=Ransomware.WannaCry
 
 name_ransomware_zip=${name_ransomware}.zip
+#name_ransomware_zip=${name_ransomware}.7z
 
-name_settings_ini=settings.ini
-
-name_vcruntime140_1_dll=vcruntime140_1.dll
+name_ransomware_dir_win='ransomware\'
 
 ## for scripts to execute on the remote hosts
 name_prepopulate_script=prepopulate.sh
@@ -85,6 +89,7 @@ path_ranfloodd_bat="${remote_working_directory_win}${name_ranfloodd_bat}"
 path_ranflood_jar_win="${path_ranflood_dir_win}${name_ranflood_jar}"
 path_ranfloodd_jar_win="${path_ranflood_dir_win}${name_ranfloodd_jar}"
 path_ransomware_win="${remote_working_directory_win}${name_ransomware}"
+path_ransomware_dir_win="${remote_working_directory_win}${name_ransomware_dir_win}"
 path_settings_ini_win="${remote_working_directory_win}${name_settings_ini}"
 
 path_ranflood_dir_linux='/mnt/c/Program Files/Ranflood/'
@@ -96,6 +101,7 @@ path_ransomware_linux="${remote_working_directory_linux}${name_ransomware}"
 path_settings_ini_linux="${remote_working_directory_linux}${name_settings_ini}"
 
 # where output of internal playbook is saved
+path_log_win="${remote_working_directory_win}log${timestamp}.txt"
 path_log_linux="${remote_working_directory_linux}log${timestamp}.txt"
 # log of filechecker restore command
 path_log_filechecker="/home/checker/log${timestamp}.txt"

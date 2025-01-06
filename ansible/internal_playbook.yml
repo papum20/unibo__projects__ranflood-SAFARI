@@ -40,67 +40,94 @@
     # Ranfloodd
     #
 
-    - name: Ensure old ranflood zip files are removed
-      ansible.windows.win_file:
-        state: absent
-        path: "{{ item }}"
-      loop:
-        # zip only contains client - the used daemon is a jar
-        - "{{ path_ranflood_win }}"
-        #- "{{ path_ranfloodd_win }}"
-
-    - name: Decompress ranflood
-      community.windows.win_unzip:
-        src: "{{ path_ranflood_dir_win }}{{ name_ranflood_zip }}"
-        dest: "{{ path_ranflood_dir_win }}"
-        delete_archive: "{{ delete_archives }}"
-
-    - name: Start ranflood daemon (jar)
-      # win_shell, unlike win_command, also allows <>|
-      ansible.windows.win_shell: >
-        {{ path_ranfloodd_bat }} {{ ranflood_jvm_mem_max }} {{ path_settings_ini_win }}
-        > {{ path_log_internal_daemon }} 2>&1
-      args:
-        executable: cmd
-      async: 1800
-      poll: 0
-      register: command_output
-
-    - name: Display the output of the command
-      ansible.builtin.debug:
-        msg: "{{ command_output }}"
-
-    - name: Wait for ranflood daemon to start
-      ansible.builtin.pause:
-        seconds: "{{ ranflood_daemon_delay }}"
-
-    - name: Snapshot ranflood
-      ansible.windows.win_command:
-        cmd: '"{{ path_ranflood_win }}" snapshot take {{ ranflood_snapshot_strategy }} "{{ item }}"'
-      loop: "{{ ranflood_target_dirs }}"
-      when: take_snapshot
+    #- name: Ensure old ranflood zip files are removed
+    #  ansible.windows.win_file:
+    #    state: absent
+    #    path: "{{ item }}"
+    #  loop:
+    #    # zip only contains client - the used daemon is a jar
+    #    - "{{ path_ranflood_win }}"
+    #    #- "{{ path_ranfloodd_win }}"
+#
+    #- name: Decompress ranflood
+    #  community.windows.win_unzip:
+    #    src: "{{ path_ranflood_dir_win }}{{ name_ranflood_zip }}"
+    #    dest: "{{ path_ranflood_dir_win }}"
+    #    delete_archive: "{{ delete_archives }}"
+#
+    #- name: Start ranflood daemon (jar)
+    #  # win_shell, unlike win_command, also allows <>|
+    #  ansible.windows.win_shell: >
+    #    {{ path_ranfloodd_bat }} {{ ranflood_jvm_mem_max }} {{ path_settings_ini_win }}
+    #    > {{ path_log_internal_daemon }} 2>&1
+    #  args:
+    #    executable: cmd
+    #  async: 1800
+    #  poll: 0
+    #  register: command_output
+#
+    #- name: Display the output of the command
+    #  ansible.builtin.debug:
+    #    msg: "{{ command_output }}"
+#
+    #- name: Wait for ranflood daemon to start
+    #  ansible.builtin.pause:
+    #    seconds: "{{ ranflood_daemon_delay }}"
+#
+    #- name: Snapshot ranflood
+    #  ansible.windows.win_command:
+    #    cmd: '"{{ path_ranflood_win }}" snapshot take {{ ranflood_snapshot_strategy }} "{{ item }}"'
+    #  loop: "{{ ranflood_target_dirs }}"
+    #  when: take_snapshot
 
     #
     # Ransomware
     #
+    # as we don't know the executable's name for each ransomware, we try to execute all extracted files
 
-    - name: Ensure old ransomware zip files are removed
+    - name: Ransomware - ensure old ransomware zip files are removed
       ansible.windows.win_file:
         state: absent
-        path: "{{ path_ransomware_win }}"
+        path: "{{ path_ransomware_dir_win }}"
 
-    - name: Decompress ransomware
+    - name: Ransomware - create extraction folder
+      ansible.windows.win_file:
+        path: "{{ path_ransomware_dir_win }}"
+        state: directory
+
+    - name: Ransomware - decompress
       community.windows.win_unzip:
         src: "{{ remote_working_directory_win }}{{ name_ransomware_zip }}"
-        dest: "{{ path_ransomware_win }}"
+        dest: "{{ path_ransomware_dir_win }}"
         password: infected
         delete_archive: "{{ delete_archives }}"
 
-    - name: Start ransomware
-      ansible.windows.win_command:
-        cmd: "{{ path_ransomware_win }}"
+    - name: Ransomware - get list of files in the directory (non-recursive)
+      ansible.windows.win_find:
+        paths: "{{ path_ransomware_dir_win }}"
+        recurse: false
+        file_type: file
+      register: ransomware_files_in_directory
+
+    - name: Ransomware - execute each file
+      ansible.windows.win_shell: |
+        "{{ item.path }}"
+      loop: "{{ ransomware_files_in_directory.files }}"
+      ignore_errors: true
+      failed_when: false  # Ensures Ansible doesn't mark this task as failed if an error occurs
+      register: ransomware_execution_results
       async: 1800
       poll: 0
+
+    - name: Ransomware - execution result
+      ansible.builtin.debug:
+        var: ransomware_execution_results
+
+    #- name: Start ransomware
+    #  ansible.windows.win_command:
+    #    cmd: "{{ path_ransomware_win }}"
+    #  async: 1800
+    #  poll: 0
 
     #
     # Ranflood client

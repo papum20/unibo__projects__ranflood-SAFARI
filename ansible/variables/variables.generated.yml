@@ -2,7 +2,7 @@
 
 
 # timestamp, can be used as "unique" id
-timestamp: '20250103-17_44_45'
+timestamp: '20250106-17_44_13'
 
 
 # Script
@@ -57,16 +57,20 @@ name_ranfloodd_jar: 'ranfloodd.jar'
 #name_ranflood_zip: '${#name_ranflood_zip}'
 name_ranflood_zip: 'ranflood-v.0.6-beta_Windows_client.zip'
 
-# WannaCry
+name_settings_ini: 'settings.ini'
+name_vcruntime140_1_dll: 'vcruntime140_1.dll'
+
+# Locbkit
 #name_ransomware: '${#name_ransomware}'
 # Phobos
 name_ransomware: 'phobos.bin'
+# WannaCry
+#name_ransomware: '${#name_ransomware}'
 
 name_ransomware_zip: 'phobos.bin.zip'
+#name_ransomware_zip: '${#name_ransomware_zip}'
 
-name_settings_ini: 'settings.ini'
-
-name_vcruntime140_1_dll: 'vcruntime140_1.dll'
+name_ransomware_dir_win: 'ransomware\'
 
 ## for scripts to execute on the remote hosts
 name_prepopulate_script: 'prepopulate.sh'
@@ -85,6 +89,7 @@ path_ranfloodd_bat: 'C:\Users\ranfloodd.bat'
 path_ranflood_jar_win: 'C:\Program Files\Ranflood\ranflood.jar'
 path_ranfloodd_jar_win: 'C:\Program Files\Ranflood\ranfloodd.jar'
 path_ransomware_win: 'C:\Users\phobos.bin'
+path_ransomware_dir_win: 'C:\Users\ransomware\'
 path_settings_ini_win: 'C:\Users\settings.ini'
 
 path_ranflood_dir_linux: '/mnt/c/Program Files/Ranflood/'
@@ -96,10 +101,11 @@ path_ransomware_linux: '/mnt/c/Users/phobos.bin'
 path_settings_ini_linux: '/mnt/c/Users/settings.ini'
 
 # where output of internal playbook is saved
-path_log_linux: '/mnt/c/Users/log20250103-17_44_45.txt'
+path_log_win: 'C:\Users\log20250106-17_44_13.txt'
+path_log_linux: '/mnt/c/Users/log20250106-17_44_13.txt'
 # log of filechecker restore command
-path_log_filechecker: '/home/checker/log20250103-17_44_45.txt'
-path_log_internal_daemon: 'C:\Users\log_daemon20250103-17_44_45.txt'
+path_log_filechecker: '/home/checker/log20250106-17_44_13.txt'
+path_log_internal_daemon: 'C:\Users\log_daemon20250106-17_44_13.txt'
 
 # seconds for which to run ranflood random to prepopulate the disk
 ranflood_random_duration: '3'
