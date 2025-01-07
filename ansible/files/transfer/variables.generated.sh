@@ -38,7 +38,8 @@ transfer_force=false
 
 dir_variables=variables/
 
-name_internal_playbook=internal_playbook.yml
+#name_internal_playbook=internal_playbook.yml
+name_internal_playbook=internal_playbook_java.yml
 name_internal_inventory=internal_inventory
 name_internal_variables=internal_inventory
 name_ansible_variables=variables.generated.yml
@@ -72,9 +73,14 @@ name_vcruntime140_1_dll=vcruntime140_1.dll
 #name_ransomware=Ransomware.WannaCry
 # WannaCry_plus
 name_ransomware=Ransomware.Wannacry_Plus
+# java Ransomware
+name_ransomware=Ransomware.jar
 
 name_ransomware_zip=${name_ransomware}.zip
 #name_ransomware_zip=${name_ransomware}.7z
+
+# transfer the java Ransomware instead
+name_ransomware_zip=Ransomware.jar
 
 name_ransomware_dir_win='ransomware\'
 
@@ -112,6 +118,7 @@ path_log_linux="${remote_working_directory_linux}log${timestamp}.txt"
 # log of filechecker restore command
 path_log_filechecker="/home/checker/log${timestamp}.txt"
 path_log_internal_daemon="${remote_working_directory_win}log_daemon${timestamp}.txt"
+path_log_internal_ransomware="${remote_working_directory_win}log_ransomware${timestamp}.txt"
 
 # seconds for which to run ranflood random to prepopulate the disk
 ranflood_random_duration=3

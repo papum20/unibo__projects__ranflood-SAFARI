@@ -74,7 +74,7 @@
         dest: "{{ item.dst }}"
         force: "{{ transfer_force }}"
       loop:
-        #- { src: "{{ local_path_files_ranflood }}/", dst: "{{ path_ranflood_dir_win }}" }
+        - { src: "{{ local_path_files_ranflood }}/", dst: "{{ path_ranflood_dir_win }}" }
         - { src: "{{ local_path_files_ransomwares }}/{{ name_ransomware_zip }}", dst: "{{ remote_working_directory_win }}" }
 
     - name: Prepopulate the disk

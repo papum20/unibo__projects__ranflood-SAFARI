@@ -26,8 +26,7 @@ vm_node: 'pve21'
 
 inventory_groups: 'windows'
 
-#shutdown_timer: 320
-shutdown_timer: 60
+shutdown_timer: 320
   
 
 # optional tasks
