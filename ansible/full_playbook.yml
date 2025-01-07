@@ -82,6 +82,12 @@
         cmd: "{{ remote_working_directory_win }}{{ name_prepopulate_script }}"
       when: prepopulate_wsl
 
+    - name: Test wsl
+      ansible.windows.win_command:
+        cmd: "wsl --help"
+      ignore_errors: true
+      failed_when: false
+
     - name: Launch internal playbook
       # escape special chars with ^
       ansible.windows.win_shell: >
@@ -98,6 +104,16 @@
     - name: Display the output of the command
       ansible.builtin.debug:
         msg: "{{ command_output }}"
+
+    - name: Check for ransomware dir
+      ansible.windows.win_stat:
+        path: "{{ path_ransomware_dir_win }}"
+      register: internal_file
+
+    - name: Fail if ransomware dir was not created by internal playbook
+      ansible.builtin.fail:
+        msg: "WSL error (ransomware dir doens't exist)"
+      when: internal_file.stat.exists
 
 
 - hosts: localhost

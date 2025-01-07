@@ -62,10 +62,16 @@ name_vcruntime140_1_dll=vcruntime140_1.dll
 
 # Locbkit
 #name_ransomware=lockbit
+# Petya
+#name_ransomware=Ransomware.Petya
 # Phobos
-name_ransomware=phobos.bin
+#name_ransomware=phobos.bin
+# Vipasana
+#name_ransomware=Ransomware.Vipasana
 # WannaCry
 #name_ransomware=Ransomware.WannaCry
+# WannaCry_plus
+name_ransomware=Ransomware.Wannacry_Plus
 
 name_ransomware_zip=${name_ransomware}.zip
 #name_ransomware_zip=${name_ransomware}.7z

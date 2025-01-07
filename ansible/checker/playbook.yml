@@ -22,15 +22,13 @@
         dest: "{{ remote_working_dir_filechecker }}"
         force: "{{ transfer_force_filechecker }}"
 
-    - name: Crea mounting point per Windows
+    - name: Crea mounting point per Windows, storage condiviso
       ansible.builtin.file:
-        path: "{{ path_mnt_win }}"
+        path: "{{ item }}"
         state: directory
-
-    - name: Crea mounting point storage condiviso
-      ansible.builtin.file:
-        path: /mnt/shared
-        state: directory
+      loop:
+        - "{{ path_mnt_win }}"
+        - /mnt/shared
 
     - name: Monta disco Windows
       ansible.posix.mount:
