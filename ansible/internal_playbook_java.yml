@@ -22,19 +22,19 @@
 - hosts: windows
   tasks:
 
-    - name: Disable network adapters
-      community.windows.win_net_adapter_feature:
-        interface: '*'
-        state: disabled
-        component_id:
-          - ms_tcpip
-          - ms_tcpip6
-          - ms_implat
-          - ms_lltdio
-          - ms_rspndr
-          - ms_lldp
-          - ms_msclient
-          - ms_pacer
+    #- name: Disable network adapters
+    #  community.windows.win_net_adapter_feature:
+    #    interface: '*'
+    #    state: disabled
+    #    component_id:
+    #      - ms_tcpip
+    #      - ms_tcpip6
+    #      - ms_implat
+    #      - ms_lltdio
+    #      - ms_rspndr
+    #      - ms_lldp
+    #      - ms_msclient
+    #      - ms_pacer
 
     #
     # Ranfloodd

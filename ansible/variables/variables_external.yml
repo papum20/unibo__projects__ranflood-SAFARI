@@ -31,5 +31,8 @@ shutdown_timer: 320
 
 # optional tasks
 
+# avoid transfers if already exists
+transfer_force: false
+
 prepopulate_wsl: false
 shutdown: true
