@@ -57,19 +57,27 @@
 
     - name: Filechecker check
       ansible.builtin.command:
-        cmd: java -jar {{ path_filechecker }} check /home/checker/cleanWindowsChecksum /home/checker/report {{ target_dir }} > {{ path_log_filechecker_out }} 2>&1
+        cmd: >
+          java -jar {{ path_filechecker }} check /home/checker/cleanWindowsChecksum /home/checker/report {{ target_dir }}
+          > {{ path_log_filechecker_out }} 2>&1
         chdir: "{{ remote_working_dir_filechecker }}"
       when: do_check
 
     - name: Filechecker sss restore
-      ansible.builtin.command:
-        cmd: java -jar {{ path_filechecker }} restore --debug -l={{ path_log_filechecker }} -e={{ target_dir }}/AppData /home/checker/cleanWindowsChecksum /home/checker/report-shards /home/checker/report {{ target_dir }} > {{ path_log_filechecker_out }} 2>&1
+      ansible.builtin.shell:
+        cmd: >
+          java -jar {{ path_filechecker }} restore --debug -l={{ path_log_filechecker }} -e={{ target_dir }}/AppData --dry-run
+          /home/checker/cleanWindowsChecksum /home/checker/report-shards /home/checker/report {{ target_dir }}
+          > {{ path_log_filechecker_out }} 2>&1
         chdir: "{{ remote_working_dir_filechecker }}"
       when: do_restore and not restore_delete
 
     - name: Filechecker sss restore with delete
-      ansible.builtin.command:
-        cmd: java -jar {{ path_filechecker }} restore --debug -l={{ path_log_filechecker }} -e={{ target_dir }}/AppData --delete /home/checker/cleanWindowsChecksum /home/checker/report-shards /home/checker/report {{ target_dir }} > {{ path_log_filechecker_out }} 2>&1
+      ansible.builtin.shell:
+        cmd: >
+          java -jar {{ path_filechecker }} restore --debug -l={{ path_log_filechecker }} -e={{ target_dir }}/AppData --dry-run --delete
+          /home/checker/cleanWindowsChecksum /home/checker/report-shards /home/checker/report {{ target_dir }}
+          > {{ path_log_filechecker_out }} 2>&1
         chdir: "{{ remote_working_dir_filechecker }}"
       when: do_restore and restore_delete
 
@@ -87,10 +95,10 @@
         remote_src: true
       when: do_restore
 
-    - name: Smonta disco Windows
-      ansible.posix.mount:
-        path: "{{ path_mnt_win }}"
-        state: unmounted
+    #- name: Smonta disco Windows
+    #  ansible.posix.mount:
+    #    path: "{{ path_mnt_win }}"
+    #    state: unmounted
 
     - name: Smonta storage condiviso
       ansible.posix.mount:

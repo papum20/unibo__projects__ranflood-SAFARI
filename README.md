@@ -50,6 +50,7 @@ This will destroy previous VMs, create new ones and launch the tests, with ansib
 			*	`ranfloodd.bat` : launches daemon through java - a bat script allows to identify and kill the process
 	*	`playbooks/` : example playbooks for some uses
 		*	`tasks/` : lists of tasks used in the (external) playbooks
+*	`out/` : where output files are transferred (e.g. with the scripts `ssh-scp-*.sh`)
 *	`scripts/` : convenience scripts for interacting with proxmox
 *	`terraform/` : terraform scripts to deploy the infrastructure
 	*	`checker/` : checker scripts

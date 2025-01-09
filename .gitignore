@@ -9,6 +9,10 @@
 
 ansible/files/ransomwares/*
 
+## results
+
+out/
+
 # editor
 
 .vscode

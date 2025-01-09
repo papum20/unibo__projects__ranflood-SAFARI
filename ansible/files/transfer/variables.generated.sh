@@ -124,6 +124,7 @@ path_log_win="${remote_working_directory_win}log${timestamp}.txt"
 path_log_linux="${remote_working_directory_linux}log${timestamp}.txt"
 ## log of filechecker restore command
 path_log_filechecker="/home/checker/log${timestamp}.txt"
+path_log_filechecker_out="/home/checker/out${timestamp}.txt"
 path_log_internal_daemon="${remote_working_directory_win}log_daemon${timestamp}.txt"
 path_log_internal_ransomware="${remote_working_directory_win}log_ransomware${timestamp}.txt"
 
