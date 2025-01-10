@@ -31,6 +31,7 @@ variable "proxmox_api_token_secret" {
     type = string
 }
 
+
 variable "vms_count" {
     type = number
 }

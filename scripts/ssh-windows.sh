@@ -17,6 +17,6 @@ if [[ ! -d out ]]; then
 fi
 
 
-source scripts/read-vms.sh terraform/
+source scripts/read-vms.sh
 
 sshpass -pPassw0rd! ssh -o StrictHostKeyChecking=no IEUser@${vm_ips[0]}

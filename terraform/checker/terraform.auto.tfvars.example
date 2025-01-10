@@ -27,8 +27,6 @@ proxmox_api_url = "http://192.168.2.11:8006/api2/json"
 proxmox_api_token_id = "proxmox_token"
 proxmox_api_token_secret = "secret-token"
 
-vms_count = 1
-
 vm_name = "Checker"
 target_node = "pve7"
 vm_id = 2100
@@ -55,8 +53,12 @@ vm_disk_size = "32G"
 # STORAGE is the storage where the VM's disk is located
 # ID must correspond to the id of the VM you want to check
 # disk-0 is the disk assigned to the vm
-vm_disk_to_check_name = "local-lvm:vm-2000-disk-0"
-
+#
+# IMPORTANT: write the variable like this (i.e. on 3 lines),
+# so that the scripts can auto-generate the disks names.
+vm_disk_to_check_name = [
+  "local-lvm:vm-2000-disk-11", "local-lvm:vm-2000-disk-12"
+]
 
 vm_scsihw = "virtio-scsi-pci"
 

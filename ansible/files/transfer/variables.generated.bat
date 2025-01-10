@@ -30,6 +30,8 @@ set local_path_files_transfer=files/transfer
 set remote_working_directory_win=C:\Users\
 set remote_working_directory_linux=/mnt/c/Users/
 
+set remote_working_directory_checker=/home/checker/
+
 
 :: Files (ansible)
 ::# all of these files will be transferred
@@ -120,13 +122,16 @@ set path_ransomware_linux=/mnt/c/Users/Ransomware.WannaCry
 set path_settings_ini_linux=/mnt/c/Users/settings.ini
 
 ::# where output of internal playbook is saved
-set path_log_win=C:\Users\log20250109-11_16_44.txt
-set path_log_linux=/mnt/c/Users/log20250109-11_16_44.txt
+set path_log_win=C:\Users\log20250110-17_00_03.txt
+set path_log_linux=/mnt/c/Users/log20250110-17_00_03.txt
 ::# log of filechecker restore command
-set path_log_filechecker=/home/checker/log20250109-11_16_44.txt
-set path_log_filechecker_out=/home/checker/out20250109-11_16_44.txt
-set path_log_internal_daemon=C:\Users\log_daemon20250109-11_16_44.txt
-set path_log_internal_ransomware=C:\Users\log_ransomware20250109-11_16_44.txt
+set path_log_filechecker=/home/checker/log20250110-17_00_03.txt
+set path_log_filechecker_out=/home/checker/out20250110-17_00_03.txt
+set path_log_internal_daemon=C:\Users\log_daemon20250110-17_00_03.txt
+set path_log_internal_ransomware=C:\Users\log_ransomware20250110-17_00_03.txt
+
+set path_report=/home/checker/report20250110-17_00_03
+set path_report_shards=/home/checker/report-shards20250110-17_00_03
 
 
 :: Prepopulate

@@ -58,10 +58,10 @@ resource "proxmox_vm_qemu" "windows_clone" {
         bridge = var.vm_network_bridge
       }
 
-
     provisioner "local-exec" {
-        command = "echo \"vm_ip=${self.ssh_host} vm_id=${self.vmid}\" >> vm.txt"
+        command = <<EOT
+            echo "vm_ip=${self.ssh_host} vm_id=${self.vmid} disk_name=${var.vm_disk_storage}:vm-${self.vmid}-disk-${self.disks[0].ide[0].ide0[0].disk[0].id}" >> vm.txt
+        EOT
     }
-
 
 }

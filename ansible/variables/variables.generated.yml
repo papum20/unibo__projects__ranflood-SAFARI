@@ -2,7 +2,7 @@
 
 
 # timestamp, can be used as "unique" id
-timestamp: '20250109-11_16_44'
+timestamp: '20250110-17_00_03'
 
 
 # Script
@@ -29,6 +29,8 @@ local_path_files_transfer: 'files/transfer'
 ## where all files will be transferred (except ranflood)
 remote_working_directory_win: 'C:\Users\'
 remote_working_directory_linux: '/mnt/c/Users/'
+
+remote_working_directory_checker: '/home/checker/'
 
 
 # Files (ansible)
@@ -120,13 +122,16 @@ path_ransomware_linux: '/mnt/c/Users/Ransomware.WannaCry'
 path_settings_ini_linux: '/mnt/c/Users/settings.ini'
 
 ## where output of internal playbook is saved
-path_log_win: 'C:\Users\log20250109-11_16_44.txt'
-path_log_linux: '/mnt/c/Users/log20250109-11_16_44.txt'
+path_log_win: 'C:\Users\log20250110-17_00_03.txt'
+path_log_linux: '/mnt/c/Users/log20250110-17_00_03.txt'
 ## log of filechecker restore command
-path_log_filechecker: '/home/checker/log20250109-11_16_44.txt'
-path_log_filechecker_out: '/home/checker/out20250109-11_16_44.txt'
-path_log_internal_daemon: 'C:\Users\log_daemon20250109-11_16_44.txt'
-path_log_internal_ransomware: 'C:\Users\log_ransomware20250109-11_16_44.txt'
+path_log_filechecker: '/home/checker/log20250110-17_00_03.txt'
+path_log_filechecker_out: '/home/checker/out20250110-17_00_03.txt'
+path_log_internal_daemon: 'C:\Users\log_daemon20250110-17_00_03.txt'
+path_log_internal_ransomware: 'C:\Users\log_ransomware20250110-17_00_03.txt'
+
+path_report: '/home/checker/report20250110-17_00_03'
+path_report_shards: '/home/checker/report-shards20250110-17_00_03'
 
 
 # Prepopulate

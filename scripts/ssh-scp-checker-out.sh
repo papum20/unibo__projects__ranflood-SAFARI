@@ -17,7 +17,7 @@ if [[ ! -d out ]]; then
 fi
 
 
-source scripts/read-vms.sh terraform/checker/
+source scripts/read-vms.sh -c
 
 sshpass -pchecker scp checker@${vm_ips[0]}:~/report* out
 sshpass -pchecker scp checker@${vm_ips[0]}:~/out* out

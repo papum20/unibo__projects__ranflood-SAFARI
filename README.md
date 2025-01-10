@@ -12,7 +12,7 @@ The script `launch-ansible.sh` also downloads it.
 
 Launch the terraform provisioner (before) and the ansible playbooks (after), on the remote hosts:
 ```bash
-./scripts/launch-all.sh
+./scripts/launch.sh
 ```
 This will destroy previous VMs, create new ones and launch the tests, with ansible, on them.  
 
@@ -24,7 +24,7 @@ This will destroy previous VMs, create new ones and launch the tests, with ansib
 ### Troubleshooting
 
 *	Terraform doesn't execute provider completely, so `vm.txt` doesn't contain the VM's ip or id:
-	either retry `./scripts/launch-all.sh -d` or manually edit `vm.txt` and launch `./scripts/launch-all.sh -m`
+	either retry `./scripts/launch.sh -d` or manually edit `vm.txt` and launch `./scripts/launch.sh -m`
 *	When launching ansible alone, if the playbook is stuck on some hosts (e.g. `windows` group), it may be due to the fact that their network interfaces were disabled previously by the playbook: connect from proxmox or recreate them.  
 *	Ranflood 0.7-beta will throw an error for missing `vcruntime140_1.dll` : run the installer from https://learn.microsoft.com/it-it/cpp/windows/latest-supported-vc-redist?view=msvc-170
 *	Error in ansible (checker) :  

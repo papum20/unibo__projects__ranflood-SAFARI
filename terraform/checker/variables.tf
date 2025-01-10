@@ -20,92 +20,95 @@
  ******************************************************************************/
 
 variable "proxmox_api_url" {
-    type = string
+	type = string
 }
 
 variable "proxmox_api_token_id" {
-    type = string
+	type = string
 }
 
 variable "proxmox_api_token_secret" {
-    type = string
-}
-
-variable "vms_count" {
-    type = number
+	type = string
 }
 
 variable "vm_name" {
-    type = string
+	type = string
 }
 
 variable "target_node" {
-    type = string
+	type = string
 }
 
 variable "vm_id" {
-    type = number
+	type = number
 }
 
 variable "template_clone" {
-    type = string
+	type = string
 }
 
 variable "is_full_clone" {
-    type = bool
+	type = bool
 }
 
 variable "vm_qemu_agent" {
-    type = number
+	type = number
 }
 
 variable "vm_qemu_agent_timeout" {
-    type = number
+	type = number
 }
 
 variable "vm_memory" {
-    type = number
+	type = number
 }
 
 
 variable "vm_sockets" {
-    type = number
+	type = number
 }
 
 variable "vm_cores" {
-    type = number
+	type = number
 }
 
 
 variable "vm_scsihw" {
-    type = string
+	type = string
 }
 
 variable "vm_ipconfig" {
-    type = string
+	type = string
 }   
 
 
 variable "vm_network_card_model" {
-    type = string
+	type = string
 }
 
 variable "vm_bootdisk" {
-    type = string
+	type = string
 }
 
 variable "vm_network_bridge" {
-    type = string
+	type = string
 }
 
 variable "vm_disk_storage" {
-    type = string
+	type = string
 }
 
 variable "vm_disk_size" {
-    type = string
+	type = string
 }
 
 variable "vm_disk_to_check_name" {
-    type = string
+	type = list(string)
+	description = "List of disks to be checked by each VM."
+}
+
+
+locals {
+	# VMs number equals the disks to mount and check
+	vms_count = length(var.vm_disk_to_check_name)
 }

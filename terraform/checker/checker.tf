@@ -21,7 +21,7 @@
 
 resource "proxmox_vm_qemu" "checker" {
 
-    count = var.vms_count
+    count = local.vms_count
 
     name = "${var.vm_name}-${count.index}"
     target_node = var.target_node
@@ -54,7 +54,7 @@ resource "proxmox_vm_qemu" "checker" {
         ide {
           ide0 {
             passthrough {
-              file = var.vm_disk_to_check_name
+              file = element(var.vm_disk_to_check_name, count.index)
             }
           }
         }
