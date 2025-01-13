@@ -23,20 +23,20 @@ resource "proxmox_vm_qemu" "checker" {
 
     count = local.vms_count
 
-    name = "${var.vm_name}-${count.index}"
-    target_node = var.target_node
-    vmid = sum([var.vm_id, count.index])
-    clone = var.template_clone
-    full_clone = var.is_full_clone
+    name        = "${var.vm_name}-${count.index}"
+    target_node = var.target_nodes[local.node_indices[count.index]]
+    vmid        = sum([var.vm_id, count.index])
+    clone       = var.template_clones[local.node_indices[count.index]]
+    full_clone  = var.is_full_clone
 
-    memory = var.vm_memory
-    cores = var.vm_cores
-    sockets = var.vm_sockets
-    agent = var.vm_qemu_agent
+    memory        = var.vm_memory
+    cores         = var.vm_cores
+    sockets       = var.vm_sockets
+    agent         = var.vm_qemu_agent
     agent_timeout = var.vm_qemu_agent_timeout
 
-    scsihw = var.vm_scsihw
-    bootdisk = var.vm_bootdisk
+    scsihw    = var.vm_scsihw
+    bootdisk  = var.vm_bootdisk
 
     ipconfig0 = var.vm_ipconfig
 
@@ -46,7 +46,7 @@ resource "proxmox_vm_qemu" "checker" {
             scsi0 {
                 disk {
                     storage = var.vm_disk_storage
-                    size = var.vm_disk_size
+                    size    = var.vm_disk_size
                 }
             }
         }
@@ -71,8 +71,8 @@ resource "proxmox_vm_qemu" "checker" {
     }
 
     network {
-        model = var.vm_network_card_model
-        bridge = var.vm_network_bridge
+        model   = var.vm_network_card_model
+        bridge  = var.vm_network_bridge
       }
 
 

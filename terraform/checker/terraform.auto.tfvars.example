@@ -23,14 +23,20 @@
  * Example of configuration variables for Terraform
  */
  
-proxmox_api_url = "http://192.168.2.11:8006/api2/json"
-proxmox_api_token_id = "proxmox_token"
-proxmox_api_token_secret = "secret-token"
+proxmox_api_url				= "http://192.168.2.11:8006/api2/json"
+proxmox_api_token_id		= "proxmox_token"
+proxmox_api_token_secret	= "secret-token"
 
 vm_name = "Checker"
-target_node = "pve7"
+target_nodes = [
+	"pve21",
+	"pve22"
+]
 vm_id = 2100
-template_clone = "checker-sss"
+template_clones = [
+	"checker-sss",
+	"checker-sss-pve22"
+]
 is_full_clone = false
 
 vm_memory = 4096
@@ -38,16 +44,16 @@ vm_memory = 4096
 vm_sockets = 1
 vm_cores = 2
 
-vm_qemu_agent = 1
-vm_qemu_agent_timeout = 120
+vm_qemu_agent			= 1
+vm_qemu_agent_timeout	= 120
 
-vm_network_card_model = "virtio"
-vm_network_bridge = "vmbr0"
+vm_network_card_model	= "virtio"
+vm_network_bridge		= "vmbr0"
 
 vm_bootdisk = "scsi0"
 
-vm_disk_storage = "local-lvm"
-vm_disk_size = "32G"
+vm_disk_storage	= "local-lvm"
+vm_disk_size	= "32G"
 
 # format: STORAGE:vm-ID-disk-0, where:
 # STORAGE is the storage where the VM's disk is located

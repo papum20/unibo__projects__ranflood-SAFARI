@@ -31,20 +31,27 @@ variable "proxmox_api_token_secret" {
 	type = string
 }
 
+
 variable "vm_name" {
 	type = string
 }
 
-variable "target_node" {
-	type = string
+variable "target_nodes" {
+	type = list(string)
+	description = "Nodes that will be used to deploy the VMs, in order (when necessary)."
 }
 
 variable "vm_id" {
 	type = number
 }
 
-variable "template_clone" {
-	type = string
+variable "template_clones" {
+    type = list(string)
+    description = "Templates to clone the VMs from, in order (when necessary). Make sure that their order respects their relative node (target_nodes)."
+	validation {
+        condition = length(var.target_nodes) == length(var.template_clones)
+        error_message = "target_nodes and template_clones must have the same length."
+    }
 }
 
 variable "is_full_clone" {
@@ -111,4 +118,8 @@ variable "vm_disk_to_check_name" {
 locals {
 	# VMs number equals the disks to mount and check
 	vms_count = length(var.vm_disk_to_check_name)
+	# indices of template and node to use
+    node_indices = [
+        for idx in range(local.vms_count) : idx % length(var.target_nodes)
+    ]
 }

@@ -121,17 +121,19 @@ path_ranfloodd_jar_linux="${path_ranflood_dir_linux}${name_ranfloodd_jar}"
 path_ransomware_linux="${remote_working_directory_linux}${name_ransomware}"
 path_settings_ini_linux="${remote_working_directory_linux}${name_settings_ini}"
 
+path_checker_out_dir="${remote_working_directory_checker}${timestamp}/"
+
 ## where output of internal playbook is saved
 path_log_win="${remote_working_directory_win}log${timestamp}.txt"
 path_log_linux="${remote_working_directory_linux}log${timestamp}.txt"
 ## log of filechecker restore command
-path_log_filechecker="${remote_working_directory_checker}log${timestamp}.txt"
-path_log_filechecker_out="${remote_working_directory_checker}out${timestamp}.txt"
+path_log_filechecker="${path_checker_out_dir}log${timestamp}.txt"
+path_log_filechecker_out="${path_checker_out_dir}out${timestamp}.txt"
 path_log_internal_daemon="${remote_working_directory_win}log_daemon${timestamp}.txt"
 path_log_internal_ransomware="${remote_working_directory_win}log_ransomware${timestamp}.txt"
 
-path_report="${remote_working_directory_checker}report${timestamp}"
-path_report_shards="${remote_working_directory_checker}report-shards${timestamp}"
+path_report="${path_checker_out_dir}report${timestamp}"
+path_report_shards="${path_checker_out_dir}report-shards${timestamp}"
 
 
 # Prepopulate

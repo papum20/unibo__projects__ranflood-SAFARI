@@ -23,35 +23,41 @@
  * Example of configuration variables for Terraform
  */
 
-proxmox_api_url = "http://192.168.2.11:8006/api2/json"
-proxmox_api_token_id = "proxmox-token"
-proxmox_api_token_secret = "secret-token"
+proxmox_api_url				= "http://192.168.2.11:8006/api2/json"
+proxmox_api_token_id		= "proxmox-token"
+proxmox_api_token_secret	= "secret-token"
 
 vms_count = 1
 
-vm_name = "WindowsInfected"
-target_node = "pve1"
+vm_name	= "WindowsInfected"
+target_nodes = [
+	"pve21",
+	"pve22"
+]
 vm_id = 2000
-template_clone = "windows-java-21"
+template_clones = [
+	"windows-java-21",
+	"windows-java-21-pve22"
+]
 is_full_clone = false
 
 vm_memory = 8192
 
-vm_sockets = 1
-vm_cores = 4
+vm_sockets	= 1
+vm_cores	= 4
 
-vm_qemu_agent = 1
-vm_qemu_agent_timeout = 120
+vm_qemu_agent			= 1
+vm_qemu_agent_timeout	= 120
 
-vm_network_card_model = "e1000"
-vm_network_bridge = "vmbr0"
+vm_network_card_model	= "e1000"
+vm_network_bridge		= "vmbr0"
 
 vm_bootdisk = "ide0"
 
 vm_disk_storage = "local-lvm"
-vm_disk_size = "40G"
+vm_disk_size	= "40G"
 
 vm_scsihw = "virtio-scsi-pci"
 
-vm_user = "IEUser"
+vm_user		= "IEUser"
 vm_password = "Passw0rd!"

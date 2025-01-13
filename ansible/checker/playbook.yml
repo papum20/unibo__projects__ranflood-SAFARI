@@ -11,7 +11,7 @@
     - name: Make sure VMs are running
       import_tasks: ../playbooks/tasks/vm-started.yml
 
-    - name: Create output directory
+    - name: Create local output directory
       ansible.builtin.file:
         path: "{{ local_working_directory }}out/{{ name_ransomware }}"
         state: directory
@@ -20,6 +20,13 @@
 - hosts: checker
   become: true
   tasks:
+
+    # Setup
+
+    - name: Create remote output directory
+      ansible.builtin.file:
+        path: "{{ path_checker_out_dir }}"
+        state: directory
 
     - name: Trasferisci filechecker jar
       ansible.builtin.copy:
@@ -60,6 +67,9 @@
         state: mounted
         fstype: ext4
 
+
+    # Filechecker
+
     - name: Filechecker check
       ansible.builtin.command:
         cmd: >
@@ -72,6 +82,7 @@
       ansible.builtin.shell:
         cmd: >
           java -jar {{ path_filechecker }} restore --debug -l={{ path_log_filechecker }} -e={{ target_dir }}/AppData --dry-run
+          --windows-letter=C -w=/mnt/win10/
           {{ remote_working_directory_checker }}cleanWindowsChecksum {{ path_report_shards }} {{ path_report }} {{ target_dir }}
           > {{ path_log_filechecker_out }} 2>&1
         chdir: "{{ remote_working_dir_filechecker }}"
@@ -81,10 +92,14 @@
       ansible.builtin.shell:
         cmd: >
           java -jar {{ path_filechecker }} restore --debug -l={{ path_log_filechecker }} -e={{ target_dir }}/AppData --dry-run --delete
+          --windows-letter=C -w=/mnt/win10/
           {{ remote_working_directory_checker }}cleanWindowsChecksum {{ path_report_shards }} {{ path_report }} {{ target_dir }}
           > {{ path_log_filechecker_out }} 2>&1
         chdir: "{{ remote_working_dir_filechecker }}"
       when: do_restore and restore_delete
+
+
+    # Transfer to shared storage
 
     - name: Trasferisci report nello storage condiviso
       ansible.builtin.copy:
@@ -100,10 +115,8 @@
         remote_src: true
       when: do_restore
 
-    #- name: Smonta disco Windows
-    #  ansible.posix.mount:
-    #    path: "{{ path_mnt_win }}"
-    #    state: unmounted
+
+    # Fill output directory
 
     - name: Find all log files in windows
       ansible.builtin.find:
@@ -112,27 +125,47 @@
         recurse: false
       register: log_files
 
-    - name: Transfer log files to local
-      ansible.builtin.fetch:
+    - name: Copy log files to output directory
+      ansible.builtin.copy:
         src: "{{ item.path }}"
-        dest: "{{ local_working_directory }}out/{{ name_ransomware }}/"
-        flat: yes
+        dest: "{{ path_checker_out_dir }}/"
+        remote_src: true
       loop: "{{ log_files.files }}"
       when: do_restore
 
+    - name: Copy checksum to output directory
+      ansible.builtin.copy:
+        src: "cleanWindowsChecksum"
+        dest: "{{ path_checker_out_dir }}/"
+        remote_src: true
+      when: do_restore
+
+
+    # Transfer all output files to local
+
+    - name: Find all output files
+      ansible.builtin.find:
+        paths: "{{ path_checker_out_dir }}"
+        recurse: false
+      register: out_files
+
     - name: Transfer output to local
       ansible.builtin.fetch:
-        src: "{{ item }}"
+        # this must be a file, not a directory
+        src: "{{ item.path }}"
         dest: "{{ local_working_directory }}out/{{ name_ransomware }}/"
         # otherwise, there would be conflicts for files having the same names on different nodes
-        flat: no
-      loop:
-        - "{{ path_report }}"
-        - "{{ path_report_shards }}"
-        - "{{ remote_working_directory_checker }}cleanWindowsChecksum"
-        - "{{ path_log_filechecker }}"
-        - "{{ path_log_filechecker_out }}"
+        flat: false
+      loop: "{{ out_files.files }}"
       when: do_restore
+
+
+    # Finish
+
+    #- name: Smonta disco Windows
+    #  ansible.posix.mount:
+    #    path: "{{ path_mnt_win }}"
+    #    state: unmounted
 
     - name: Smonta storage condiviso
       ansible.posix.mount:

@@ -121,17 +121,19 @@ set path_ranfloodd_jar_linux=/mnt/c/Program Files/Ranflood/ranfloodd.jar
 set path_ransomware_linux=/mnt/c/Users/Ransomware.WannaCry
 set path_settings_ini_linux=/mnt/c/Users/settings.ini
 
-::# where output of internal playbook is saved
-set path_log_win=C:\Users\log20250110-17_00_03.txt
-set path_log_linux=/mnt/c/Users/log20250110-17_00_03.txt
-::# log of filechecker restore command
-set path_log_filechecker=/home/checker/log20250110-17_00_03.txt
-set path_log_filechecker_out=/home/checker/out20250110-17_00_03.txt
-set path_log_internal_daemon=C:\Users\log_daemon20250110-17_00_03.txt
-set path_log_internal_ransomware=C:\Users\log_ransomware20250110-17_00_03.txt
+set path_checker_out_dir=/home/checker/20250113-11_22_48/
 
-set path_report=/home/checker/report20250110-17_00_03
-set path_report_shards=/home/checker/report-shards20250110-17_00_03
+::# where output of internal playbook is saved
+set path_log_win=C:\Users\log20250113-11_22_48.txt
+set path_log_linux=/mnt/c/Users/log20250113-11_22_48.txt
+::# log of filechecker restore command
+set path_log_filechecker=/home/checker/20250113-11_22_48/log20250113-11_22_48.txt
+set path_log_filechecker_out=/home/checker/20250113-11_22_48/out20250113-11_22_48.txt
+set path_log_internal_daemon=C:\Users\log_daemon20250113-11_22_48.txt
+set path_log_internal_ransomware=C:\Users\log_ransomware20250113-11_22_48.txt
+
+set path_report=/home/checker/20250113-11_22_48/report20250113-11_22_48
+set path_report_shards=/home/checker/20250113-11_22_48/report-shards20250113-11_22_48
 
 
 :: Prepopulate
