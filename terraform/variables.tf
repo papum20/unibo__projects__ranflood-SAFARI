@@ -122,6 +122,6 @@ variable "vm_password" {
 locals {
     # indices of template and node to use
     node_indices = [
-        for idx in range(length(var.vms_count)) : idx % length(var.target_nodes)
+        for idx in range(var.vms_count) : idx % length(var.target_nodes)
     ]
 }

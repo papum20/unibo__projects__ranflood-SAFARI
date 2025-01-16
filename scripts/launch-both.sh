@@ -29,6 +29,8 @@ function test() {
 
 # max number of tests which can be executed in parallel (set manually in terraform)
 tests_parallel=1
+path_out=out/launch-both.log
+mkdir out
 
 
 #
@@ -68,6 +70,8 @@ shift $((OPTIND -1))
 
 if [[ -n "$1" ]]; then
   tests_n="$1"
+  # clear args, so won't have problem with next source
+  shift
 fi
 
 test_batches_n=$(ceil_divide $tests_n $tests_parallel)
@@ -82,6 +86,11 @@ for ((i=1; i<=test_batches_n; i++)); do
   test $terraform_manual
   tests_completed=$((tests_completed+tests_parallel))
   echo "Test batch completed: $i (tot: $tests_completed / $tests_n)"
+  # write down new ips
+  source scripts/read-vms.sh
+  echo "[$(date +'%Y%m%d-%H_%M_%S')] windows IPs: ${vm_ips[@]}" >> "$path_out"
+  source scripts/read-vms.sh -c
+  echo "[$(date +'%Y%m%d-%H_%M_%S')] checker IPs: ${vm_ips[@]}" >> "$path_out"
 done
 
 echo "Completed tests: $tests_completed / $tests_n"
