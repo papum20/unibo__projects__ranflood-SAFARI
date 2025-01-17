@@ -1,0 +1,145 @@
+Report-shards found and loaded.
+Restoring completed.
+--- Summary ---
+2025-01-10T09:46:57.428938069	-	total time elapsed (nanosecs): 0
+2025-01-10T09:46:57.428938069	-	total time elapsed (millisecs): 0
+Files:		0	possible original files found
+Recovered:	0	files
+Failed:	0	files unrecoverable
+	0	files have wrong checksum
+Errors:		0	files
+Shards:	0 / 0	valid out of total files analyzed
+	0 / 0	deleted out of total valid shards found
+--- End of Summary ---
+
+--- Summary ---
+2025-01-10T09:46:57.428938069	-	total time elapsed (nanosecs): 0
+2025-01-10T09:46:57.428938069	-	total time elapsed (millisecs): 0
+Files:		0	possible original files found
+Recovered:	0	files
+Failed:	0	files unrecoverable
+	0	files have wrong checksum
+Errors:		0	files
+Shards:	0 / 0	valid out of total files analyzed
+	0 / 0	deleted out of total valid shards found
+--- End of Summary ---
+
+Removed from checksum: Pictures/Camera Roll/desktop.ini
+Removed from checksum: NTUSER.DAT{1c3790b4-b8ad-11e8-aa21-e41d2d101530}.TM.blf
+Removed from checksum: Links/desktop.ini
+Removed from checksum: Desktop/eula.lnk
+Removed from checksum: SAVED_GA/DESKTOP.INI
+Removed from checksum: Contacts/desktop.ini
+Removed from checksum: MicrosoftEdgeBackups/backups/MicrosoftEdgeBackup20240204/DatastoreBackup/spartan.edb
+Removed from checksum: NTUSER_D.BLF
+Removed from checksum: NTUSER.DAT{1c3790b4-b8ad-11e8-aa21-e41d2d101530}.TMContainer00000000000000000001.regtrans-ms
+Removed from checksum: _SSH/ENVIRONM
+Removed from checksum: Music/desktop.ini
+Removed from checksum: Links/Downloads.lnk
+Removed from checksum: Videos/Captures/desktop.ini
+Found different signature from checksum: NTUSER.DAT
+Removed from checksum: Music/FILE_002.MP3
+Removed from checksum: MicrosoftEdgeBackups/backups/MicrosoftEdgeBackup20240204/DatastoreBackup/spartan.pat
+Removed from checksum: NTUSER_D.REG
+Removed from checksum: Links/Desktop.lnk
+Removed from checksum: ntuser.ini
+Removed from checksum: Searches/Indexed Locations.search-ms
+Removed from checksum: Desktop/desktop.ini
+Removed from checksum: MicrosoftEdgeBackups/backups/MicrosoftEdgeBackup20240204/MicrosoftEdgeSettingsBackup.txt
+Removed from checksum: Searches/Everywhere.search-ms
+Removed from checksum: init.bat
+Removed from checksum: DOWNLOAD/SKYPE_8_.EXE
+Removed from checksum: Music/FILE_001.MP3
+Removed from checksum: Pictures/desktop.ini
+Removed from checksum: DOWNLOAD/UTORRENT.EXE
+Removed from checksum: Pictures/Saved Pictures/desktop.ini
+Removed from checksum: DOWNLOAD/FIREFOX_.EXE
+Removed from checksum: Links/DOWNLOAD.LNK
+Removed from checksum: OneDrive/desktop.ini
+Removed from checksum: MicrosoftEdgeBackups/backups/MicrosoftEdgeBackup20240204/DatastoreBackup/edb00001.log
+Removed from checksum: Favorites/Links/desktop.ini
+Removed from checksum: Music/FILE_000.MP3
+Removed from checksum: 3D Objects/desktop.ini
+Removed from checksum: _BASH_HI
+Removed from checksum: Music/FILE_EXA.MP3
+Removed from checksum: MicrosoftEdgeBackups/backups/MicrosoftEdgeBackup20240204/MicrosoftEdgeCookiesBackup.dat
+Removed from checksum: FAVORITE/DESKTOP.INI
+Removed from checksum: DOWNLOAD/NPP_7_9_.EXE
+Removed from checksum: Searches/INDEXED_.SEA
+Removed from checksum: Searches/desktop.ini
+Found different signature from checksum: ntuser.dat.LOG1
+Removed from checksum: Searches/winrt--{S-1-5-21-3461203602-4096304019-2269080069-1000}-.searchconnector-ms
+Removed from checksum: ntuser.dat.LOG2
+Removed from checksum: FAVORITE/LINKS_FO/DESKTOP.INI
+Removed from checksum: Links/RECENTPL.LNK
+Removed from checksum: FAVORITE/LINKS/DESKTOP.INI
+Removed from checksum: Saved Games/desktop.ini
+Removed from checksum: Desktop/__TORREN.LNK
+Removed from checksum: DOCUMENT/DESKTOP.INI
+Removed from checksum: Desktop/OPERA_BR.LNK
+Removed from checksum: MicrosoftEdgeBackups/backups/MicrosoftEdgeBackup20240204/DatastoreBackup/schema.txt
+Removed from checksum: NTUSE000.REG
+Removed from checksum: NTUSER.DAT{1c3790b4-b8ad-11e8-aa21-e41d2d101530}.TMContainer00000000000000000002.regtrans-ms
+Removed from checksum: Searches/EVERYWHE.SEA
+Removed from checksum: Documents/desktop.ini
+Removed from checksum: Favorites/desktop.ini
+Removed from checksum: Downloads/desktop.ini
+Removed from checksum: MicrosoftEdgeBackups/backups/MicrosoftEdgeBackup20240204/Protected - It is a violation of Windows Policy to modify/Backup.dat
+Removed from checksum: DOWNLOAD/DESKTOP.INI
+Removed from checksum: Videos/desktop.ini
+Walking: /mnt/win10/Users/IEUser
+Walking: /mnt/win10/Users/IEUser/.ansible_async
+Walking: /mnt/win10/Users/IEUser/3D Objects
+Walking: /mnt/win10/Users/IEUser/ansible
+Walking: /mnt/win10/Users/IEUser/Contacts
+Walking: /mnt/win10/Users/IEUser/Desktop
+Walking: /mnt/win10/Users/IEUser/Desktop/ENCYC
+Walking: /mnt/win10/Users/IEUser/Desktop/ANOTHER
+Walking: /mnt/win10/Users/IEUser/Desktop/PERSO000
+Walking: /mnt/win10/Users/IEUser/Desktop/PERSONAL
+Walking: /mnt/win10/Users/IEUser/DOCUMENT
+Walking: /mnt/win10/Users/IEUser/Documents
+Walking: /mnt/win10/Users/IEUser/Documents/WindowsPowerShell
+Walking: /mnt/win10/Users/IEUser/Documents/WindowsPowerShell/Scripts
+Walking: /mnt/win10/Users/IEUser/Documents/WindowsPowerShell/Scripts/InstalledScriptInfos
+Walking: /mnt/win10/Users/IEUser/DOWNLOAD
+Walking: /mnt/win10/Users/IEUser/Downloads
+Walking: /mnt/win10/Users/IEUser/FAVORITE
+Walking: /mnt/win10/Users/IEUser/FAVORITE/LINKS
+Walking: /mnt/win10/Users/IEUser/FAVORITE/LINKS_FO
+Walking: /mnt/win10/Users/IEUser/FAVORITE/MICROSOF
+Walking: /mnt/win10/Users/IEUser/FAVORITE/MSN_WEBS
+Walking: /mnt/win10/Users/IEUser/FAVORITE/WINDOWS_
+Walking: /mnt/win10/Users/IEUser/Favorites
+Walking: /mnt/win10/Users/IEUser/Favorites/Links
+Walking: /mnt/win10/Users/IEUser/OneDrive
+Walking: /mnt/win10/Users/IEUser/Pictures
+Walking: /mnt/win10/Users/IEUser/Pictures/Saved Pictures
+Walking: /mnt/win10/Users/IEUser/Pictures/Camera Roll
+Walking: /mnt/win10/Users/IEUser/Saved Games
+Walking: /mnt/win10/Users/IEUser/SAVED_GA
+Walking: /mnt/win10/Users/IEUser/Searches
+Walking: /mnt/win10/Users/IEUser/Videos
+Walking: /mnt/win10/Users/IEUser/Videos/Captures
+Walking: /mnt/win10/Users/IEUser/_SSH
+Walking: /mnt/win10/Users/IEUser/Links
+Walking: /mnt/win10/Users/IEUser/MicrosoftEdgeBackups
+Walking: /mnt/win10/Users/IEUser/MicrosoftEdgeBackups/backups
+Walking: /mnt/win10/Users/IEUser/MicrosoftEdgeBackups/backups/MicrosoftEdgeBackup20240204
+Walking: /mnt/win10/Users/IEUser/MicrosoftEdgeBackups/backups/MicrosoftEdgeBackup20240204/DatastoreBackup
+Walking: /mnt/win10/Users/IEUser/MicrosoftEdgeBackups/backups/MicrosoftEdgeBackup20240204/FavoriteIcons
+Walking: /mnt/win10/Users/IEUser/MicrosoftEdgeBackups/backups/MicrosoftEdgeBackup20240204/Protected - It is a violation of Windows Policy to modify
+Walking: /mnt/win10/Users/IEUser/Music
+Checking: /mnt/win10/Users/IEUser/init.bat
+Checking: /mnt/win10/Users/IEUser/NTUSER.DAT{1c3790b4-b8ad-11e8-aa21-e41d2d101530}.TM.blf
+Checking: /mnt/win10/Users/IEUser/.vbox_version.lockbit
+Checking: /mnt/win10/Users/IEUser/NTUSER.DAT{1c3790b4-b8ad-11e8-aa21-e41d2d101530}.TMContainer00000000000000000001.regtrans-ms
+Checking: /mnt/win10/Users/IEUser/NTUSER.DAT{1c3790b4-b8ad-11e8-aa21-e41d2d101530}.TMContainer00000000000000000002.regtrans-ms
+Checking: /mnt/win10/Users/IEUser/ntuser.ini
+Checking: /mnt/win10/Users/IEUser/NTUSER_D.BLF
+Checking: /mnt/win10/Users/IEUser/NTUSER_D.REG
+Checking: /mnt/win10/Users/IEUser/_BASH_HI
+Checking: /mnt/win10/Users/IEUser/NTUSE000.REG
+Checking: /mnt/win10/Users/IEUser/NTUSER.DAT
+Checking: /mnt/win10/Users/IEUser/ntuser.dat.LOG1
+Checking: /mnt/win10/Users/IEUser/ntuser.dat.LOG2

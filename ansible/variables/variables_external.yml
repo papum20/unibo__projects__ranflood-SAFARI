@@ -26,12 +26,12 @@ vm_node: 'pve21'
 
 inventory_groups: 'windows'
 
-shutdown_timer: 320
+shutdown_timer: 620
   
 
 # optional tasks
 
-# avoid transfers if already exists
+# avoid transfers if already exists (only for larger files, not small or generated ones)
 transfer_force: false
 
 prepopulate_wsl: false

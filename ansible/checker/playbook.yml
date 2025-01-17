@@ -162,10 +162,10 @@
 
     # Finish
 
-    #- name: Smonta disco Windows
-    #  ansible.posix.mount:
-    #    path: "{{ path_mnt_win }}"
-    #    state: unmounted
+    - name: Smonta disco Windows
+      ansible.posix.mount:
+        path: "{{ path_mnt_win }}"
+        state: unmounted
 
     - name: Smonta storage condiviso
       ansible.posix.mount:
