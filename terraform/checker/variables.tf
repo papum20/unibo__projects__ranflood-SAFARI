@@ -46,7 +46,7 @@ variable "vm_id" {
 }
 
 variable "template_clones" {
-    type = list(string)
+    type = map(string)
     description = "Templates to clone the VMs from, in order (when necessary). Make sure that their order respects their relative node (target_nodes)."
 	validation {
         condition = length(var.target_nodes) == length(var.template_clones)
@@ -110,14 +110,17 @@ variable "vm_disk_size" {
 }
 
 variable "vm_disk_to_check_name" {
-	type = list(string)
-	description = "List of disks to be checked by each VM."
+	type = map(string)
+	description = "List of disks to be checked by each VM, each with its node."
 }
 
 
 locals {
 	# VMs number equals the disks to mount and check
 	vms_count = length(var.vm_disk_to_check_name)
+	# List of disks, to access them sequentially
+	disk_names = keys(var.vm_disk_to_check_name)
+	disk_nodes = values(var.vm_disk_to_check_name)
 	# indices of template and node to use
     node_indices = [
         for idx in range(local.vms_count) : idx % length(var.target_nodes)

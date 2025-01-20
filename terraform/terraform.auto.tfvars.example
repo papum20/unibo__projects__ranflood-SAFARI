@@ -35,10 +35,10 @@ target_nodes = [
 	"pve22"
 ]
 vm_id = 2000
-template_clones = [
-	"windows-java-21",
-	"windows-java-21-pve22"
-]
+template_clones = {
+	pve21 = "windows-java-21-init",
+	pve22 = "windows-java-21-init-pve22"
+}
 is_full_clone = false
 
 vm_memory = 8192

@@ -153,11 +153,11 @@ fi
 
 if [[ $mode == "flood" ]]; then
   ## Join
-  disk_names_str=$(printf "\"%s\", " "${disk_names[@]}")
+  disk_names_str=$(printf "%s, " "${disk_names[@]}")
   ## Remove the trailing comma and space
   disk_names_str=${disk_names_str%, }
-  sed -i "/^vm_disk_to_check_name = \[/,/^\]/ \
-    c\vm_disk_to_check_name = [\n  $disk_names_str\n]" \
+  sed -i "/^vm_disk_to_check_name = {/,/^}/ \
+    c\vm_disk_to_check_name = {\n  $disk_names_str\n}" \
     terraform/checker/terraform.auto.tfvars
 
   if [[ -z $disk_names_str ]]; then

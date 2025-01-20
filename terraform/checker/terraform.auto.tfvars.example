@@ -33,10 +33,10 @@ target_nodes = [
 	"pve22"
 ]
 vm_id = 2100
-template_clones = [
-	"checker-sss",
-	"checker-sss-pve22"
-]
+template_clones = {
+	pve21 = "checker-sss",
+	pve22 = "checker-sss-pve22"
+}
 is_full_clone = false
 
 vm_memory = 4096
@@ -62,9 +62,10 @@ vm_disk_size	= "32G"
 #
 # IMPORTANT: write the variable like this (i.e. on 3 lines),
 # so that the scripts can auto-generate the disks names.
-vm_disk_to_check_name = [
-  "local-lvm:vm-2000-disk-11", "local-lvm:vm-2000-disk-12"
-]
+vm_disk_to_check_name = {
+  "local-lvm:vm-2000-disk-11" = "pve21",
+  "local-lvm:vm-2000-disk-12" = "pve22" 
+}
 
 vm_scsihw = "virtio-scsi-pci"
 

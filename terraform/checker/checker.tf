@@ -22,11 +22,11 @@
 resource "proxmox_vm_qemu" "checker" {
 
     count = local.vms_count
-
+    
     name        = "${var.vm_name}-${count.index}"
-    target_node = var.target_nodes[local.node_indices[count.index]]
+    target_node = local.disk_nodes[count.index]
     vmid        = sum([var.vm_id, count.index])
-    clone       = var.template_clones[local.node_indices[count.index]]
+    clone       = var.template_clones[local.disk_nodes[count.index]]
     full_clone  = var.is_full_clone
 
     memory        = var.vm_memory
@@ -54,7 +54,7 @@ resource "proxmox_vm_qemu" "checker" {
         ide {
           ide0 {
             passthrough {
-              file = element(var.vm_disk_to_check_name, count.index)
+              file = local.disk_names[count.index]
             }
           }
         }

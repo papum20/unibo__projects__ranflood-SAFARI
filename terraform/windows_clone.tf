@@ -26,7 +26,7 @@ resource "proxmox_vm_qemu" "windows_clone" {
     name        = "${var.vm_name}-${count.index}"
     target_node = var.target_nodes[local.node_indices[count.index]]
     vmid        = sum([var.vm_id, count.index])
-    clone       = var.template_clones[local.node_indices[count.index]]
+    clone       = var.template_clones[var.target_nodes[local.node_indices[count.index]]]
     full_clone  = var.is_full_clone
 
     memory          = var.vm_memory
@@ -60,7 +60,7 @@ resource "proxmox_vm_qemu" "windows_clone" {
 
     provisioner "local-exec" {
         command = <<EOT
-            echo "vm_ip=${self.ssh_host} vm_id=${self.vmid} disk_name=${var.vm_disk_storage}:vm-${self.vmid}-disk-${self.disks[0].ide[0].ide0[0].disk[0].id}" >> vm.txt
+            echo "vm_ip=${self.ssh_host} vm_id=${self.vmid} disk_name=\"${var.vm_disk_storage}:vm-${self.vmid}-disk-${self.disks[0].ide[0].ide0[0].disk[0].id}\" = \"${self.target_node}\"" >> vm.txt
         EOT
     }
 

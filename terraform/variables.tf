@@ -50,7 +50,7 @@ variable "vm_id" {
 }
 
 variable "template_clones" {
-    type = list(string)
+    type = map(string)
     description = "Templates to clone the VMs from, for each node, in order (when necessary). Make sure that their order respects their relative node (target_nodes)."
     validation {
         condition = length(var.target_nodes) == length(var.template_clones)
