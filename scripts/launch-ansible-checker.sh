@@ -62,7 +62,7 @@ cd ${dir_ansible}
 
 # Run ansible
 
-ansible-playbook -vvv -i checker/inventory checker/playbook.yml \
+ansible-playbook -v -i checker/inventory checker/playbook.yml \
 	--extra-vars "@variables/${name_ansible_variables}" \
 	--extra-vars "@variables/${variables_credentials}" \
 	--extra-vars "@checker/${variables_checker}" \

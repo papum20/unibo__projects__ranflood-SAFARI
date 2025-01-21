@@ -89,93 +89,138 @@ else
 fi
 
 
+function launch-function() {
 
-#
-# Terraform
-#
+  #
+  # Terraform
+  #
 
-cd $dir_terraform
+  cd $dir_terraform
 
 
-echo "[Terraform] Launching terraform"
+  echo "[Terraform] Launching terraform"
 
-if [[ $delete_only == true || $terraform_delete == true ]]; then
-  # clean previous VMs data
-  rm ${out_terraform_filename}
-  
-  echo "[Terraform] Deleting previous VMs"
-  terraform destroy -auto-approve
-fi
+  if [[ $delete_only == true || $terraform_delete == true ]]; then
+    # clean previous VMs data
+    rm ${out_terraform_filename}
+    
+    echo "[Terraform] Deleting previous VMs"
+    terraform destroy -auto-approve
+  fi
 
-if [[ $delete_only == true ]]; then
-  echo "[Terraform] Deleting only, skipping all."
-  exit 0
-fi
+  if [[ $delete_only == true ]]; then
+    echo "[Terraform] Deleting only, skipping all."
+    exit 0
+  fi
 
-if [[ $terraform_manual == false ]]; then
-  echo "[Terraform] Provisioning new VMs"
-  terraform apply -auto-approve
-fi
+  if [[ $terraform_manual == false ]]; then
+    echo "[Terraform] Provisioning new VMs"
+    terraform apply -auto-approve
+  fi
 
-cd $dir_current
+  cd $dir_current
 
-# generate ansible variables
-if [[ $mode == "flood" ]]; then
-  source scripts/read-vms.sh
-else 
-  source scripts/read-vms.sh -c
-fi
+  # generate ansible variables
+  if [[ $mode == "flood" ]]; then
+    source scripts/read-vms.sh
+  else 
+    source scripts/read-vms.sh -c
+  fi
 
-{
-  echo "vm_ids:"
-  for id in "${vm_ids[@]}"; do
-    echo "  - $id"
-  done
-} > "${dir_ansible_variables}/${name_variables_ids}"
+  {
+    echo "vm_ids:"
+    for id in "${vm_ids[@]}"; do
+      echo "  - $id"
+    done
+  } > "${dir_ansible_variables}/${name_variables_ids}"
 
-last_ip=
-{
-  echo "vm_ips:"
-  for ip in "${vm_ips[@]}"; do
-    echo "  - $ip"
-    last_ip=$ip
+  last_ip=
+  {
+    echo "vm_ips:"
+    for ip in "${vm_ips[@]}"; do
+      echo "  - $ip"
+      last_ip=$ip
 
-    # Remove known host, to avoid conflicts in ansible
-    ssh-keygen -R $ip 1>/dev/null 2>&1
-  done
-} > "${dir_ansible_variables}/${name_variables_ips}"
+      # Remove known host, to avoid conflicts in ansible
+      ssh-keygen -R $ip 1>/dev/null 2>&1
+    done
+  } > "${dir_ansible_variables}/${name_variables_ips}"
 
-# exit if last ip is empty
-if [[ -z $last_ip ]]; then
-  echo "[Error] No VMs were created. Please edit manually vm.txt and retry with -m."
-  exit 1
-fi
-
-if [[ $mode == "flood" ]]; then
-  ## Join
-  disk_names_str=$(printf "%s, " "${disk_names[@]}")
-  ## Remove the trailing comma and space
-  disk_names_str=${disk_names_str%, }
-  sed -i "/^vm_disk_to_check_name = {/,/^}/ \
-    c\vm_disk_to_check_name = {\n  $disk_names_str\n}" \
-    terraform/checker/terraform.auto.tfvars
-
-  if [[ -z $disk_names_str ]]; then
-    echo "[Error] No disks were created. Please edit manually vm.txt and retry with -m."
+  # exit if last ip is empty
+  if [[ -z $last_ip ]]; then
+    echo "[Error] No VMs were created. Please edit manually vm.txt and retry with -m."
     exit 1
   fi
+
+  # old version, if checker VMs worked normally
+  #
+  #if [[ $mode == "flood" ]]; then
+  #  ## Join
+  #  disk_names_str=$(printf "%s, " "${disk_names[@]}")
+  #  ## Remove the trailing comma and space
+  #  disk_names_str=${disk_names_str%, }
+  #  sed -i "/^vm_disk_to_check_name = {/,/^}/ \
+  #    c\vm_disk_to_check_name = {\n  $disk_names_str\n}" \
+  #    terraform/checker/terraform.auto.tfvars
+  #
+  #  if [[ -z $disk_names_str ]]; then
+  #    echo "[Error] No disks were created. Please edit manually vm.txt and retry with -m."
+  #    exit 1
+  #  fi
+  #fi
+
+  if [[ $mode == "flood" ]]; then
+    disk_names_str=$(printf "%s, " "${disk_names[@]}")
+    ## Remove the trailing comma and space
+    disk_names_str=${disk_names_str%, }
+    if [[ -z $disk_names_str ]]; then
+      echo "[Error] No disks were created. Please edit manually vm.txt and retry with -m."
+      exit 1
+    fi
+  fi
+
+
+  #
+  # Ansible
+  #
+
+
+  ## sometimes it won't connect, try to wait first
+  sleep 10
+
+  echo "[Ansible] Launching ansible"
+  "./scripts/${script_ansible}" -y
+
+}
+
+
+
+if [[ $mode == "flood" ]]; then
+  launch-function
+
+elif [[ $delete_only == false ]]; then
+  # iterate over lines of vm.txt for windows  
+  out_vmip=vm_ip
+  out_vmid=vm_id
+  out_diskname=disk_name
+  while IFS= read -r line; do
+    if [[ $line =~ ${out_vmip}=([0-9\.]+)\ ${out_vmid}=([0-9]+)\ ${out_diskname}=(.*) ]]; then
+      win_vm_ip=("${BASH_REMATCH[1]}")
+      win_vm_id=("${BASH_REMATCH[2]}")
+      win_disk_name=("${BASH_REMATCH[3]}")
+
+      if [[ -z $win_disk_name ]]; then
+        echo "[Error] No disks were created. Please edit manually vm.txt and retry with -m."
+        exit 1
+      else 
+        echo "[Info] Checker, found Windows VM: $win_vm_ip, $win_vm_id, $win_disk_name"
+      fi
+
+      sed -i "/^vm_disk_to_check_name = {/,/^}/ \
+        c\vm_disk_to_check_name = {\n  $win_disk_name\n}" \
+        terraform/checker/terraform.auto.tfvars
+
+      launch-function
+    fi
+  done < terraform/vm.txt
 fi
-
-
-#
-# Ansible
-#
-
-
-## sometimes it won't connect, try to wait first
-sleep 10
-
-echo "[Ansible] Launching ansible"
-"./scripts/${script_ansible}" -y
-
-
