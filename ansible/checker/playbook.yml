@@ -49,23 +49,23 @@
         state: mounted
         fstype: ntfs
 
-    - name: Crea partizione storage condiviso
-      community.general.parted:
-        device: /dev/sdc
-        number: 1
-        state: present
-
-    - name: Formatta partizione storage condiviso
-      community.general.filesystem:
-        dev: /dev/sdc1
-        fstype: ext4
-
-    - name: Monta storage condiviso
-      ansible.posix.mount:
-        path: /mnt/shared
-        src: /dev/sdc1
-        state: mounted
-        fstype: ext4
+    #- name: Crea partizione storage condiviso
+    #  community.general.parted:
+    #    device: /dev/sdc
+    #    number: 1
+    #    state: present
+#
+    #- name: Formatta partizione storage condiviso
+    #  community.general.filesystem:
+    #    dev: /dev/sdc1
+    #    fstype: ext4
+#
+    #- name: Monta storage condiviso
+    #  ansible.posix.mount:
+    #    path: /mnt/shared
+    #    src: /dev/sdc1
+    #    state: mounted
+    #    fstype: ext4
 
 
     # Filechecker
@@ -97,23 +97,6 @@
           > {{ path_log_filechecker_out }} 2>&1
         chdir: "{{ remote_working_dir_filechecker }}"
       when: do_restore and restore_delete
-
-
-    # Transfer to shared storage
-
-    - name: Trasferisci report nello storage condiviso
-      ansible.builtin.copy:
-        src: "{{ path_report }}"
-        dest: /mnt/shared/
-        remote_src: true
-      when: do_check or do_restore
-
-    - name: Trasferisci report-shards nello storage condiviso
-      ansible.builtin.copy:
-        src: "{{ path_report_shards }}"
-        dest: /mnt/shared/
-        remote_src: true
-      when: do_restore
 
 
     # Fill output directory
@@ -160,6 +143,24 @@
       when: do_restore
 
 
+    # Transfer to shared storage
+    # NOTE: should change names for parallel runs
+
+    #- name: Trasferisci report nello storage condiviso
+    #  ansible.builtin.copy:
+    #    src: "{{ path_report }}"
+    #    dest: /mnt/shared/
+    #    remote_src: true
+    #  when: do_check or do_restore
+
+    #- name: Trasferisci report-shards nello storage condiviso
+    #  ansible.builtin.copy:
+    #    src: "{{ path_report_shards }}"
+    #    dest: /mnt/shared/
+    #    remote_src: true
+    #  when: do_restore
+
+
     # Finish
 
     - name: Smonta disco Windows
@@ -167,7 +168,7 @@
         path: "{{ path_mnt_win }}"
         state: unmounted
 
-    - name: Smonta storage condiviso
-      ansible.posix.mount:
-        path: /mnt/shared
-        state: unmounted
+    #- name: Smonta storage condiviso
+    #  ansible.posix.mount:
+    #    path: /mnt/shared
+    #    state: unmounted

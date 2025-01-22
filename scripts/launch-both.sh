@@ -14,23 +14,26 @@ ceil_divide() {
 
 # test(bool TERRAFORM_MANUAL)
 function test() {
-  echo $1
   if [[ $1 == true ]]; then
-    ./scripts/launch.sh -c -D && \
-      ./scripts/launch.sh -m && \
-      ./scripts/launch.sh -c -d
+    ./scripts/launch.sh -c -D -l "$path_log" && \
+      ./scripts/launch.sh -m -l "$path_log" && \
+      ./scripts/launch.sh -c -d -l "$path_log"
   else
-    ./scripts/launch.sh -c -D && \
-      ./scripts/launch.sh -d && \
-      ./scripts/launch.sh -c -d
+    ./scripts/launch.sh -c -D -l "$path_log" && \
+      ./scripts/launch.sh -d -l "$path_log" && \
+      ./scripts/launch.sh -c -d -l "$path_log"
   fi
 }
 
 
+timestamp=$(date +'%Y%m%d-%H_%M_%S')
+
 # max number of tests which can be executed in parallel (set manually in terraform)
-tests_parallel=1
-path_out=out/launch-both.log
+tests_parallel=2
+path_out="${PWD}/out/launch-both_${timestamp}.out"
+path_log="${PWD}/out/launch-both_${timestamp}.log"
 mkdir out
+
 
 
 #
@@ -75,22 +78,22 @@ if [[ -n "$1" ]]; then
 fi
 
 test_batches_n=$(ceil_divide $tests_n $tests_parallel)
-echo "Running $tests_n tests in $test_batches_n batches of $tests_parallel tests each..."
+echo "Running $tests_n tests in $test_batches_n batches of $tests_parallel tests each..." | tee -a "$path_log"
 
 
 test_completed=0
 
 # Loop for the number of tests
 for ((i=1; i<=test_batches_n; i++)); do
-  echo "Running test $i of $tests_n"
+  echo "Running test $i of $tests_n" | tee -a "$path_log"
   test $terraform_manual
   tests_completed=$((tests_completed+tests_parallel))
-  echo "Test batch completed: $i (tot: $tests_completed / $tests_n)"
+  echo "Test batch completed: $i (tot: $tests_completed / $tests_n)" | tee -a "$path_log"
   # write down new ips
   source scripts/read-vms.sh
-  echo "[$(date +'%Y%m%d-%H_%M_%S')] windows IPs: ${vm_ips[@]}" >> "$path_out"
+  echo "[$(date +'%Y%m%d-%H_%M_%S')] windows IPs: ${vm_ips[@]}" | tee -a "$path_log" >> "$path_out"
   source scripts/read-vms.sh -c
-  echo "[$(date +'%Y%m%d-%H_%M_%S')] checker IPs: ${vm_ips[@]}" >> "$path_out"
+  echo "[$(date +'%Y%m%d-%H_%M_%S')] checker IPs: ${vm_ips[@]}" | tee -a "$path_log" >> "$path_out"
 done
 
-echo "Completed tests: $tests_completed / $tests_n"
+echo "Completed tests: $tests_completed / $tests_n" | tee -a "$path_log"

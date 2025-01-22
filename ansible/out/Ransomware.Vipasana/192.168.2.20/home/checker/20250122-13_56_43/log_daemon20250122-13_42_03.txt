@@ -1,0 +1,345 @@
+3G C:\Users\settings.ini
+| [main] INFO org.ranflood.daemon.Ranflood.main
+| Ranflood Daemon (ranfloodd) version 0.7-BETA started.
+
+| [main] INFO org.ranflood.daemon.RanfloodDaemon.start
+| Server started at tcp://localhost:7890, accepting requests from clients
+
+| [main] INFO org.ranflood.daemon.RanfloodDaemon.start
+| HTTP server started on port 8081
+
+| [main] INFO jetty-11.0.15; built: 2023-04-11T18:37:53.775Z; git: 5bc5e562c8d05c5862505aebe5cf83a61bdbcb96; jvm 21.0.5+9-LTS-239
+| [main] INFO Session workerName=node0
+| [main] INFO Started o.e.j.s.ServletContextHandler@3e0e1046{/,null,AVAILABLE}
+| [main] INFO Started ServerConnector@368f2016{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+| [main] INFO Started Server@11c9af63{STARTING}[11.0.15,sto=0] @11264ms
+| [pool-2-thread-1] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Server received [{"command":"flood","subcommand":"start","parameters":{"method":"SSS_RANSOMWARE","path":"C:\\Users\\IEUser\\DOCUMENT"}}]
+
+| [pool-2-thread-2] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Launched SSS_RANSOMWARE flood, ID: 4cb6188f-406a-4a8b-8d42-d1bc4a157994
+
+| [pool-2-thread-2] INFO Interruptible file channel will be used
+java.lang.reflect.InaccessibleObjectException: Unable to make public void sun.nio.ch.FileChannelImpl.setUninterruptible() accessible: module java.base does not "exports sun.nio.ch" to unnamed module @53fe15ff
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:391)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:367)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:315)
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:203)
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:197)
+	at jetbrains.exodus.io.FileDataWriter$Companion$setUninterruptibleMethod$1.invoke(FileDataWriter.kt:188)
+	at jetbrains.exodus.io.FileDataWriter$Companion$setUninterruptibleMethod$1.invoke(FileDataWriter.kt:185)
+	at jetbrains.exodus.util.UnsafeHolder.doPrivileged$lambda-0(UnsafeHolder.kt:30)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at jetbrains.exodus.util.UnsafeHolder.doPrivileged(UnsafeHolder.kt:29)
+	at jetbrains.exodus.io.FileDataWriter.<clinit>(FileDataWriter.kt:185)
+	at jetbrains.exodus.io.FileDataReaderWriterProvider.newFileDataWriter(FileDataReaderWriterProvider.kt:48)
+	at jetbrains.exodus.io.FileDataReaderWriterProvider.newReaderWriter(FileDataReaderWriterProvider.kt:30)
+	at jetbrains.exodus.log.LogConfig.createReaderWriter(LogConfig.java:359)
+	at jetbrains.exodus.log.LogConfig.getReader(LogConfig.java:125)
+	at jetbrains.exodus.log.Log.<init>(Log.kt:52)
+	at jetbrains.exodus.env.Environments.newLogInstance(Environments.kt:117)
+	at jetbrains.exodus.env.Environments.newLogInstance(Environments.kt:81)
+	at jetbrains.exodus.env.Environments.newLogInstance(Environments.kt:77)
+	at jetbrains.exodus.env.Environments$newInstance$4.invoke(Environments.kt:46)
+	at jetbrains.exodus.env.Environments$newInstance$4.invoke(Environments.kt:46)
+	at jetbrains.exodus.env.Environments.prepare(Environments.kt:120)
+	at jetbrains.exodus.env.Environments.newInstance(Environments.kt:46)
+	at jetbrains.exodus.env.Environments.newInstance(Environments.kt:43)
+	at org.ranflood.daemon.flooders.onTheFly.OnTheFlySnapshooter.<init>(OnTheFlySnapshooter.java:50)
+	at org.ranflood.daemon.flooders.onTheFly.OnTheFlySnapshooter.<clinit>(OnTheFlySnapshooter.java:44)
+	at org.ranflood.daemon.flooders.SSS.SSSSnapshooter.getSnapshot(SSSSnapshooter.java:51)
+	at org.ranflood.daemon.flooders.SSS.SSSFloodTask.loadWriteFileTasks(SSSFloodTask.java:133)
+	at org.ranflood.daemon.flooders.SSS.SSSFloodTask.lambda$loadWriteFileTasks$0(SSSFloodTask.java:176)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+| [pool-2-thread-2] WARN Can't open directory channel. Log directory fsync won't be performed.
+| [pool-3-thread-2] INFO io.reactivex.rxjava3.internal.subscribers.LambdaSubscriber.onNext
+| Task 4cb6188f-406a-4a8b-8d42-d1bc4a157994 has 0 remaining tasks, stopping it
+
+| [pool-3-thread-2] INFO org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Removed flood task: 4cb6188f-406a-4a8b-8d42-d1bc4a157994
+
+| [pool-2-thread-2] INFO Exodus environment created: C:\Program Files\Ranflood\ranflood_testsite\signatures.db
+| [pool-2-thread-2] INFO Queueing ComputeUtilizationFromScratchJob
+| [pool-2-thread-4] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Server received [{"command":"flood","subcommand":"start","parameters":{"method":"SSS_RANSOMWARE","path":"C:\\Users\\IEUser\\DOWNLOAD"}}]
+
+| [pool-2-thread-4] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Launched SSS_RANSOMWARE flood, ID: abb4e913-ae92-45ee-80c8-f6aad3fce224
+
+| [pool-2-thread-3] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Server received [{"command":"flood","subcommand":"start","parameters":{"method":"SSS_RANSOMWARE","path":"C:\\Users\\IEUser\\Desktop"}}]
+
+| [pool-2-thread-3] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Launched SSS_RANSOMWARE flood, ID: f175ae0c-f685-42d2-823b-8a8016f6d421
+
+| [Exodus shared background cleaner] INFO Started calculation of log utilization from scratch at C:\Program Files\Ranflood\ranflood_testsite\signatures.db
+| [Exodus shared background cleaner] INFO Finished calculation of log utilization from scratch at C:\Program Files\Ranflood\ranflood_testsite\signatures.db
+| [pool-2-thread-4] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Server received [{"command":"flood","subcommand":"start","parameters":{"method":"SSS_RANSOMWARE","path":"C:\\Users\\IEUser\\Documents"}}]
+
+| [pool-2-thread-4] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Launched SSS_RANSOMWARE flood, ID: 0c0d8c4d-e8b9-462e-8cdf-136f01679af6
+
+| [pool-2-thread-4] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Server received [{"command":"flood","subcommand":"start","parameters":{"method":"SSS_RANSOMWARE","path":"C:\\Users\\IEUser\\Downloads"}}]
+
+| [pool-2-thread-4] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Launched SSS_RANSOMWARE flood, ID: 5eaa586e-d731-4b3d-b0ce-9e2c5f181d37
+
+| [pool-2-thread-4] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Server received [{"command":"flood","subcommand":"start","parameters":{"method":"SSS_RANSOMWARE","path":"C:\\Users\\IEUser\\Music"}}]
+
+| [pool-2-thread-1] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Launched SSS_RANSOMWARE flood, ID: 6897ca3b-6607-4809-9018-ad5491b8a5c4
+
+| [pool-2-thread-7] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Server received [{"command":"flood","subcommand":"start","parameters":{"method":"SSS_RANSOMWARE","path":"C:\\Users\\IEUser\\My Documents"}}]
+
+| [pool-2-thread-4] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Launched SSS_RANSOMWARE flood, ID: ce9bc5d2-205c-4a2d-8731-ea80b99bc1d7
+
+| [pool-2-thread-1] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Server received [{"command":"flood","subcommand":"start","parameters":{"method":"SSS_RANSOMWARE","path":"C:\\Users\\IEUser\\OneDrive"}}]
+
+| [pool-2-thread-2] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Launched SSS_RANSOMWARE flood, ID: ea4c3954-3d25-46f3-976d-da1dcdf4e43c
+
+| [pool-2-thread-6] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Server received [{"command":"flood","subcommand":"start","parameters":{"method":"SSS_RANSOMWARE","path":"C:\\Users\\IEUser\\Pictures"}}]
+
+| [pool-2-thread-8] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Launched SSS_RANSOMWARE flood, ID: 6592ad2e-1b3c-4164-87da-83f6f2780725
+
+| [pool-2-thread-3] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Server received [{"command":"flood","subcommand":"start","parameters":{"method":"SSS_RANSOMWARE","path":"C:\\Users\\IEUser\\PrintHood"}}]
+
+| [pool-2-thread-7] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Launched SSS_RANSOMWARE flood, ID: 399b928d-8a87-4590-a975-be8fcd5e5565
+
+| [pool-2-thread-4] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Server received [{"command":"flood","subcommand":"start","parameters":{"method":"SSS_RANSOMWARE","path":"C:\\Users\\IEUser\\SAVED_GA"}}]
+
+| [pool-2-thread-8] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Launched SSS_RANSOMWARE flood, ID: b50cd430-de8e-462d-acc0-532bf8be1f70
+
+| [pool-2-thread-2] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Server received [{"command":"flood","subcommand":"start","parameters":{"method":"SSS_RANSOMWARE","path":"C:\\Users\\IEUser\\SendTo"}}]
+
+| [pool-2-thread-6] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Launched SSS_RANSOMWARE flood, ID: 62455dbf-48e0-4f58-81d3-c8ad3a001790
+
+| [pool-2-thread-2] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Server received [{"command":"flood","subcommand":"start","parameters":{"method":"SSS_RANSOMWARE","path":"C:\\Users\\IEUser\\Videos"}}]
+
+| [pool-2-thread-8] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Launched SSS_RANSOMWARE flood, ID: ba658772-8f6f-4f64-83aa-2cfff1dcd77b
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 0/8): C:\Users\IEUser\Desktop\4465CDCE.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 1/8): C:\Users\IEUser\Desktop\4465CDCE.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 2/8): C:\Users\IEUser\Desktop\4465CDCE.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 3/8): C:\Users\IEUser\Desktop\4465CDCE.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 4/8): C:\Users\IEUser\Desktop\4465CDCE.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 5/8): C:\Users\IEUser\Desktop\4465CDCE.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 6/8): C:\Users\IEUser\Desktop\4465CDCE.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 7/8): C:\Users\IEUser\Desktop\4465CDCE.DUM
+
+| [pool-3-thread-3] INFO io.reactivex.rxjava3.internal.subscribers.LambdaSubscriber.onNext
+| Task 399b928d-8a87-4590-a975-be8fcd5e5565 has 0 remaining tasks, stopping it
+
+| [pool-3-thread-3] INFO org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Removed flood task: 399b928d-8a87-4590-a975-be8fcd5e5565
+
+Exception in thread "HTTP-Dispatcher" java.lang.OutOfMemoryError: Java heap space
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 0/8): C:\Users\IEUser\Desktop\01F22128.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 1/8): C:\Users\IEUser\Desktop\01F22128.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 2/8): C:\Users\IEUser\Desktop\01F22128.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 3/8): C:\Users\IEUser\Desktop\01F22128.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 4/8): C:\Users\IEUser\Desktop\01F22128.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 5/8): C:\Users\IEUser\Desktop\01F22128.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 6/8): C:\Users\IEUser\Desktop\01F22128.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 7/8): C:\Users\IEUser\Desktop\01F22128.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 0/8): C:\Users\IEUser\Desktop\4C7C1D2F.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 1/8): C:\Users\IEUser\Desktop\4C7C1D2F.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 2/8): C:\Users\IEUser\Desktop\4C7C1D2F.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 3/8): C:\Users\IEUser\Desktop\4C7C1D2F.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 4/8): C:\Users\IEUser\Desktop\4C7C1D2F.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 5/8): C:\Users\IEUser\Desktop\4C7C1D2F.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 6/8): C:\Users\IEUser\Desktop\4C7C1D2F.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 7/8): C:\Users\IEUser\Desktop\4C7C1D2F.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 0/8): C:\Users\IEUser\Desktop\0A8AE703.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 1/8): C:\Users\IEUser\Desktop\0A8AE703.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 2/8): C:\Users\IEUser\Desktop\0A8AE703.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 3/8): C:\Users\IEUser\Desktop\0A8AE703.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 4/8): C:\Users\IEUser\Desktop\0A8AE703.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 5/8): C:\Users\IEUser\Desktop\0A8AE703.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 6/8): C:\Users\IEUser\Desktop\0A8AE703.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 7/8): C:\Users\IEUser\Desktop\0A8AE703.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 0/8): C:\Users\IEUser\Desktop\43D8E93F.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 1/8): C:\Users\IEUser\Desktop\43D8E93F.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 2/8): C:\Users\IEUser\Desktop\43D8E93F.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 3/8): C:\Users\IEUser\Desktop\43D8E93F.DUM
+
+| [Exodus shared timer thread] ERROR Java heap space
+java.lang.OutOfMemoryError: Java heap space
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 4/8): C:\Users\IEUser\Desktop\43D8E93F.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 5/8): C:\Users\IEUser\Desktop\43D8E93F.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 6/8): C:\Users\IEUser\Desktop\43D8E93F.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 7/8): C:\Users\IEUser\Desktop\43D8E93F.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 0/8): C:\Users\IEUser\Documents\My Music\FILE_001.MP3
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 1/8): C:\Users\IEUser\Documents\My Music\FILE_001.MP3
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 2/8): C:\Users\IEUser\Documents\My Music\FILE_001.MP3
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 3/8): C:\Users\IEUser\Documents\My Music\FILE_001.MP3
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 4/8): C:\Users\IEUser\Documents\My Music\FILE_001.MP3
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 5/8): C:\Users\IEUser\Documents\My Music\FILE_001.MP3
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 6/8): C:\Users\IEUser\Documents\My Music\FILE_001.MP3
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 7/8): C:\Users\IEUser\Documents\My Music\FILE_001.MP3
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 0/8): C:\Users\IEUser\Music\FILE_001.MP3
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 1/8): C:\Users\IEUser\Music\FILE_001.MP3
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 2/8): C:\Users\IEUser\Music\FILE_001.MP3
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 3/8): C:\Users\IEUser\Music\FILE_001.MP3
+
+| [Exodus shared timer thread] ERROR Java heap space
+java.lang.OutOfMemoryError: Java heap space
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 4/8): C:\Users\IEUser\Music\FILE_001.MP3
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 5/8): C:\Users\IEUser\Music\FILE_001.MP3
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 6/8): C:\Users\IEUser\Music\FILE_001.MP3
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 7/8): C:\Users\IEUser\Music\FILE_001.MP3
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 0/8): C:\Users\IEUser\Desktop\7934FE27.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 1/8): C:\Users\IEUser\Desktop\7934FE27.DUM
+
+| [Exodus shared timer thread] ERROR Java heap space
+java.lang.OutOfMemoryError: Java heap space
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 2/8): C:\Users\IEUser\Desktop\7934FE27.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 3/8): C:\Users\IEUser\Desktop\7934FE27.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 4/8): C:\Users\IEUser\Desktop\7934FE27.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 5/8): C:\Users\IEUser\Desktop\7934FE27.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 6/8): C:\Users\IEUser\Desktop\7934FE27.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 7/8): C:\Users\IEUser\Desktop\7934FE27.DUM
+

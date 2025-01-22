@@ -1,0 +1,30 @@
+Running 7 tests in 7 batches of 1 tests each...
+Running test 1 of 7
+Test batch completed: 1 (tot: 1 / 7)
+[20250122-10_19_46] windows IPs: 
+[20250122-10_19_46] checker IPs: 192.168.2.66
+Running test 2 of 7
+Test batch completed: 2 (tot: 2 / 7)
+[20250122-10_19_46] windows IPs: 
+[20250122-10_19_46] checker IPs: 192.168.2.66
+Running test 3 of 7
+Test batch completed: 3 (tot: 3 / 7)
+[20250122-10_19_46] windows IPs: 
+[20250122-10_19_46] checker IPs: 192.168.2.66
+Running test 4 of 7
+Test batch completed: 4 (tot: 4 / 7)
+[20250122-10_19_46] windows IPs: 
+[20250122-10_19_46] checker IPs: 192.168.2.66
+Running test 5 of 7
+Test batch completed: 5 (tot: 5 / 7)
+[20250122-10_19_46] windows IPs: 
+[20250122-10_19_46] checker IPs: 192.168.2.66
+Running test 6 of 7
+Test batch completed: 6 (tot: 6 / 7)
+[20250122-10_19_46] windows IPs: 
+[20250122-10_19_46] checker IPs: 192.168.2.66
+Running test 7 of 7
+Test batch completed: 7 (tot: 7 / 7)
+[20250122-10_19_46] windows IPs: 
+[20250122-10_19_46] checker IPs: 192.168.2.66
+Completed tests: 7 / 7
