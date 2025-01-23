@@ -73,7 +73,7 @@
     - name: Filechecker check
       ansible.builtin.command:
         cmd: >
-          java -jar {{ path_filechecker }} check {{ remote_working_directory_checker }}cleanWindowsChecksum {{ path_report }} {{ target_dir }}
+          java -Xmx5G -jar {{ path_filechecker }} check {{ remote_working_directory_checker }}cleanWindowsChecksum {{ path_report }} {{ target_dir }}
           > {{ path_log_filechecker_out }} 2>&1
         chdir: "{{ remote_working_dir_filechecker }}"
       when: do_check
@@ -81,7 +81,7 @@
     - name: Filechecker sss restore
       ansible.builtin.shell:
         cmd: >
-          java -jar {{ path_filechecker }} restore --debug -l={{ path_log_filechecker }} -e={{ target_dir }}/AppData --dry-run
+          java -Xmx5G -jar {{ path_filechecker }} restore --debug -l={{ path_log_filechecker }} -e={{ target_dir }}/AppData --dry-run
           --windows-letter=C -w=/mnt/win10/
           {{ remote_working_directory_checker }}cleanWindowsChecksum {{ path_report_shards }} {{ path_report }} {{ target_dir }}
           > {{ path_log_filechecker_out }} 2>&1
@@ -91,7 +91,7 @@
     - name: Filechecker sss restore with delete
       ansible.builtin.shell:
         cmd: >
-          java -jar {{ path_filechecker }} restore --debug -l={{ path_log_filechecker }} -e={{ target_dir }}/AppData --dry-run --delete
+          java -Xmx5G -jar {{ path_filechecker }} restore --debug -l={{ path_log_filechecker }} -e={{ target_dir }}/AppData --dry-run --delete
           --windows-letter=C -w=/mnt/win10/
           {{ remote_working_directory_checker }}cleanWindowsChecksum {{ path_report_shards }} {{ path_report }} {{ target_dir }}
           > {{ path_log_filechecker_out }} 2>&1

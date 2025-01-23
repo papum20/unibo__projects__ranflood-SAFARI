@@ -35,6 +35,7 @@
           - ms_lldp
           - ms_msclient
           - ms_pacer
+      when: "true"
 
     #
     # Ranfloodd
@@ -127,12 +128,6 @@
     - name: Ransomware - execution result
       ansible.builtin.debug:
         var: ransomware_execution_results
-
-    - name: Start ransomware
-      ansible.windows.win_command:
-        cmd: "{{ path_ransomware_win }}"
-      async: 1800
-      poll: 0
 
     #
     # Ranflood client
