@@ -108,6 +108,12 @@
         recurse: false
       register: log_files
 
+    - name: Fail if no log_daemon file found
+      ansible.builtin.fail:
+        msg: "No log_daemon file found!"
+      when: log_files.files | selectattr('path', 'search', 'log_daemon.*') | list | length == 0
+
+
     - name: Copy log files to output directory
       ansible.builtin.copy:
         src: "{{ item.path }}"

@@ -105,19 +105,41 @@
       ansible.builtin.debug:
         msg: "{{ command_output }}"
 
-    - name: Check for ransomware dir
-      ansible.windows.win_stat:
-        path: "{{ path_ransomware_dir_win }}"
-      register: internal_file
+    #
+    # Checks
+    #
 
-    - name: Fail if ransomware dir was not created by internal playbook
-      ansible.builtin.fail:
-        msg: "WSL error (ransomware dir doens't exist)"
-      when: internal_file.stat.exists
+    # checks only if not disabling network
+
+    ##- name: Wait for ransomware files to be created 
+    ##  ansible.builtin.pause:
+    ##    seconds: 60
+
+    ##- name: Check for ransomware dir
+    ##  ansible.windows.win_stat:
+    ##    path: "{{ path_ransomware_dir_win }}"
+    ##  register: internal_file
+
+    ##- name: Fail if ransomware dir was not created by internal playbook
+    ##  ansible.builtin.fail:
+    ##    msg: "WSL error (ransomware dir doens't exist)"
+    ##  when: internal_file.stat.exists
+
+    ##- name: Find files in ransomware dir
+    ##  ansible.windows.win_find:
+    ##    paths: "{{ path_ransomware_dir_win }}"
+    ##  register: ransomware_dir_contents
+    ##  when: internal_file.stat.exists
+
+    ##- name: Fail if ransomware dir is empty
+    ##  ansible.builtin.fail:
+    ##    msg: "The directory {{ path_ransomware_dir_win }} is empty."
+    ##  when: ransomware_dir_contents.matched == 0
 
 
 - hosts: localhost
   tasks:
+
     - name: Shutdown VMs
       import_tasks: playbooks/tasks/vm-shutdown.yml
       when: shutdown
