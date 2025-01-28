@@ -29,8 +29,37 @@
       import_tasks: playbooks/tasks/vm-started.yml
 
 
+    - name: Test wsl
+      ansible.builtin.command: sshpass -pPassw0rd! ssh -o StrictHostKeyChecking=no IEUser@{{ item }} wsl --help
+      loop: "{{ vm_ips }}"
+      ignore_errors: true
+      failed_when: false
+
+
 - hosts: windows
   tasks:
+
+    #- name: Test wsl
+    #  ansible.windows.win_shell: 'wsl'
+    #  ignore_errors: true
+    #  failed_when: false
+#
+    #- name: Test wsl log
+    #  ansible.windows.win_shell: 'type {{ remote_working_directory_win }}\test_wsl.log'
+    #  register: command_output_test_wsl_log
+    #  failed_when: false
+#
+    #- name: Display the output of the command (test wsl)
+    #  ansible.builtin.debug:
+    #    msg: "{{ command_output_test_wsl_log.stdout_lines }}"
+    #  failed_when: false
+#
+    #- name: Fetch test wsl log
+    #  ansible.builtin.fetch:
+    #    src: '{{ remote_working_directory_win }}\test_wsl.log'
+    #    dest: "{{ local_working_directory }}"
+    #    flat: true
+    #  failed_when: false
 
     # From documentation:
     # If path is a directory, it is copied (including the source folder name) recursively to dest.
@@ -82,28 +111,27 @@
         cmd: "{{ remote_working_directory_win }}{{ name_prepopulate_script }}"
       when: prepopulate_wsl
 
-    - name: Test wsl
-      ansible.windows.win_command:
-        cmd: "wsl --help"
-      ignore_errors: true
-      failed_when: false
+    #- name: Launch internal playbook
+    #  # escape special chars with ^
+    #  ansible.windows.win_shell: >
+    #      wsl ansible-playbook -vvv
+    #      -i "{{ remote_working_directory_linux }}{{ name_internal_inventory }}"
+    #      "{{ remote_working_directory_linux }}{{ name_internal_playbook }}"
+    #      --extra-vars "@{{ remote_working_directory_linux }}{{ name_ansible_variables }}"
+    #      --extra-vars "@{{ remote_working_directory_linux }}{{ name_ansible_variables_internal }}"
+    #      > {{ path_log_win }} 2>&1
+    #  async: 3600
+    #  poll: 0
+    #  register: command_output
 
     - name: Launch internal playbook
       # escape special chars with ^
-      ansible.windows.win_shell: >
-          wsl ansible-playbook -vvv
-          -i "{{ remote_working_directory_linux }}{{ name_internal_inventory }}"
-          "{{ remote_working_directory_linux }}{{ name_internal_playbook }}"
-          --extra-vars "@{{ remote_working_directory_linux }}{{ name_ansible_variables }}"
-          --extra-vars "@{{ remote_working_directory_linux }}{{ name_ansible_variables_internal }}"
-          > {{ path_log_win }} 2>&1
+      ansible.windows.win_command:
+        cmd: 'wsl ansible-playbook -vvv -i "{{ remote_working_directory_linux }}{{ name_internal_inventory }}" "{{ remote_working_directory_linux }}{{ name_internal_playbook }}" --extra-vars "@{{ remote_working_directory_linux }}{{ name_ansible_variables }}" --extra-vars "@{{ remote_working_directory_linux }}{{ name_ansible_variables_internal }}"'
       async: 3600
       poll: 0
       register: command_output
 
-    - name: Display the output of the command
-      ansible.builtin.debug:
-        msg: "{{ command_output }}"
 
     #
     # Checks

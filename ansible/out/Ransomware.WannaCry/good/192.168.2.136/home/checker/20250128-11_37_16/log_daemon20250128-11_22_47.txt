@@ -1,0 +1,208 @@
+3G C:\Users\settings.ini
+| [main] INFO org.ranflood.daemon.Ranflood.main
+| Ranflood Daemon (ranfloodd) version 0.7-BETA started.
+
+| [main] INFO org.ranflood.daemon.RanfloodDaemon.start
+| Server started at tcp://localhost:7890, accepting requests from clients
+
+| [main] INFO org.ranflood.daemon.RanfloodDaemon.start
+| HTTP server started on port 8081
+
+| [main] INFO jetty-11.0.15; built: 2023-04-11T18:37:53.775Z; git: 5bc5e562c8d05c5862505aebe5cf83a61bdbcb96; jvm 21.0.5+9-LTS-239
+| [main] INFO Session workerName=node0
+| [main] INFO Started o.e.j.s.ServletContextHandler@3e0e1046{/,null,AVAILABLE}
+| [main] INFO Started ServerConnector@368f2016{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+| [main] INFO Started Server@11c9af63{STARTING}[11.0.15,sto=0] @10758ms
+| [pool-2-thread-1] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Server received [{"command":"flood","subcommand":"start","parameters":{"method":"SSS_RANSOMWARE","path":"C:\\Users\\IEUser\\DOCUMENT"}}]
+
+| [pool-2-thread-2] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Launched SSS_RANSOMWARE flood, ID: 00fb1605-dac9-4a1d-8af5-8f45ac932349
+
+| [pool-3-thread-2] INFO io.reactivex.rxjava3.internal.subscribers.LambdaSubscriber.onNext
+| Task 00fb1605-dac9-4a1d-8af5-8f45ac932349 has 0 remaining tasks, stopping it
+
+| [pool-3-thread-2] INFO org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Removed flood task: 00fb1605-dac9-4a1d-8af5-8f45ac932349
+
+| [pool-2-thread-5] INFO Interruptible file channel will be used
+java.lang.reflect.InaccessibleObjectException: Unable to make public void sun.nio.ch.FileChannelImpl.setUninterruptible() accessible: module java.base does not "exports sun.nio.ch" to unnamed module @53fe15ff
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:391)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:367)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:315)
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:203)
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:197)
+	at jetbrains.exodus.io.FileDataWriter$Companion$setUninterruptibleMethod$1.invoke(FileDataWriter.kt:188)
+	at jetbrains.exodus.io.FileDataWriter$Companion$setUninterruptibleMethod$1.invoke(FileDataWriter.kt:185)
+	at jetbrains.exodus.util.UnsafeHolder.doPrivileged$lambda-0(UnsafeHolder.kt:30)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at jetbrains.exodus.util.UnsafeHolder.doPrivileged(UnsafeHolder.kt:29)
+	at jetbrains.exodus.io.FileDataWriter.<clinit>(FileDataWriter.kt:185)
+	at jetbrains.exodus.io.FileDataReaderWriterProvider.newFileDataWriter(FileDataReaderWriterProvider.kt:48)
+	at jetbrains.exodus.io.FileDataReaderWriterProvider.newReaderWriter(FileDataReaderWriterProvider.kt:30)
+	at jetbrains.exodus.log.LogConfig.createReaderWriter(LogConfig.java:359)
+	at jetbrains.exodus.log.LogConfig.getReader(LogConfig.java:125)
+	at jetbrains.exodus.log.Log.<init>(Log.kt:52)
+	at jetbrains.exodus.env.Environments.newLogInstance(Environments.kt:117)
+	at jetbrains.exodus.env.Environments.newLogInstance(Environments.kt:81)
+	at jetbrains.exodus.env.Environments.newLogInstance(Environments.kt:77)
+	at jetbrains.exodus.env.Environments$newInstance$4.invoke(Environments.kt:46)
+	at jetbrains.exodus.env.Environments$newInstance$4.invoke(Environments.kt:46)
+	at jetbrains.exodus.env.Environments.prepare(Environments.kt:120)
+	at jetbrains.exodus.env.Environments.newInstance(Environments.kt:46)
+	at jetbrains.exodus.env.Environments.newInstance(Environments.kt:43)
+	at org.ranflood.daemon.flooders.onTheFly.OnTheFlySnapshooter.<init>(OnTheFlySnapshooter.java:50)
+	at org.ranflood.daemon.flooders.onTheFly.OnTheFlySnapshooter.<clinit>(OnTheFlySnapshooter.java:44)
+	at org.ranflood.daemon.flooders.SSS.SSSSnapshooter.getSnapshot(SSSSnapshooter.java:51)
+	at org.ranflood.daemon.flooders.SSS.SSSFloodTask.loadWriteFileTasks(SSSFloodTask.java:133)
+	at org.ranflood.daemon.flooders.SSS.SSSFloodTask.lambda$loadWriteFileTasks$0(SSSFloodTask.java:176)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+| [pool-2-thread-5] WARN Can't open directory channel. Log directory fsync won't be performed.
+| [pool-2-thread-5] INFO Exodus environment created: C:\Program Files\Ranflood\ranflood_testsite\signatures.db
+| [pool-2-thread-5] INFO Queueing ComputeUtilizationFromScratchJob
+| [Exodus shared background cleaner] INFO Started calculation of log utilization from scratch at C:\Program Files\Ranflood\ranflood_testsite\signatures.db
+| [pool-2-thread-1] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Server received [{"command":"flood","subcommand":"start","parameters":{"method":"SSS_RANSOMWARE","path":"C:\\Users\\IEUser\\DOWNLOAD"}}]
+
+| [pool-2-thread-2] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Launched SSS_RANSOMWARE flood, ID: bf71b8d3-f8b5-4ade-8023-bf436a0c79a1
+
+| [Exodus shared background cleaner] INFO Finished calculation of log utilization from scratch at C:\Program Files\Ranflood\ranflood_testsite\signatures.db
+| [pool-2-thread-6] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Server received [{"command":"flood","subcommand":"start","parameters":{"method":"SSS_RANSOMWARE","path":"C:\\Users\\IEUser\\Desktop"}}]
+
+| [pool-2-thread-6] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Launched SSS_RANSOMWARE flood, ID: 786cbcb5-36a0-450d-b907-66454fbd6194
+
+| [pool-2-thread-6] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Server received [{"command":"flood","subcommand":"start","parameters":{"method":"SSS_RANSOMWARE","path":"C:\\Users\\IEUser\\Documents"}}]
+
+| [pool-2-thread-6] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Launched SSS_RANSOMWARE flood, ID: d740f9bd-3271-4ca1-b795-d9d8af55aff4
+
+| [pool-2-thread-7] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Server received [{"command":"flood","subcommand":"start","parameters":{"method":"SSS_RANSOMWARE","path":"C:\\Users\\IEUser\\Downloads"}}]
+
+| [pool-2-thread-7] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Launched SSS_RANSOMWARE flood, ID: 5d9a845e-875b-4ba2-8dec-8c0604836a28
+
+| [pool-2-thread-7] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Server received [{"command":"flood","subcommand":"start","parameters":{"method":"SSS_RANSOMWARE","path":"C:\\Users\\IEUser\\Music"}}]
+
+| [pool-2-thread-3] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Launched SSS_RANSOMWARE flood, ID: 14b05328-cdea-4d0d-bd9e-df87682967db
+
+| [pool-2-thread-7] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Server received [{"command":"flood","subcommand":"start","parameters":{"method":"SSS_RANSOMWARE","path":"C:\\Users\\IEUser\\My Documents"}}]
+
+| [pool-2-thread-6] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Launched SSS_RANSOMWARE flood, ID: 38de23b5-a772-4b83-8fbf-8e8e87320c29
+
+| [pool-2-thread-7] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Server received [{"command":"flood","subcommand":"start","parameters":{"method":"SSS_RANSOMWARE","path":"C:\\Users\\IEUser\\OneDrive"}}]
+
+| [pool-2-thread-5] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Launched SSS_RANSOMWARE flood, ID: 9e9f7e66-1bc5-407b-9378-99212d5817fe
+
+| [pool-2-thread-2] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Server received [{"command":"flood","subcommand":"start","parameters":{"method":"SSS_RANSOMWARE","path":"C:\\Users\\IEUser\\Pictures"}}]
+
+| [pool-2-thread-6] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Launched SSS_RANSOMWARE flood, ID: 9b16adce-83de-49de-8426-8441d7bdb4f4
+
+| [pool-2-thread-6] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Server received [{"command":"flood","subcommand":"start","parameters":{"method":"SSS_RANSOMWARE","path":"C:\\Users\\IEUser\\PrintHood"}}]
+
+| [pool-2-thread-5] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Launched SSS_RANSOMWARE flood, ID: 4edffdbf-0d10-4826-9bc8-fa84e5c9c6ea
+
+| [pool-2-thread-1] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Server received [{"command":"flood","subcommand":"start","parameters":{"method":"SSS_RANSOMWARE","path":"C:\\Users\\IEUser\\SAVED_GA"}}]
+
+| [pool-2-thread-7] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Launched SSS_RANSOMWARE flood, ID: 92cc59f2-1df0-464b-a8f8-c25dcba37f5b
+
+| [pool-2-thread-3] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Server received [{"command":"flood","subcommand":"start","parameters":{"method":"SSS_RANSOMWARE","path":"C:\\Users\\IEUser\\SendTo"}}]
+
+| [pool-2-thread-4] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Launched SSS_RANSOMWARE flood, ID: b5c4775a-8905-49b1-b536-f252fe5ad06a
+
+| [pool-2-thread-5] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Server received [{"command":"flood","subcommand":"start","parameters":{"method":"SSS_RANSOMWARE","path":"C:\\Users\\IEUser\\Videos"}}]
+
+| [pool-2-thread-7] INFO java.util.concurrent.Executors$RunnableAdapter.call
+| Launched SSS_RANSOMWARE flood, ID: 238ba040-d564-4086-9619-9e4428d8a0b1
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 0/8): C:\Users\IEUser\Desktop\43D8E93F.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 1/8): C:\Users\IEUser\Desktop\43D8E93F.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 2/8): C:\Users\IEUser\Desktop\43D8E93F.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 3/8): C:\Users\IEUser\Desktop\43D8E93F.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 4/8): C:\Users\IEUser\Desktop\43D8E93F.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 5/8): C:\Users\IEUser\Desktop\43D8E93F.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 6/8): C:\Users\IEUser\Desktop\43D8E93F.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 7/8): C:\Users\IEUser\Desktop\43D8E93F.DUM
+
+java.io.FileNotFoundException: C:\Users\IEUser\Desktop\CCODAMIC.PDF (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at org.ranflood.daemon.flooders.SSS.SSSFloodTask.loadWriteFileTasks(SSSFloodTask.java:126)
+	at org.ranflood.daemon.flooders.SSS.SSSFloodTask.lambda$loadWriteFileTasks$0(SSSFloodTask.java:176)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+| [pool-2-thread-8] ERROR java.util.concurrent.Executors$RunnableAdapter.call
+| Error in instantiating writing task for C:\Users\IEUser\Desktop\CCODAMIC.PDF in C:\Users\IEUser\Desktop: Could not open file or folder C:\Users\IEUser\Desktop\CCODAMIC.PDF while trying to create SSS_RANSOMWARE task
+
+| [pool-3-thread-3] INFO io.reactivex.rxjava3.internal.subscribers.LambdaSubscriber.onNext
+| Task 4edffdbf-0d10-4826-9bc8-fa84e5c9c6ea has 0 remaining tasks, stopping it
+
+| [pool-3-thread-3] INFO org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Removed flood task: 4edffdbf-0d10-4826-9bc8-fa84e5c9c6ea
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 0/8): C:\Users\IEUser\Desktop\0A8AE703.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 1/8): C:\Users\IEUser\Desktop\0A8AE703.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 2/8): C:\Users\IEUser\Desktop\0A8AE703.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 3/8): C:\Users\IEUser\Desktop\0A8AE703.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 4/8): C:\Users\IEUser\Desktop\0A8AE703.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 5/8): C:\Users\IEUser\Desktop\0A8AE703.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 6/8): C:\Users\IEUser\Desktop\0A8AE703.DUM
+
+| [pool-3-thread-3] ERROR org.ranflood.daemon.flooders.FloodTaskExecutor.lambda$signalExecution$0
+| Out of memory, when splitting with SSS (try 7/8): C:\Users\IEUser\Desktop\0A8AE703.DUM
+

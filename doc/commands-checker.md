@@ -8,8 +8,8 @@ rm log* out* report* -f && \
 	> out.txt 2>&1
 ```
 ```bash
-sshpass -pchecker ssh checker@192.168.2.
+sshpass -pchecker ssh -o StrictHostKeyChecking=no checker@192.168.2.
 ```
 ```bash
-sshpass -pchecker scp checker@192.168.2.:~/{report*,out*,log*} out
+sshpass -pchecker scp -o StrictHostKeyChecking=no checker@192.168.2.:~/{report*,out*,log*} out
 ```

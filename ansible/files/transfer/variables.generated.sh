@@ -79,9 +79,9 @@ name_env_linux=variables.generated.sh
 # Phobos
 #name_ransomware=phobos.bin
 # Vipasana
-#name_ransomware=Ransomware.Vipasana
+name_ransomware=Ransomware.Vipasana
 # WannaCry
-name_ransomware=Ransomware.WannaCry
+#name_ransomware=Ransomware.WannaCry
 # WannaCry_plus
 #name_ransomware=Ransomware.Wannacry_Plus
 # java Ransomware
