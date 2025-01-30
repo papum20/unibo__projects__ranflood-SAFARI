@@ -121,19 +121,19 @@ set path_ranfloodd_jar_linux=/mnt/c/Program Files/Ranflood/ranfloodd.jar
 set path_ransomware_linux=/mnt/c/Users/Ransomware.Vipasana
 set path_settings_ini_linux=/mnt/c/Users/settings.ini
 
-set path_checker_out_dir=/home/checker/20250128-16_55_16/
+set path_checker_out_dir=/home/checker/20250130-15_13_54/
 
 ::# where output of internal playbook is saved
-set path_log_win=C:\Users\log20250128-16_55_16.txt
-set path_log_linux=/mnt/c/Users/log20250128-16_55_16.txt
+set path_log_win=C:\Users\log20250130-15_13_54.txt
+set path_log_linux=/mnt/c/Users/log20250130-15_13_54.txt
 ::# log of filechecker restore command
-set path_log_filechecker=/home/checker/20250128-16_55_16/log20250128-16_55_16.txt
-set path_log_filechecker_out=/home/checker/20250128-16_55_16/out20250128-16_55_16.txt
-set path_log_internal_daemon=C:\Users\log_daemon20250128-16_55_16.txt
-set path_log_internal_ransomware=C:\Users\log_ransomware20250128-16_55_16.txt
+set path_log_filechecker=/home/checker/20250130-15_13_54/log20250130-15_13_54.txt
+set path_log_filechecker_out=/home/checker/20250130-15_13_54/out20250130-15_13_54.txt
+set path_log_internal_daemon=C:\Users\log_daemon20250130-15_13_54.txt
+set path_log_internal_ransomware=C:\Users\log_ransomware20250130-15_13_54.txt
 
-set path_report=/home/checker/20250128-16_55_16/report20250128-16_55_16
-set path_report_shards=/home/checker/20250128-16_55_16/report-shards20250128-16_55_16
+set path_report=/home/checker/20250130-15_13_54/report20250130-15_13_54
+set path_report_shards=/home/checker/20250130-15_13_54/report-shards20250130-15_13_54
 
 
 :: Prepopulate

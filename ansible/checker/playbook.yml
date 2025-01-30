@@ -87,6 +87,8 @@
           > {{ path_log_filechecker_out }} 2>&1
         chdir: "{{ remote_working_dir_filechecker }}"
       when: do_restore and not restore_delete
+      # download fail logs anyway
+      failed_when: false
 
     - name: Filechecker sss restore with delete
       ansible.builtin.shell:
