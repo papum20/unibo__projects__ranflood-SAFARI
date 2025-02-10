@@ -1,0 +1,83 @@
+PHOBOS:
+Average counts (files: 10):
+tot_checksum: 563.0
+tot_checksum_still_present: 548.3
+recovered: 0.2
+recovered_already_existing: 14.3
+recovered_new: 0.0
+already_existing: 0.0
+error_write_file: 0.0
+error_delete_shard: 0.0
+---
+All counts (files: 10):
+tot_checksum: [563, 563, 563, 563, 563, 563, 563, 563, 563, 563]
+tot_checksum_still_present: [555, 523, 547, 545, 554, 551, 549, 549, 555, 555]
+recovered: [0, 0, 0, 1, 1, 0, 0, 0, 0, 0]
+recovered_already_existing: [17, 13, 14, 10, 15, 14, 15, 16, 14, 15]
+recovered_new: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+already_existing: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+error_write_file: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+error_delete_shard: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+LOCKBIT:
+Average counts (files: 10):
+tot_checksum: 563.0
+tot_checksum_still_present: 60.0
+recovered: 0.0
+recovered_already_existing: 0.0
+recovered_new: 0.0
+already_existing: 0.0
+error_write_file: 0.0
+error_delete_shard: 0.0
+---
+All counts (files: 10):
+tot_checksum: [563, 563, 563, 563, 563, 563, 563, 563, 563, 563]
+tot_checksum_still_present: [60, 60, 60, 60, 60, 60, 60, 60, 60, 60]
+recovered: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+recovered_already_existing: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+recovered_new: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+already_existing: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+error_write_file: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+error_delete_shard: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+WANNACRY:
+Average counts (files: 10):
+tot_checksum: 563.0
+tot_checksum_still_present: 329.9
+recovered: 9.6
+recovered_already_existing: 20.0
+recovered_new: 0.0
+already_existing: 0.0
+error_write_file: 0.0
+error_delete_shard: 0.0
+---
+All counts (files: 10):
+tot_checksum: [563, 563, 563, 563, 563, 563, 563, 563, 563, 563]
+tot_checksum_still_present: [360, 265, 360, 355, 360, 357, 265, 360, 359, 258]
+recovered: [13, 3, 13, 12, 5, 10, 10, 7, 14, 9]
+recovered_already_existing: [19, 31, 19, 15, 33, 14, 17, 21, 17, 14]
+recovered_new: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+already_existing: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+error_write_file: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+error_delete_shard: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+VIPASANA:
+Average counts (files: 10):
+tot_checksum: 563.0
+tot_checksum_still_present: 552.4
+recovered: 0.8
+recovered_already_existing: 34.3
+recovered_new: 0.0
+already_existing: 0.0
+error_write_file: 0.0
+error_delete_shard: 0.0
+---
+All counts (files: 10):
+tot_checksum: [563, 563, 563, 563, 563, 563, 563, 563, 563, 563]
+tot_checksum_still_present: [527, 529, 559, 559, 557, 559, 559, 559, 557, 559]
+recovered: [4, 0, 0, 0, 2, 0, 0, 0, 2, 0]
+recovered_already_existing: [29, 36, 30, 32, 33, 39, 34, 39, 34, 37]
+recovered_new: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+already_existing: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+error_write_file: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+error_delete_shard: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]

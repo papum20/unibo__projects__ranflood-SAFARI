@@ -1,0 +1,1184 @@
+Start - 2025-01-30T12:05:31.312477969
+Analyzed shard: /mnt/win10/Users/IEUser/init.bat; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/NTUSER.DAT{1c3790b4-b8ad-11e8-aa21-e41d2d101530}.TM.blf; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/.ansible_async/j117069534188.376; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/.ansible_async/j302882999874.5764; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/.ansible_async/j309403283418.5364; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/.ansible_async/j387003579308.1848; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/.ansible_async/j602780231968.1240; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/.vbox_version; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/3D Objects/desktop.ini; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/ansible/inventory; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/ansible/playbook.yml; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/AppData; generation = -1; valid shard = false
+[Error]	Could not read shard, IO exception: /mnt/win10/Users/IEUser/Application Data
+[Error]	Could not read shard, IO exception: /mnt/win10/Users/IEUser/Application Data
+Analyzed shard: /mnt/win10/Users/IEUser/Contacts/desktop.ini; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Contacts/IEUSER.CON; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Cookies; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/01F22128.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/0A8AE703.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/0BD4255D.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/4465CDCE.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/4C7C1D2F.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/7934FE27.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/990423D0.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/9EF78656.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ACTION_O.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ADAPTIVE.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ADOPT000.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ADOPTING.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/AGENT_BA.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANALYZIN.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/1724FEEB.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/2265BECF.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/2BC48EB7.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/32DED4B9.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/3C22462C.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/408D4B92.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/4357AB01.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/4636428E.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/4FCEC5A8.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/6A1F9D65.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/7F04C660.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/81998AB1.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/94435D7E.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/9F09BC54.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/A442EF09.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/A5CC7627.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/A7BAE86E.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/BF2955DB.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/D2603682.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/DE25D108.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/E0A5826D.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/EAEC1341.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/EFFE1AF8.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/AN_ATMOS.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/AN_OVERV.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/APPROACH.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ARCHITEC.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ATTACK_A.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/AUTHENTI.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_BLO000.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_BLOCKC.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_CASE_B.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_CLO000.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_CLOUD_.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_CLUSTE.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_COM000.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_COMPAR.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_DATAFL.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_DECISI.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_DISTRI.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_FLEXIB.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_FOCUS_.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_FRAMEW.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_GENERA.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_HYBRID.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_LEARNI.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_LIGHTW.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_LITERA.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_METHOD.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_MICROS.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_MIXED_.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_MULTI_.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_NOVEL_.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_PRACTI.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_SCALAB.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_SCIENC.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_SELF_O.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_SERVIC.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_STUDY_.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_SYSTEM.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/BIOINFOP.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/BLOCKCHA.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/BOINC_FO.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/BRICK___.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/CC81FEF7.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/CCODAMIC.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/CLOUD000.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/CLOUD001.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/CLOUDIFI.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/CLOUDINT.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/CLOUD_BA.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/CLOUD_RE.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/COMPUTIN.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/CONSTRAI.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/CONSTRUC.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/COST_EFF.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/CYBELE__.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/CYBER_PH.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/D35FF869.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/DATA_MAN.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/DEFENSE_.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/DESIG000.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/DESIG001.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/DESIGN_A.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/desktop.ini; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/DETECTIO.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/DEVOPS_C.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/EAB16DBE.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/8C400643.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/05652CFA.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/0890A6BA.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/10534DEF.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/191667D9.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/2C6BD39A.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/30191474.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/40888E1C.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/4C520A95.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/4D9E3920.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/530D11BA.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/5C9FF138.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/68E03BF8.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/6C9B742D.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/6FE97F45.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/73A27B5D.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/882D13AF.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/88701D72.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/8FD06015.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/96129B4A.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/A3345EC1.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/A9E0251B.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/B0B27A75.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/B14078F6.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/B6E72997.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/B97E01E5.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/C3B05F46.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/C74F31A5.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/D622BFEB.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/DA405530.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/DB063209.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/E0D37763.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/E3C59DB7.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/F0459F04.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/F27477DE.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/F2DB3468.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/F774CB07.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/FA367364.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/FA9AA7EB.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/FFF3A879.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/eula.lnk; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/F3BE26A6.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/FE293672.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/FILE_000.DOC; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/FILE_001.DOC; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/FILE_SAM.DOC; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/I_SKGWKV.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/JS5J37I_.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/KCKJODLQ.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/LKNJ2VOT.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/N23ZPP_V.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/NKZJODFK.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/OASPNOLL.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/OPERA_BR.LNK; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/OQUXVXJG.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_CLOUD_.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_MIXED_.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/CLOUDIFI.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/ACTION_O.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/ADAPTIVE.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/ADOPT000.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/ADOPTING.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/AGENT_BA.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/ANALYZIN.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/AN_ATMOS.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/AN_OVERV.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/APPLICAT.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/APPROACH.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/ARCHITEC.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/ATTACK_A.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/AUTHENTI.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_BLO000.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_BLOCKC.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_CASE_B.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_CLO000.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_CLUSTE.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_COM000.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_COMPAR.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_DATAFL.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_DECISI.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_DISTRI.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_FLEXIB.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_FOCUS_.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_FORMAL.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_FRAMEW.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_GENERA.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_HYBRID.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_LEARNI.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_LIGHTW.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_LITERA.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_METHOD.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_MICROS.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_MULTI_.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_NOVEL_.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_PRACTI.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_SCALAB.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_SCIENC.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_SELF_O.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_SERVIC.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_STUDY_.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_SYS000.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/A_SYSTEM.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/BIOINFOP.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/BLOCKCHA.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/BOINC_FO.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/BRICK___.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/CCODAMIC.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/CLOUD000.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/CLOUD001.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/CLOUDINT.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/CLOUD_BA.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/CLOUD_RE.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/COMPUTIN.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/CONSTRAI.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/CONSTRUC.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/COST_EFF.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/CYBEL000.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/CYBELE__.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/CYBER_PH.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/DATA_MAN.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/DEFENSE_.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/DESIG000.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/DESIG001.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/DESIGN_A.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/DETECTIO.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/DEVOPS_C.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSO000/PIA19808.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSONAL/061A3F65.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSONAL/105136C2.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSONAL/1095353F.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSONAL/174ABBC7.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSONAL/1938EBE8.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSONAL/1A0805E4.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSONAL/1B983CCC.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSONAL/204DBBF1.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSONAL/28EB4E3E.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSONAL/33E2688D.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSONAL/3E3FAF4D.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSONAL/4A1640DE.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSONAL/5531D344.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSONAL/651DD96D.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSONAL/68AB457F.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSONAL/7E4B2689.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSONAL/827E2C46.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSONAL/86316F8F.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSONAL/8FF7BF24.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSONAL/B383A9FE.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSONAL/C2CDEC43.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSONAL/CDBBFF16.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/PERSONAL/D62CF3D2.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/R9WVYQ_O.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/RSF0HUZO.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/SVSSLQNT.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/TIHHX_RB.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/TM96YEQ9.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/__TORREN.LNK; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/___OBX0M.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/APPLICAT.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_FORMAL.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_SYS000.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/CYBEL000.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/FILE_002.DOC; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_CLOUD_.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_MIXED_.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/CLOUDIFI.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/DEVOPS_C.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/ACTION_O.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/ADAPTIVE.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/ADOPT000.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/ADOPTING.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/AGENT_BA.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/ANALYZIN.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/AN_ATMOS.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/AN_OVERV.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/APPLICAT.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/APPROACH.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/ARCHITEC.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/ATTACK_A.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/AUTHENTI.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_BLO000.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_BLOCKC.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_CASE_B.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_CLO000.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_CLUSTE.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_COM000.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_COMPAR.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_DATAFL.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_DECISI.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_DISTRI.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_FLEXIB.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_FOCUS_.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_FORMAL.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_FRAMEW.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_GENERA.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_HYBRID.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_LEARNI.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_LIGHTW.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_LITERA.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_METHOD.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_MICROS.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_MULTI_.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_NOVEL_.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_PRACTI.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_SCALAB.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_SCIENC.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_SELF_O.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_SERVIC.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_STUDY_.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_SYS000.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/A_SYSTEM.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/BIOINFOP.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/BLOCKCHA.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/BOINC_FO.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/BRICK___.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/CCODAMIC.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/CLOUD000.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/CLOUD001.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/CLOUDINT.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/CLOUD_BA.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/CLOUD_RE.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/COMPUTIN.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/CONSTRAI.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/CONSTRUC.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/COST_EFF.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/CYBEL000.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/CYBELE__.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/CYBER_PH.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/DATA_MAN.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/DEFENSE_.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/DESIG000.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/DESIG001.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/DESIGN_A.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/DESKTOP.INI; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/DETECTIO.PDF; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/FILE_000.DOC; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/FILE_001.DOC; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/FILE_002.DOC; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/FILE_003.DOC; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/FILE_004.DOC; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/FILE_SAM.DOC; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/I_SKGWKV.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/JS5J37I_.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/KCKJODLQ.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/LKNJ2VOT.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/N23ZPP_V.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/NKZJODFK.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/OASPNOLL.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/OQUXVXJG.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/R9WVYQ_O.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/RSF0HUZO.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/SVSSLQNT.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/TIHHX_RB.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/TM96YEQ9.JPG; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/DOCUMENT/___OBX0M.JPG; generation = -1; valid shard = false
+Found shard for new original file: C:\Users\IEUser\My Documents\desktop.ini
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1059.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 1
+Found shard for new original file: C:\Users\IEUser\Documents\desktop.ini
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop408.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 1
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop409.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 2
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop410.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 3
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop411.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 4
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop412.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 5
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop413.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 6
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop414.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 7
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop415.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 8
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop416.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 9
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop417.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 10
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop418.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 11
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop419.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 12
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop420.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 13
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop421.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 14
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop422.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 15
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop423.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 16
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop424.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 17
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop426.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 18
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop427.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 19
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop428.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 20
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop429.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 21
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop430.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 22
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop431.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 23
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop432.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 24
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop433.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 25
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop434.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 26
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop435.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 27
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop436.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 28
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop437.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 29
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop438.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 30
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop439.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 31
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop440.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 32
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop441.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 33
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop442.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 34
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop444.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 35
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop445.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 36
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop446.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 37
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop447.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 38
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop448.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 39
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop449.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 40
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop450.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 41
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop451.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 42
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop452.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 43
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop453.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 44
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop454.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 45
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop455.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 46
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop456.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 47
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop457.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 48
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop458.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 49
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop459.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 50
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop460.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 51
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1005.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 2
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1023.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 3
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1041.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 4
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop462.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 52
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop463.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 53
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop464.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 54
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop465.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 55
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop466.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 56
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop467.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 57
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop468.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 58
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop469.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 59
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop470.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 60
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop471.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 61
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop472.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 62
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop473.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 63
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop474.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 64
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop475.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 65
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop476.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 66
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop477.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 67
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop478.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 68
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop480.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 69
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop481.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 70
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop482.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 71
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop483.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 72
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop484.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 73
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop485.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 74
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop486.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 75
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop487.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 76
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop488.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 77
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop489.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 78
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop490.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 79
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop491.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 80
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop492.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 81
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop493.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 82
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop494.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 83
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop495.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 84
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop496.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 85
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop498.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 86
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop499.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 87
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop500.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 88
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop501.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 89
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop502.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 90
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop503.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 91
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop504.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 92
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop505.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 93
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop506.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 94
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop507.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 95
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop508.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 96
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop509.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 97
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop510.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 98
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop511.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 99
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop512.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 100
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop513.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 101
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop514.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 102
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop516.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 103
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop517.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 104
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop518.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 105
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop519.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 106
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop520.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 107
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop521.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 108
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop522.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 109
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop523.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 110
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop524.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 111
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop525.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 112
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop526.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 113
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop527.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 114
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop528.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 115
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop529.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 116
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop530.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 117
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop531.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 118
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop532.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 119
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop534.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 120
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop535.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 121
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop536.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 122
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop537.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 123
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop538.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 124
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop539.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 125
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop540.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 126
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop541.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 127
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop542.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 128
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop543.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 129
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop544.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 130
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop545.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 131
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop546.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 132
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop547.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 133
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop548.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 134
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop549.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 135
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop550.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 136
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop552.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 137
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop553.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 138
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop554.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 139
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop555.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 140
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop556.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 141
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop557.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 142
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop558.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 143
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop559.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 144
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop560.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 145
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop561.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 146
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop562.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 147
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop563.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 148
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop564.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 149
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop565.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 150
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop566.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 151
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop567.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 152
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop568.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 153
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop.ini; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1000.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 5
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1001.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 6
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1002.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 7
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1003.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 8
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1004.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 9
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop570.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 154
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop571.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 155
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop572.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 156
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop573.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 157
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop574.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 158
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop575.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 159
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop576.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 160
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop577.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 161
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop578.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 162
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop579.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 163
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop580.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 164
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop581.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 165
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop582.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 166
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop583.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 167
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop584.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 168
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop585.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 169
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop586.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 170
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop588.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 171
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop589.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 172
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop590.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 173
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop591.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 174
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop592.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 175
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop593.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 176
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop594.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 177
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop595.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 178
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop596.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 179
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop597.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 180
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop598.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 181
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop599.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 182
+[Error]	Could not read shard, IO exception: /mnt/win10/Users/IEUser/Documents/My Music
+[Error]	Could not read shard, IO exception: /mnt/win10/Users/IEUser/Documents/My Music
+[Error]	Could not read shard, IO exception: /mnt/win10/Users/IEUser/Documents/My Pictures
+[Error]	Could not read shard, IO exception: /mnt/win10/Users/IEUser/Documents/My Pictures
+[Error]	Could not read shard, IO exception: /mnt/win10/Users/IEUser/Documents/My Videos
+[Error]	Could not read shard, IO exception: /mnt/win10/Users/IEUser/Documents/My Videos
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1006.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 10
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1007.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 11
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1008.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 12
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1009.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 13
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1010.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 14
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1011.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 15
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1012.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 16
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1013.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 17
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1014.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 18
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1015.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 19
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1016.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 20
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1017.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 21
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1018.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 22
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1019.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 23
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1020.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 24
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1021.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 25
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1022.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 26
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1024.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 27
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1025.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 28
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1026.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 29
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1027.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 30
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1028.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 31
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1029.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 32
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1030.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 33
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1031.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 34
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1032.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 35
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1033.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 36
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1034.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 37
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1035.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 38
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1036.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 39
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1037.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 40
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1038.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 41
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1039.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 42
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1040.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 43
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1042.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 44
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1043.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 45
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1044.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 46
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1045.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 47
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1046.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 48
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1047.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 49
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1048.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 50
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1049.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 51
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1050.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 52
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1051.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 53
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1052.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 54
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1053.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 55
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1054.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 56
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1055.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 57
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1056.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 58
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1057.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 59
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1058.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 60
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1060.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 61
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1061.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 62
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1062.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 63
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1063.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 64
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1064.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 65
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1065.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 66
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1066.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 67
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1067.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 68
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1068.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 69
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1069.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 70
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1070.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 71
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1071.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 72
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1072.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 73
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1073.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 74
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1074.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 75
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1075.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 76
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1076.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 77
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1078.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 78
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1079.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 79
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1080.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 80
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1081.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 81
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1082.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 82
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1083.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 83
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1084.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 84
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1085.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 85
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1086.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 86
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1087.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 87
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1088.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 88
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1089.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 89
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1090.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 90
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1091.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 91
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1092.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 92
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1093.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 93
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1094.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 94
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1096.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 95
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1097.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 96
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1098.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 97
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1099.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 98
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1100.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 99
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1101.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 100
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1102.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 101
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1103.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 102
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1104.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 103
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1105.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 104
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1106.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 105
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1107.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 106
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1108.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 107
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1109.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 108
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1110.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 109
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1111.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 110
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1112.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 111
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1114.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 112
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1115.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 113
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1116.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 114
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1117.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 115
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1118.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 116
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1119.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 117
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1120.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 118
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1121.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 119
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1122.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 120
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1123.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 121
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1124.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 122
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1125.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 123
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1126.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 124
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1127.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 125
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1128.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 126
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1129.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 127
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1130.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 128
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1132.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 129
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1133.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 130
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1134.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 131
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1135.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 132
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1136.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 133
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1137.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 134
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1138.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 135
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1139.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 136
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1140.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 137
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1141.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 138
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1142.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 139
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1143.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 140
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1144.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 141
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1145.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 142
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1146.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 143
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1147.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 144
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1148.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 145
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1150.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 146
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1151.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 147
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1152.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 148
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1153.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 149
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1154.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 150
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1155.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 151
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1156.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 152
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1157.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 153
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1158.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 154
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1159.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 155
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1160.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 156
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1161.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 157
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1162.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 158
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1163.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 159
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1164.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 160
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1165.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 161
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1166.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 162
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1077.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 163
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1095.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 164
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1113.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 165
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1131.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 166
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1149.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 167
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1167.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 168
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1185.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 169
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop407.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 183
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop425.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 184
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop443.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 185
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop461.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 186
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop479.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 187
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop497.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 188
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop515.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 189
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop533.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 190
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop551.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 191
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop569.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 192
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop587.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 193
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1168.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 170
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1169.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 171
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1170.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 172
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1171.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 173
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1172.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 174
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1173.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 175
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1174.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 176
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1175.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 177
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1176.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 178
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1177.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 179
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1178.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 180
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1179.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 181
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1180.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 182
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1181.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 183
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1182.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 184
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1183.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 185
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1184.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 186
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1186.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 187
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1187.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 188
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1188.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 189
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1189.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 190
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1190.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 191
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1191.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 192
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1192.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 193
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1193.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 194
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1194.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 195
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1195.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 196
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1196.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 197
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1197.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 198
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1198.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 199
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop1199.ini; generation = 427397938200; valid shard = true
+New shards of C:\Users\IEUser\My Documents\desktop.ini: 200
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop400.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 194
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop401.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 195
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop402.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 196
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop403.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 197
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop404.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 198
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop405.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 199
+Analyzed shard: /mnt/win10/Users/IEUser/Documents/desktop406.ini; generation = 402601227500; valid shard = true
+New shards of C:\Users\IEUser\Documents\desktop.ini: 200

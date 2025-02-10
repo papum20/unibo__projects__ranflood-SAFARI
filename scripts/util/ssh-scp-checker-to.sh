@@ -19,4 +19,4 @@ fi
 
 source scripts/read-vms.sh -c
 
-sshpass -pchecker scp "$1" checker@${vm_ips[0]}:"$2"
+sshpass -pchecker scp -r "$1" checker@${vm_ips[0]}:"$2"

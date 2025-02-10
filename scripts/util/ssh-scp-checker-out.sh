@@ -19,6 +19,6 @@ fi
 
 source scripts/read-vms.sh -c
 
-sshpass -pchecker scp checker@${vm_ips[0]}:~/report* out
-sshpass -pchecker scp checker@${vm_ips[0]}:~/out* out
-sshpass -pchecker scp checker@${vm_ips[0]}:~/log* out
+sshpass -pchecker scp -r checker@${vm_ips[0]}:~/report* out
+sshpass -pchecker scp -r checker@${vm_ips[0]}:~/out* out
+sshpass -pchecker scp -r checker@${vm_ips[0]}:~/log* out
