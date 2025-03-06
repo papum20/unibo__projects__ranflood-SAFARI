@@ -65,11 +65,6 @@
         executable: cmd
       async: 1800
       poll: 0
-      register: command_output
-
-    - name: Display the output of the command
-      ansible.builtin.debug:
-        msg: "{{ command_output }}"
 
     - name: Wait for ranflood daemon to start
       ansible.builtin.pause:
@@ -133,9 +128,23 @@
     # Ranflood client
     #
 
-    - name: Wait between ransomware and ranflood client
+    - name: Start ranflood daemon (jar), again, to make sure
+      # win_shell, unlike win_command, also allows <>|
+      ansible.windows.win_shell: >
+        {{ path_ranfloodd_bat }} {{ ranflood_jvm_mem_max }} {{ path_settings_ini_win }}
+        > {{ path_log_internal_daemon }} 2>&1
+      args:
+        executable: cmd
+      async: 1800
+      poll: 0
+
+    - name: Wait for both daemon and ransomware
       ansible.builtin.pause:
-        seconds: "{{ ranflood_start_delay }}"
+        seconds: 1
+
+    #- name: Wait between ransomware and ranflood client
+    #  ansible.builtin.pause:
+    #    seconds: "{{ ranflood_start_delay }}"
 
     - name: Start ranflood client on target dirs
       ansible.windows.win_command:

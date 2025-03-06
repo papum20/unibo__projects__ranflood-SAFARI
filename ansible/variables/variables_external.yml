@@ -21,7 +21,8 @@
 
 
 
-proxmox_ip: '192.168.2.17'
+#proxmox_ip: '192.168.2.17'
+proxmox_ip: '192.168.2.11'
 vm_node: 'pve21'
 
 inventory_groups: 'windows'
@@ -32,7 +33,8 @@ shutdown_timer: 620
 # optional tasks
 
 # avoid transfers if already exists (only for larger files, not small or generated ones)
-transfer_force: false
+transfer_force_ranflood: true
+transfer_force_ransomware: false
 
 prepopulate_wsl: false
 shutdown: true
