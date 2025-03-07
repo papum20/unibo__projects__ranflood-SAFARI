@@ -121,19 +121,19 @@ set path_ranfloodd_jar_linux=/mnt/c/Program Files/Ranflood/ranfloodd.jar
 set path_ransomware_linux=/mnt/c/Users/lockbit
 set path_settings_ini_linux=/mnt/c/Users/settings.ini
 
-set path_checker_out_dir=/home/checker/20250306-16_51_49/
+set path_checker_out_dir=/home/checker/20250307-17_12_29/
 
 ::# where output of internal playbook is saved
-set path_log_win=C:\Users\log20250306-16_51_49.txt
-set path_log_linux=/mnt/c/Users/log20250306-16_51_49.txt
+set path_log_win=C:\Users\log20250307-17_12_29.txt
+set path_log_linux=/mnt/c/Users/log20250307-17_12_29.txt
 ::# log of filechecker restore command
-set path_log_filechecker=/home/checker/20250306-16_51_49/log20250306-16_51_49.txt
-set path_log_filechecker_out=/home/checker/20250306-16_51_49/out20250306-16_51_49.txt
-set path_log_internal_daemon=C:\Users\log_daemon20250306-16_51_49.txt
-set path_log_internal_ransomware=C:\Users\log_ransomware20250306-16_51_49.txt
+set path_log_filechecker=/home/checker/20250307-17_12_29/log20250307-17_12_29.txt
+set path_log_filechecker_out=/home/checker/20250307-17_12_29/out20250307-17_12_29.txt
+set path_log_internal_daemon=C:\Users\log_daemon20250307-17_12_29.txt
+set path_log_internal_ransomware=C:\Users\log_ransomware20250307-17_12_29.txt
 
-set path_report=/home/checker/20250306-16_51_49/report20250306-16_51_49
-set path_report_shards=/home/checker/20250306-16_51_49/report-shards20250306-16_51_49
+set path_report=/home/checker/20250307-17_12_29/report20250307-17_12_29
+set path_report_shards=/home/checker/20250307-17_12_29/report-shards20250307-17_12_29
 
 
 :: Prepopulate

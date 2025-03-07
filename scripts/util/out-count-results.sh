@@ -18,4 +18,10 @@ if [[ -z "$1" || ! -d "$1" ]]; then
 fi
 
 
-find $1 -name report* | egrep -v shards | wc -l
+regex_ip="$1/?([0-9]+\.){3}[0-9]+.*"
+
+# only direct subfolders
+find $1 -name report* | egrep -v shards | egrep $regex_ip | wc -l
+
+# also in subfolders
+#find $1 -name report* | egrep -v shards | wc -l
