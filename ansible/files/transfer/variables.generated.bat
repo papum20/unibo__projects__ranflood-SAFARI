@@ -73,7 +73,7 @@ set name_env_linux=variables.generated.sh
 ::# (only this one will be transferred and used)
 
 :: Locbkit
-set name_ransomware=lockbit
+set #name_ransomware=lockbit
 :: Petya
 set #name_ransomware=Ransomware.Petya
 :: Phobos
@@ -81,14 +81,14 @@ set #name_ransomware=phobos.bin
 :: Vipasana
 set #name_ransomware=Ransomware.Vipasana
 :: WannaCry
-set #name_ransomware=Ransomware.WannaCry
+set name_ransomware=Ransomware.WannaCry
 :: WannaCry_plus
 set #name_ransomware=Ransomware.Wannacry_Plus
 :: java Ransomware
 set #name_ransomware=Ransomware.jar
 
-set #name_ransomware_zip=lockbit.zip
-set name_ransomware_zip=lockbit.7z
+set name_ransomware_zip=Ransomware.WannaCry.zip
+set #name_ransomware_zip=Ransomware.WannaCry.7z
 
 ::## transfer the java Ransomware instead
 set #name_ransomware_zip=Ransomware.jar
@@ -107,7 +107,7 @@ set path_ranflood_bat=C:\Users\ranflood.bat
 set path_ranfloodd_bat=C:\Users\ranfloodd.bat
 set path_ranflood_jar_win=C:\Program Files\Ranflood\ranflood.jar
 set path_ranfloodd_jar_win=C:\Program Files\Ranflood\ranfloodd.jar
-set path_ransomware_win=C:\Users\lockbit
+set path_ransomware_win=C:\Users\Ransomware.WannaCry
 set path_ransomware_dir_win=C:\Users\ransomware\
 set path_settings_ini_win=C:\Users\settings.ini
 
@@ -118,22 +118,22 @@ set path_ranflood_linux=/mnt/c/Program Files/Ranflood/ranflood.exe
 set path_ranfloodd_linux=/mnt/c/Program Files/Ranflood/ranfloodd.exe
 set path_ranflood_jar_linux=/mnt/c/Program Files/Ranflood/ranflood.jar
 set path_ranfloodd_jar_linux=/mnt/c/Program Files/Ranflood/ranfloodd.jar
-set path_ransomware_linux=/mnt/c/Users/lockbit
+set path_ransomware_linux=/mnt/c/Users/Ransomware.WannaCry
 set path_settings_ini_linux=/mnt/c/Users/settings.ini
 
-set path_checker_out_dir=/home/checker/20250307-17_12_29/
+set path_checker_out_dir=/home/checker/20250311-17_29_35/
 
 ::# where output of internal playbook is saved
-set path_log_win=C:\Users\log20250307-17_12_29.txt
-set path_log_linux=/mnt/c/Users/log20250307-17_12_29.txt
+set path_log_win=C:\Users\log20250311-17_29_35.txt
+set path_log_linux=/mnt/c/Users/log20250311-17_29_35.txt
 ::# log of filechecker restore command
-set path_log_filechecker=/home/checker/20250307-17_12_29/log20250307-17_12_29.txt
-set path_log_filechecker_out=/home/checker/20250307-17_12_29/out20250307-17_12_29.txt
-set path_log_internal_daemon=C:\Users\log_daemon20250307-17_12_29.txt
-set path_log_internal_ransomware=C:\Users\log_ransomware20250307-17_12_29.txt
+set path_log_filechecker=/home/checker/20250311-17_29_35/log20250311-17_29_35.txt
+set path_log_filechecker_out=/home/checker/20250311-17_29_35/out20250311-17_29_35.txt
+set path_log_internal_daemon=C:\Users\log_daemon20250311-17_29_35.txt
+set path_log_internal_ransomware=C:\Users\log_ransomware20250311-17_29_35.txt
 
-set path_report=/home/checker/20250307-17_12_29/report20250307-17_12_29
-set path_report_shards=/home/checker/20250307-17_12_29/report-shards20250307-17_12_29
+set path_report=/home/checker/20250311-17_29_35/report20250311-17_29_35
+set path_report_shards=/home/checker/20250311-17_29_35/report-shards20250311-17_29_35
 
 
 :: Prepopulate

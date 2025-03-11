@@ -73,7 +73,7 @@ name_env_linux=variables.generated.sh
 ## (only this one will be transferred and used)
 
 # Locbkit
-name_ransomware=lockbit
+#name_ransomware=lockbit
 # Petya
 #name_ransomware=Ransomware.Petya
 # Phobos
@@ -81,14 +81,14 @@ name_ransomware=lockbit
 # Vipasana
 #name_ransomware=Ransomware.Vipasana
 # WannaCry
-#name_ransomware=Ransomware.WannaCry
+name_ransomware=Ransomware.WannaCry
 # WannaCry_plus
 #name_ransomware=Ransomware.Wannacry_Plus
 # java Ransomware
 #name_ransomware=Ransomware.jar
 
-#name_ransomware_zip=${name_ransomware}.zip
-name_ransomware_zip=${name_ransomware}.7z
+name_ransomware_zip=${name_ransomware}.zip
+#name_ransomware_zip=${name_ransomware}.7z
 
 ### transfer the java Ransomware instead
 #name_ransomware_zip=Ransomware.jar
