@@ -2,7 +2,7 @@
 
 
 # timestamp, can be used as "unique" id
-timestamp: '20250311-17_29_35'
+timestamp: '20250313-16_51_14'
 
 
 # Script
@@ -77,17 +77,17 @@ name_env_linux: 'variables.generated.sh'
 # Petya
 #name_ransomware: '${#name_ransomware}'
 # Phobos
-#name_ransomware: '${#name_ransomware}'
+name_ransomware: 'phobos.bin'
 # Vipasana
 #name_ransomware: '${#name_ransomware}'
 # WannaCry
-name_ransomware: 'Ransomware.WannaCry'
+#name_ransomware: '${#name_ransomware}'
 # WannaCry_plus
 #name_ransomware: '${#name_ransomware}'
 # java Ransomware
 #name_ransomware: '${#name_ransomware}'
 
-name_ransomware_zip: 'Ransomware.WannaCry.zip'
+name_ransomware_zip: 'phobos.bin.zip'
 #name_ransomware_zip: '${#name_ransomware_zip}'
 
 ### transfer the java Ransomware instead
@@ -107,7 +107,7 @@ path_ranflood_bat: 'C:\Users\ranflood.bat'
 path_ranfloodd_bat: 'C:\Users\ranfloodd.bat'
 path_ranflood_jar_win: 'C:\Program Files\Ranflood\ranflood.jar'
 path_ranfloodd_jar_win: 'C:\Program Files\Ranflood\ranfloodd.jar'
-path_ransomware_win: 'C:\Users\Ransomware.WannaCry'
+path_ransomware_win: 'C:\Users\phobos.bin'
 path_ransomware_dir_win: 'C:\Users\ransomware\'
 path_settings_ini_win: 'C:\Users\settings.ini'
 
@@ -118,22 +118,22 @@ path_ranflood_linux: '/mnt/c/Program Files/Ranflood/ranflood.exe'
 path_ranfloodd_linux: '/mnt/c/Program Files/Ranflood/ranfloodd.exe'
 path_ranflood_jar_linux: '/mnt/c/Program Files/Ranflood/ranflood.jar'
 path_ranfloodd_jar_linux: '/mnt/c/Program Files/Ranflood/ranfloodd.jar'
-path_ransomware_linux: '/mnt/c/Users/Ransomware.WannaCry'
+path_ransomware_linux: '/mnt/c/Users/phobos.bin'
 path_settings_ini_linux: '/mnt/c/Users/settings.ini'
 
-path_checker_out_dir: '/home/checker/20250311-17_29_35/'
+path_checker_out_dir: '/home/checker/20250313-16_51_14/'
 
 ## where output of internal playbook is saved
-path_log_win: 'C:\Users\log20250311-17_29_35.txt'
-path_log_linux: '/mnt/c/Users/log20250311-17_29_35.txt'
+path_log_win: 'C:\Users\log20250313-16_51_14.txt'
+path_log_linux: '/mnt/c/Users/log20250313-16_51_14.txt'
 ## log of filechecker restore command
-path_log_filechecker: '/home/checker/20250311-17_29_35/log20250311-17_29_35.txt'
-path_log_filechecker_out: '/home/checker/20250311-17_29_35/out20250311-17_29_35.txt'
-path_log_internal_daemon: 'C:\Users\log_daemon20250311-17_29_35.txt'
-path_log_internal_ransomware: 'C:\Users\log_ransomware20250311-17_29_35.txt'
+path_log_filechecker: '/home/checker/20250313-16_51_14/log20250313-16_51_14.txt'
+path_log_filechecker_out: '/home/checker/20250313-16_51_14/out20250313-16_51_14.txt'
+path_log_internal_daemon: 'C:\Users\log_daemon20250313-16_51_14.txt'
+path_log_internal_ransomware: 'C:\Users\log_ransomware20250313-16_51_14.txt'
 
-path_report: '/home/checker/20250311-17_29_35/report20250311-17_29_35'
-path_report_shards: '/home/checker/20250311-17_29_35/report-shards20250311-17_29_35'
+path_report: '/home/checker/20250313-16_51_14/report20250313-16_51_14'
+path_report_shards: '/home/checker/20250313-16_51_14/report-shards20250313-16_51_14'
 
 
 # Prepopulate

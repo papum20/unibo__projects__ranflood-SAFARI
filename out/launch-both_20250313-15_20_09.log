@@ -1,0 +1,110 @@
+Running 10 tests in 5 batches of 2 tests each...
+Running test 1 of 10
+[Script] Launching in checker mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Deleting only, skipping all.
+[Script] Launching in flood mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Provisioning new VMs
+vm_ids: 2000
+vm_ips: 192.168.2.67
+vm_disk_to_check_name: "local-lvm:vm-2000-disk-21" = "pve21"
+[Ansible] Launching ansible
+[Script] Launching in checker mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Provisioning new VMs
+vm_ids: 2110
+vm_ips: 192.168.2.117
+[Ansible] Launching ansible
+Test batch completed: 1 (tot: 2 / 10)
+[20250313-15_41_05] windows IPs: 192.168.2.67
+[20250313-15_41_05] checker IPs: 192.168.2.117
+Running test 2 of 10
+[Script] Launching in checker mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Deleting only, skipping all.
+[Script] Launching in flood mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Provisioning new VMs
+vm_ids: 2000
+vm_ips: 192.168.2.135
+vm_disk_to_check_name: "local-lvm:vm-2000-disk-21" = "pve21"
+[Ansible] Launching ansible
+[Script] Launching in checker mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Provisioning new VMs
+vm_ids: 2110
+vm_ips: 192.168.2.173
+[Ansible] Launching ansible
+Test batch completed: 2 (tot: 4 / 10)
+[20250313-16_04_22] windows IPs: 192.168.2.135
+[20250313-16_04_22] checker IPs: 192.168.2.173
+Running test 3 of 10
+[Script] Launching in checker mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Deleting only, skipping all.
+[Script] Launching in flood mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Provisioning new VMs
+vm_ids: 2000
+vm_ips: 192.168.2.67
+vm_disk_to_check_name: "local-lvm:vm-2000-disk-21" = "pve21"
+[Ansible] Launching ansible
+[Script] Launching in checker mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Provisioning new VMs
+vm_ids: 2110
+vm_ips: 192.168.2.201
+[Ansible] Launching ansible
+Test batch completed: 3 (tot: 6 / 10)
+[20250313-16_25_55] windows IPs: 192.168.2.67
+[20250313-16_25_55] checker IPs: 192.168.2.201
+Running test 4 of 10
+[Script] Launching in checker mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Deleting only, skipping all.
+[Script] Launching in flood mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Provisioning new VMs
+vm_ids: 2000
+vm_ips: 192.168.2.213
+vm_disk_to_check_name: "local-lvm:vm-2000-disk-21" = "pve21"
+[Ansible] Launching ansible
+[Script] Launching in checker mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Provisioning new VMs
+vm_ids: 2110
+vm_ips: 192.168.2.25
+[Ansible] Launching ansible
+Test batch completed: 4 (tot: 8 / 10)
+[20250313-16_48_14] windows IPs: 192.168.2.213
+[20250313-16_48_14] checker IPs: 192.168.2.25
+Running test 5 of 10
+[Script] Launching in checker mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Deleting only, skipping all.
+[Script] Launching in flood mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Provisioning new VMs
+vm_ids: 2001 2000
+vm_ips: 192.168.2.65 192.168.2.67
+vm_disk_to_check_name: "local-lvm:vm-2001-disk-0" = "pve22" "local-lvm:vm-2000-disk-21" = "pve21"
+[Ansible] Launching ansible
+Test batch completed: 5 (tot: 10 / 10)
+[20250313-17_06_05] windows IPs: 192.168.2.65 192.168.2.67
+[20250313-17_06_05] checker IPs: 
+Completed tests: 10 / 10

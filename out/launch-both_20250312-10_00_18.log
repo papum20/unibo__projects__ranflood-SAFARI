@@ -1,0 +1,57 @@
+Running 6 tests in 3 batches of 2 tests each...
+Running test 1 of 6
+[Script] Launching in checker mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Deleting only, skipping all.
+[Script] Launching in flood mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Provisioning new VMs
+vm_ids: 2001 2000
+vm_ips: 192.168.2.65 192.168.2.67
+vm_disk_to_check_name: "local-lvm:vm-2001-disk-0" = "pve22" "local-lvm:vm-2000-disk-21" = "pve21"
+[Ansible] Launching ansible
+Test batch completed: 1 (tot: 2 / 6)
+[20250312-10_16_53] windows IPs: 192.168.2.65 192.168.2.67
+[20250312-10_16_53] checker IPs: 
+Running test 2 of 6
+[Script] Launching in checker mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Deleting only, skipping all.
+[Script] Launching in flood mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Provisioning new VMs
+vm_ids: 2000
+vm_ips: 192.168.2.221
+vm_disk_to_check_name: "local-lvm:vm-2000-disk-21" = "pve21"
+[Ansible] Launching ansible
+[Script] Launching in checker mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Provisioning new VMs
+vm_ids: 2110
+vm_ips: 192.168.2.44
+[Ansible] Launching ansible
+Test batch completed: 2 (tot: 4 / 6)
+[20250312-10_46_22] windows IPs: 192.168.2.221
+[20250312-10_46_22] checker IPs: 192.168.2.44
+Running test 3 of 6
+[Script] Launching in checker mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Deleting only, skipping all.
+[Script] Launching in flood mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Provisioning new VMs
+vm_ids: 2001 2000
+vm_ips: 192.168.2.65 192.168.2.67
+vm_disk_to_check_name: "local-lvm:vm-2001-disk-0" = "pve22" "local-lvm:vm-2000-disk-21" = "pve21"
+[Ansible] Launching ansible
+Test batch completed: 3 (tot: 6 / 6)
+[20250312-11_04_21] windows IPs: 192.168.2.65 192.168.2.67
+[20250312-11_04_21] checker IPs: 
+Completed tests: 6 / 6
