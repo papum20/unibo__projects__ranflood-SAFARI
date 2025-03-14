@@ -103,7 +103,7 @@ if __name__ == "__main__":
 	pattern = "report2.*"
 
 	if len(sys.argv) < 2:
-		print("Usage: average.py [-v] <input.json>")
+		print("Usage: report-flatten-filter.py [-v] <input.json>")
 		sys.exit(1)
 
 	file_input = sys.argv[1]

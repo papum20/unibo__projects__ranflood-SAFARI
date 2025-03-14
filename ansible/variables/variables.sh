@@ -77,11 +77,11 @@ name_env_linux=variables.generated.sh
 # Petya
 #name_ransomware=Ransomware.Petya
 # Phobos
-name_ransomware=phobos.bin
+#name_ransomware=phobos.bin
 # Vipasana
 #name_ransomware=Ransomware.Vipasana
 # WannaCry
-#name_ransomware=Ransomware.WannaCry
+name_ransomware=Ransomware.WannaCry
 # WannaCry_plus
 #name_ransomware=Ransomware.Wannacry_Plus
 # java Ransomware

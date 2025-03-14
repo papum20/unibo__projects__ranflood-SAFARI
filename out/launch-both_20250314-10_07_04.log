@@ -1,0 +1,54 @@
+Running 7 tests in 4 batches of 2 tests each...
+Running test 1 of 7
+[Script] Launching in checker mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Deleting only, skipping all.
+[Script] Launching in flood mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Provisioning new VMs
+[Error] No VMs were created. Please edit manually vm.txt and retry with -m.
+Test batch completed: 1 (tot: 2 / 7)
+[20250314-10_07_08] windows IPs: 
+[20250314-10_07_08] checker IPs: 
+Running test 2 of 7
+[Script] Launching in checker mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Deleting only, skipping all.
+[Script] Launching in flood mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Provisioning new VMs
+[Error] No VMs were created. Please edit manually vm.txt and retry with -m.
+Test batch completed: 2 (tot: 4 / 7)
+[20250314-10_07_11] windows IPs: 
+[20250314-10_07_11] checker IPs: 
+Running test 3 of 7
+[Script] Launching in checker mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Deleting only, skipping all.
+[Script] Launching in flood mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Provisioning new VMs
+[Error] No VMs were created. Please edit manually vm.txt and retry with -m.
+Test batch completed: 3 (tot: 6 / 7)
+[20250314-10_07_14] windows IPs: 
+[20250314-10_07_14] checker IPs: 
+Running test 4 of 7
+[Script] Launching in checker mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Deleting only, skipping all.
+[Script] Launching in flood mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Provisioning new VMs
+[Error] No VMs were created. Please edit manually vm.txt and retry with -m.
+Test batch completed: 4 (tot: 8 / 7)
+[20250314-10_07_18] windows IPs: 
+[20250314-10_07_18] checker IPs: 
+Completed tests: 8 / 7
