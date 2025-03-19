@@ -1,0 +1,525 @@
+Start - 2025-03-19T13:14:08.884208164
+Analyzed shard: /mnt/win10/Users/IEUser/init.bat; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/NTUSER.DAT{1c3790b4-b8ad-11e8-aa21-e41d2d101530}.TM.blf; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/.ansible_async/j110903848848.2656; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/.ansible_async/j833420429759.2848; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/.ansible_async/j898446925037.1320; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/.ansible_async/j922865616857.5880; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/.vbox_version; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/3D Objects/desktop.ini; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/ansible/inventory; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/ansible/playbook.yml; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/AppData; generation = -1; valid shard = false
+[Error]	Could not read shard, IO exception: /mnt/win10/Users/IEUser/Application Data
+[Error]	Could not read shard, IO exception: /mnt/win10/Users/IEUser/Application Data
+Analyzed shard: /mnt/win10/Users/IEUser/Contacts/desktop.ini; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Contacts/IEUSER.CON; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Cookies; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/01F22128.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/0A8AE703.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/0BD4255D.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/APPLICAT.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/APPROACH.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ARCHITEC.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ATTACK_A.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/AUTHENTI.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_BLO000.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_FORMAL.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_FRAMEW.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_GENERA.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_HYBRID.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_LEARNI.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_LIGHTW.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_SYS000.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_SYSTEM.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/BIOINFOP.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/BLOCKCHA.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/BOINC_FO.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/BRICK___.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/CYBEL000.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/CYBELE__.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/CYBER_PH.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/D35FF869.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/DATA_MAN.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/DEFENSE_.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/FILE_002.DOC.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/FILE_SAM.DOC.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/I_SKGWKV.JPG.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/JS5J37I_.JPG.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/KCKJODLQ.JPG.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F.DUM; generation = -1; valid shard = false
+Found shard for new original file: C:\Users\IEUser\Desktop\43D8E93F.DUM
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard111.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 1
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard126.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 2
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard140.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 3
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard155.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 4
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard22.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 5
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard37.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 6
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard51.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 7
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard8.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 8
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard94.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 9
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ADOPT000.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/CC81FEF7.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/DESIG000.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/FILE_001.DOC.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/LKNJ2VOT.JPG.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_BLOCKC.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_CASE_B.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_CLO000.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_CLOUD_.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_CLUSTE.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_COM000.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_COMPAR.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_DATAFL.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_DECISI.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_DISTRI.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_FLEXIB.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_FOCUS_.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ADOPTING.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/AGENT_BA.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANALYZIN.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/1724FEEB.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/2265BECF.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/2BC48EB7.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/32DED4B9.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/3C22462C.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/408D4B92.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/4357AB01.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/4636428E.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/4FCEC5A8.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/6A1F9D65.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/7F04C660.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/81998AB1.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/94435D7E.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/9F09BC54.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/A442EF09.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/A5CC7627.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/A7BAE86E.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/BF2955DB.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/D2603682.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/DE25D108.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/E0A5826D.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/EAEC1341.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ANOTHER/EFFE1AF8.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/AN_ATMOS.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/AN_OVERV.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_LITERA.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_METHOD.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_MICROS.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_MIXED_.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_MULTI_.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_NOVEL_.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_PRACTI.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_SCALAB.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_SCIENC.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_SELF_O.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_SERVIC.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/A_STUDY_.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard80.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 10
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard81.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 11
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard82.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 12
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard83.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 13
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard84.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 14
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard85.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 15
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard86.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 16
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard87.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 17
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard88.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 18
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard89.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 19
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard9.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 20
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard90.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 21
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard91.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 22
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard92.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 23
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard93.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 24
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard0.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 25
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard1.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 26
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard10.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 27
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard100.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 28
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard101.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 29
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard102.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 30
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard103.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 31
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard104.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 32
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard105.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 33
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard106.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 34
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard107.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 35
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard108.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 36
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard109.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 37
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard11.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 38
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard110.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 39
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard23.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 40
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard24.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 41
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard25.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 42
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard26.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 43
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard27.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 44
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard28.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 45
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard29.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 46
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard3.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 47
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard30.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 48
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard31.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 49
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard32.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 50
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard33.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 51
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard34.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 52
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard35.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 53
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard36.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 54
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard38.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 55
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard39.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 56
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard4.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 57
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard40.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 58
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard41.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 59
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard42.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 60
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard43.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 61
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard44.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 62
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard45.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 63
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard46.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 64
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard47.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 65
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard48.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 66
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard49.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 67
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard5.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 68
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard50.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 69
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard52.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 70
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard53.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 71
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard54.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 72
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard55.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 73
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard56.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 74
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard57.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 75
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard58.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 76
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard59.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 77
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard6.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 78
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard60.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 79
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard61.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 80
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard62.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 81
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard63.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 82
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard64.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 83
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard65.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 84
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard66.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 85
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard67.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 86
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard68.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 87
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard69.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 88
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard7.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 89
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard70.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 90
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard71.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 91
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard72.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 92
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard73.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 93
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard74.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 94
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard75.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 95
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard76.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 96
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard77.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 97
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard78.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 98
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard79.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 99
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/4465CDCE.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/4C7C1D2F.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/7934FE27.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/990423D0.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/9EF78656.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/@Please_Read_Me@.txt; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/@WanaDecryptor@.exe; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ACTION_O.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ADAPTIVE.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard112.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 100
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard113.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 101
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard114.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 102
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard115.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 103
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard116.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 104
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard117.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 105
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard118.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 106
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard119.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 107
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard12.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 108
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard120.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 109
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard121.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 110
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard122.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 111
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard123.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 112
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard124.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 113
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard125.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 114
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard127.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 115
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard128.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 116
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard129.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 117
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard13.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 118
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard130.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 119
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard131.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 120
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard132.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 121
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard133.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 122
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard134.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 123
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard135.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 124
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard136.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 125
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard137.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 126
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard138.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 127
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard139.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 128
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard14.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 129
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard95.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 130
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard96.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 131
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard97.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 132
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard98.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 133
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard99.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 134
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard141.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 135
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard142.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 136
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard143.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 137
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard144.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 138
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard145.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 139
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard146.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 140
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard147.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 141
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard148.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 142
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard149.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 143
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard15.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 144
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard150.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 145
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard151.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 146
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard152.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 147
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard153.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 148
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard154.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 149
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard156.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 150
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard157.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 151
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard158.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 152
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard159.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 153
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard16.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 154
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard160.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 155
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard161.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 156
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard162.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 157
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard163.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 158
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard164.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 159
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard165.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 160
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard166.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 161
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard167.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 162
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard168.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 163
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard169.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 164
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard17.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 165
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard170.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 166
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard18.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 167
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard19.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 168
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard2.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 169
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard20.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 170
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/43D8E93F_shard21.DUM; generation = 426409160300; valid shard = true
+New shards of C:\Users\IEUser\Desktop\43D8E93F.DUM: 171
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/CCODAMIC.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/CLOUD000.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/CLOUD001.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/CLOUDIFI.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/CLOUDINT.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/CLOUD_BA.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/CLOUD_RE.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/COMPUTIN.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/CONSTRAI.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/CONSTRUC.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/COST_EFF.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/DESIG001.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/DESIGN_A.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/desktop.ini; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/DETECTIO.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/DEVOPS_C.PDF.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/EAB16DBE.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/8C400643.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/05652CFA.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/0890A6BA.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/10534DEF.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/191667D9.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/2C6BD39A.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/30191474.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/40888E1C.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/4C520A95.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/4D9E3920.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/530D11BA.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/5C9FF138.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/68E03BF8.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/6C9B742D.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/6FE97F45.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/73A27B5D.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/882D13AF.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/88701D72.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/8FD06015.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/96129B4A.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/A3345EC1.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/A9E0251B.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/B0B27A75.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/B14078F6.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/B6E72997.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/B97E01E5.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/C3B05F46.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/C74F31A5.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/D622BFEB.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/DA405530.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/DB063209.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/E0D37763.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/E3C59DB7.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/F0459F04.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/F27477DE.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/F2DB3468.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/F774CB07.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/FA367364.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/FA9AA7EB.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/ENCYC/FFF3A879.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/eula.lnk; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/F3BE26A6.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/FE293672.DUM; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/FILE_000.DOC.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/N23ZPP_V.JPG.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/NKZJODFK.JPG.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/OASPNOLL.JPG.WNCRY; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/OPERA_BR.LNK; generation = -1; valid shard = false
+Analyzed shard: /mnt/win10/Users/IEUser/Desktop/OQUXVXJG.JPG.WNCRY; generation = -1; valid shard = false

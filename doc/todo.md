@@ -21,11 +21,16 @@
 		*	always 100-800 shards corrupted
 		*	probably corrupts a shard as soon as it gets created!
 *	wannacry
-	*	sss improvement (no split corrupted files)
+	*	old (don't know if used sss improvement)
 		*	1s 200shards - 10 (res 10)
+	*	sss improvement (no split corrupted files)
+		*	1s 200shards - 
 		*	1s 10shards - 5 (res 60)
 		*	1s 5shards - 3 (res 75)
 		*	1s 50shards - 4 (res 20)
+*	phobos
+	*	sss improvement (no split corrupted files)
+		*	1s 5shards - 3 (res 0, ransomware doesn't activate)
 
 ## DONE	
 
