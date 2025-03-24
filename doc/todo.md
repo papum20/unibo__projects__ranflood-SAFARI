@@ -26,7 +26,7 @@
 		*	60s 200shards - 5 (res 10)
 		*	1s 200shards - 2 (res 10)
 		*	1s 10shards - 5 (res 60)
-		*	1s 5shards - 3 (res 75) doing
+		*	1s 5shards - 3 (res 75)
 		*	1s 50shards - 4 (res 20)
 *	phobos
 	*	sss improvement (no split corrupted files)
