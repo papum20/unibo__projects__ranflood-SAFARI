@@ -1,0 +1,5 @@
+Running 8 tests in 2 batches of 4 tests each...
+Running test 1 of 8
+[Script] Launching in checker mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
