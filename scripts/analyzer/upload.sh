@@ -7,7 +7,7 @@ fi
 
 
 if [[ $# -ne 3 ]]; then
-	echo "Usage: $0 <folder> <json_file> <ransomware>"
+	echo "Usage: $0 FOLDER JSON_FILE RANSOMWARE"
 	exit 1
 fi
 

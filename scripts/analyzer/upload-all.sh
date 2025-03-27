@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#
+# This is an old version of the upload-one script, more hard-coded.
+# Use the other one, which also accepts parameters.
+#
+
 if [[ ! -d scripts ]]; then
 	echo "Run this script from the root directory of the repository"
 	exit 1
