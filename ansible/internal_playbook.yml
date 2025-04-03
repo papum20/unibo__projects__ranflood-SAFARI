@@ -35,7 +35,7 @@
           - ms_lldp
           - ms_msclient
           - ms_pacer
-      when: "true"
+      when: "false"
 
     #
     # Ranfloodd

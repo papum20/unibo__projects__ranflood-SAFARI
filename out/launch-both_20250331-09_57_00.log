@@ -1,0 +1,23 @@
+Running 3 tests in 1 batches of 4 tests each...
+Running test 1 of 3
+[Script] Launching in checker mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Deleting only, skipping all.
+[Script] Launching in flood mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Provisioning new VMs
+vm_ids: 2002 2003 2000 2001
+vm_ips: 192.168.2.152 192.168.2.110 192.168.2.67 192.168.2.251
+vm_disk_to_check_name: "local-lvm:vm-2002-disk-0" = "pve23" "local-lvm:vm-2003-disk-0" = "pve24" "local-lvm:vm-2000-disk-21" = "pve21" "local-lvm:vm-2001-disk-0" = "pve22"
+[Ansible] Launching ansible
+[Script] Launching in checker mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Provisioning new VMs
+[Error] No VMs were created. Please edit manually vm.txt and retry with -m.
+Test batch completed: 1 (tot: 4 / 3)
+[20250331-10_16_49] windows IPs: 192.168.2.152 192.168.2.110 192.168.2.67 192.168.2.251
+[20250331-10_16_49] checker IPs: 
+Completed tests: 4 / 3

@@ -72,14 +72,21 @@ name_env_linux=variables.generated.sh
 ## ransomwares
 ## (only this one will be transferred and used)
 
+name_ransomware=Birele
+# 7ev3n
+#name_ransomware=7ev3n
+# Birele
+#name_ransomware=Birele
 # Cryptowall
 #name_ransomware=Ransomware.Cryptowall
+# Fantom
+#name_ransomware=Fantom
 # Locbkit
 #name_ransomware=lockbit
 # Locy
 #name_ransomware=Ransomware.Locky
-# Petya
-name_ransomware=Ransomware.Petya
+# Petya_
+#name_ransomware=Ransomware.Petya
 # Phobos
 #name_ransomware=phobos.bin
 # Vipasana
@@ -88,6 +95,8 @@ name_ransomware=Ransomware.Petya
 #name_ransomware=Ransomware.WannaCry
 # WannaCry_plus
 #name_ransomware=Ransomware.Wannacry_Plus
+# Winlocker
+#name_ransomware=WinlockerVB6Blacksod
 # java Ransomware
 #name_ransomware=Ransomware.jar
 
