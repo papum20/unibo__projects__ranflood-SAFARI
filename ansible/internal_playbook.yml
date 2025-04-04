@@ -142,9 +142,9 @@
       ansible.builtin.pause:
         seconds: 1
 
-    #- name: Wait between ransomware and ranflood client
-    #  ansible.builtin.pause:
-    #    seconds: "{{ ranflood_start_delay }}"
+    - name: Wait between ransomware and ranflood client
+      ansible.builtin.pause:
+        seconds: "{{ ranflood_start_delay }}"
 
     - name: Start ranflood client on target dirs
       ansible.windows.win_command:

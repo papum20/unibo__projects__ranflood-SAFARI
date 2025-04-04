@@ -72,7 +72,7 @@ name_env_linux=variables.generated.sh
 ## ransomwares
 ## (only this one will be transferred and used)
 
-name_ransomware=Birele
+name_ransomware=Fantom
 # 7ev3n
 #name_ransomware=7ev3n
 # Birele

@@ -15,13 +15,18 @@ ceil_divide() {
 # test(bool TERRAFORM_MANUAL)
 function test() {
   if [[ $1 == true ]]; then
+    # retry checker 3 times
     ./scripts/launch.sh -c -D -l "$path_log" && \
       ./scripts/launch.sh -m -l "$path_log" && \
-      ./scripts/launch.sh -c -d -l "$path_log"
+      ( ./scripts/launch.sh -c -d -l "$path_log" || \
+        ./scripts/launch.sh -c -d -l "$path_log" || \
+        ./scripts/launch.sh -c -d -l "$path_log" )
   else
     ./scripts/launch.sh -c -D -l "$path_log" && \
       ./scripts/launch.sh -d -l "$path_log" && \
-      ./scripts/launch.sh -c -d -l "$path_log"
+      ( ./scripts/launch.sh -c -d -l "$path_log" || \
+        ./scripts/launch.sh -c -d -l "$path_log" || \
+        ./scripts/launch.sh -c -d -l "$path_log" )
   fi
 }
 

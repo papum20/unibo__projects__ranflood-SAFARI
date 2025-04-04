@@ -1,0 +1,15 @@
+3G C:\Users\settings.ini
+| [main] INFO org.ranflood.daemon.Ranflood.main
+| Ranflood Daemon (ranfloodd) version 0.7-BETA started.
+
+| [main] INFO org.ranflood.daemon.RanfloodDaemon.start
+| Server started at tcp://localhost:7890, accepting requests from clients
+
+| [main] INFO org.ranflood.daemon.RanfloodDaemon.start
+| HTTP server started on port 8081
+
+| [main] INFO jetty-11.0.15; built: 2023-04-11T18:37:53.775Z; git: 5bc5e562c8d05c5862505aebe5cf83a61bdbcb96; jvm 21.0.5+9-LTS-239
+| [main] INFO Session workerName=node0
+| [main] INFO Started o.e.j.s.ServletContextHandler@3e0e1046{/,null,AVAILABLE}
+| [main] INFO Started ServerConnector@368f2016{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+| [main] INFO Started Server@11c9af63{STARTING}[11.0.15,sto=0] @7600ms

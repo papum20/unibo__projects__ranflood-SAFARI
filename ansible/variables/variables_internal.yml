@@ -43,7 +43,7 @@ ranflood_snapshot_strategy: sss-ransomware
 # seconds between daemon and client
 ranflood_daemon_delay: 3
 # seconds between the start of ransomware and ranflood (client)
-ranflood_start_delay: 1
+ranflood_start_delay: 620
 #ranflood_start_delay: 60
 
 # optional tasks
