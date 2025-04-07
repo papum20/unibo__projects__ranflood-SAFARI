@@ -1,4 +1,0 @@
-vm_ip=fd13:b4c8:b049::775 vm_id=2001 disk_name="local-lvm:vm-2001-disk-0" = "pve22"
-vm_ip=192.168.2.67 vm_id=2003 disk_name="local-lvm:vm-2003-disk-0" = "pve24"
-vm_ip=192.168.2.69 vm_id=2002 disk_name="local-lvm:vm-2002-disk-0" = "pve23"
-vm_ip=192.168.2.160 vm_id=2000 disk_name="local-lvm:vm-2000-disk-21" = "pve21"

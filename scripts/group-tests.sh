@@ -63,8 +63,9 @@ fi
 # no flooder
 #ransomware_test Birele 620 200 2
 #ransomware_test WinlockerVB6Blacksod 620 200 2
-ransomware_test 7ev3n 620 200 2
-ransomware_test Fantom 620 200 2
+#ransomware_test 7ev3n 620 200 2
+#ransomware_test Fantom 620 200 2
+ransomware_test Vichingo455@Annabelle 620 200 2
 exit 0
 
 #ransomware_test Birele 1 200 3

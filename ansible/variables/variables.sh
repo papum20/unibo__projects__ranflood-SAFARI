@@ -72,9 +72,11 @@ name_env_linux=variables.generated.sh
 ## ransomwares
 ## (only this one will be transferred and used)
 
-name_ransomware=Fantom
+name_ransomware=Vichingo455@Annabelle
 # 7ev3n
 #name_ransomware=7ev3n
+# Annabelle
+#name_ransomware=Vichingo455@Annabelle
 # Birele
 #name_ransomware=Birele
 # Cryptowall
