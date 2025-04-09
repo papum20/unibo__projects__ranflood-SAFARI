@@ -39,14 +39,22 @@ function ransomware_test() {
 	echo "Starting test: $ransomware, delay=${delay}s, shards=${shards}, tests=$tests, directory=$directory"
 
 	if [[ ! -d $directory ]]; then
+		mkdir -p $directory
+	fi
+
+	tests_to_do=$((tests - $(./scripts/util/out-count-results.sh $directory)))
+
+	if [[ $tests_to_do -le 0 ]]; then
+		echo "All tests already done, skipping..."
+		return
+	else 
+		echo "Some tests were already found, running $tests_to_do remaining tests..."
 		set_name_ransomware $ransomware
 		set_ranflood_start_delay $delay
 		set_shards_created $shards
 		mkdir -p $directory
-		./scripts/launch-both-retry.sh $tests ./ansible/out/$ransomware
+		./scripts/launch-both-retry.sh -i $tests_to_do ./ansible/out/$ransomware
 		find ./ansible/out/$ransomware/ -maxdepth 1 -name "192.168.*" -exec mv {} $directory \;
-	else
-		echo "Directory already exists, skipping..."
 	fi
 }
 
@@ -65,7 +73,8 @@ fi
 #ransomware_test WinlockerVB6Blacksod 620 200 2
 #ransomware_test 7ev3n 620 200 2
 #ransomware_test Fantom 620 200 2
-ransomware_test Vichingo455@Annabelle 620 200 2
+#ransomware_test Vichingo455@Annabelle 620 200 5
+ransomware_test Ransomware.Petya 620 200 5
 exit 0
 
 #ransomware_test Birele 1 200 3

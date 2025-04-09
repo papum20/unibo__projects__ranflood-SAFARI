@@ -2,7 +2,7 @@
 
 function usage() {
   echo "launch-both.sh: launch infected VM and then checker."
-  echo "Usage: launch-both.sh [-m|--manual] [TESTS_N=1]"
+  echo "Usage: launch-both.sh [-m|--manual] [-i|--ignore-errors] [TESTS_N=1]"
   exit 1
 }
 
@@ -12,18 +12,20 @@ ceil_divide() {
   echo $(( (num + denom - 1) / denom ))
 }
 
-# test(bool TERRAFORM_MANUAL)
+# test(bool TERRAFORM_MANUAL, bool IGNORE_ERRORS)
 function test() {
   if [[ $1 == true ]]; then
     # retry checker 3 times
     ./scripts/launch.sh -c -D -l "$path_log" && \
-      ./scripts/launch.sh -m -l "$path_log" && \
+      ( ./scripts/launch.sh -m -l "$path_log" || \
+        $2 == true ) && \
       ( ./scripts/launch.sh -c -d -l "$path_log" || \
         ./scripts/launch.sh -c -d -l "$path_log" || \
         ./scripts/launch.sh -c -d -l "$path_log" )
   else
     ./scripts/launch.sh -c -D -l "$path_log" && \
-      ./scripts/launch.sh -d -l "$path_log" && \
+      ( ./scripts/launch.sh -d -l "$path_log" || \
+        $2 == true ) && \
       ( ./scripts/launch.sh -c -d -l "$path_log" || \
         ./scripts/launch.sh -c -d -l "$path_log" || \
         ./scripts/launch.sh -c -d -l "$path_log" )
@@ -34,7 +36,7 @@ function test() {
 timestamp=$(date +'%Y%m%d-%H_%M_%S')
 
 # max number of tests which can be executed in parallel (set manually in terraform)
-tests_parallel=2
+tests_parallel=4
 path_out="${PWD}/out/launch-both_${timestamp}.out"
 path_log="${PWD}/out/launch-both_${timestamp}.log"
 mkdir out
@@ -45,11 +47,15 @@ mkdir out
 # ARGS
 #
 
+ignore_errors=false
 terraform_manual=false
 tests_n=1
 
-while getopts ":m-:" opt; do
+while getopts ":mi-:" opt; do
   case $opt in
+    i)
+      ignore_errors=true
+      ;;
     m)
       terraform_manual=true
       ;;
@@ -57,6 +63,9 @@ while getopts ":m-:" opt; do
       case "${OPTARG}" in
         manual)
           terraform_manual=true
+          ;;
+        ignore-errors)
+          ignore_errors=true
           ;;
         *)
           echo "Unknown option: --${OPTARG}"
@@ -91,7 +100,7 @@ test_completed=0
 # Loop for the number of tests
 for ((i=1; i<=test_batches_n; i++)); do
   echo "Running test $i of $tests_n" | tee -a "$path_log"
-  test $terraform_manual
+  test $terraform_manual $ignore_errors
   tests_completed=$((tests_completed+tests_parallel))
   echo "Test batch completed: $i (tot: $tests_completed / $tests_n)" | tee -a "$path_log"
   # write down new ips

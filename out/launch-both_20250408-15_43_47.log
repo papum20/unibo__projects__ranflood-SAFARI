@@ -1,0 +1,33 @@
+Running 3 tests in 2 batches of 2 tests each...
+Running test 1 of 3
+[Script] Launching in checker mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Deleting only, skipping all.
+[Script] Launching in flood mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Provisioning new VMs
+vm_ids: 2000
+vm_ips: 192.168.2.63
+vm_disk_to_check_name: "local-lvm:vm-2000-disk-21" = "pve21"
+[Ansible] Launching ansible
+[Script] Launching in checker mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Provisioning new VMs
+vm_ids: 2110
+vm_ips: 192.168.2.50
+[Ansible] Launching ansible
+Test batch completed: 1 (tot: 2 / 3)
+[20250408-16_04_33] windows IPs: 192.168.2.63
+[20250408-16_04_33] checker IPs: 192.168.2.50
+Running test 2 of 3
+[Script] Launching in checker mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Deleting only, skipping all.
+[Script] Launching in flood mode
+[Terraform] Launching terraform
+[Terraform] Deleting previous VMs
+[Terraform] Provisioning new VMs

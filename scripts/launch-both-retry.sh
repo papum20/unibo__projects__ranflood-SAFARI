@@ -8,12 +8,16 @@ function usage() {
 }
 
 
+ignore_errors=false
 terraform_manual=false
 tests_n=1
 out_dir=
 
-while getopts ":m-:" opt; do
+while getopts ":mi-:" opt; do
   case $opt in
+    i)
+      ignore_errors=true
+      ;;
     m)
       terraform_manual=true
       ;;
@@ -21,6 +25,9 @@ while getopts ":m-:" opt; do
       case "${OPTARG}" in
         manual)
           terraform_manual=true
+          ;;
+        ignore-errors)
+          ignore_errors=true
           ;;
         *)
           echo "Unknown option: --${OPTARG}"
@@ -59,9 +66,13 @@ while [[ $(./scripts/util/out-count-results.sh $out_dir) -lt $tests_n ]]; do
   tests_to_do=$((tests_n - $(./scripts/util/out-count-results.sh $out_dir)))
   echo "Running $tests_to_do tests..."
 
-  if [[ $terraform_manual == true ]]; then
-    ./scripts/launch-both.sh -m $tests_to_do
-  else
-    ./scripts/launch-both.sh $tests_to_do
+  flags=
+  if [[ $ignore_errors == true ]]; then
+    flags="${flags} -i"
   fi
+  if [[ $terraform_manual == true ]]; then
+    flags="${flags} -m"
+  fi
+
+  ./scripts/launch-both.sh $flags $tests_to_do
 done
