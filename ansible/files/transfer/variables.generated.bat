@@ -136,19 +136,19 @@ set path_ranfloodd_jar_linux=/mnt/c/Program Files/Ranflood/ranfloodd.jar
 set path_ransomware_linux=/mnt/c/Users/Ransomware.Petya
 set path_settings_ini_linux=/mnt/c/Users/settings.ini
 
-set path_checker_out_dir=/home/checker/20250409-10_27_43/
+set path_checker_out_dir=/home/checker/20250411-14_54_59/
 
 ::# where output of internal playbook is saved
-set path_log_win=C:\Users\log20250409-10_27_43.txt
-set path_log_linux=/mnt/c/Users/log20250409-10_27_43.txt
+set path_log_win=C:\Users\log20250411-14_54_59.txt
+set path_log_linux=/mnt/c/Users/log20250411-14_54_59.txt
 ::# log of filechecker restore command
-set path_log_filechecker=/home/checker/20250409-10_27_43/log20250409-10_27_43.txt
-set path_log_filechecker_out=/home/checker/20250409-10_27_43/out20250409-10_27_43.txt
-set path_log_internal_daemon=C:\Users\log_daemon20250409-10_27_43.txt
-set path_log_internal_ransomware=C:\Users\log_ransomware20250409-10_27_43.txt
+set path_log_filechecker=/home/checker/20250411-14_54_59/log20250411-14_54_59.txt
+set path_log_filechecker_out=/home/checker/20250411-14_54_59/out20250411-14_54_59.txt
+set path_log_internal_daemon=C:\Users\log_daemon20250411-14_54_59.txt
+set path_log_internal_ransomware=C:\Users\log_ransomware20250411-14_54_59.txt
 
-set path_report=/home/checker/20250409-10_27_43/report20250409-10_27_43
-set path_report_shards=/home/checker/20250409-10_27_43/report-shards20250409-10_27_43
+set path_report=/home/checker/20250411-14_54_59/report20250411-14_54_59
+set path_report_shards=/home/checker/20250411-14_54_59/report-shards20250411-14_54_59
 
 
 :: Prepopulate

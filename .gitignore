@@ -13,7 +13,7 @@ ansible/files/ransomwares/*
 
 .vscode
 
-# logs
+# output & logs
 
 terraform/**/*.log
 
