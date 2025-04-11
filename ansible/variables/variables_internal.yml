@@ -48,6 +48,8 @@ ranflood_start_delay: 620
 
 # optional tasks
 
+# disable network adapters at the beginning
+network_disable: false
 delete_archives: false
 ## snapshots already present in the used VMs
 take_snapshot: false

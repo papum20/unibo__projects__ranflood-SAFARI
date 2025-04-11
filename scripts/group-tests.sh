@@ -35,7 +35,7 @@ function ransomware_test() {
 	delay=$2
 	shards=$3
 	tests=$4
-	directory=./ansible/out/$ransomware/${delay}s-${shards}shards
+	directory=./out/ansible/$ransomware/${delay}s-${shards}shards
 	echo "Starting test: $ransomware, delay=${delay}s, shards=${shards}, tests=$tests, directory=$directory"
 
 	if [[ ! -d $directory ]]; then
@@ -53,8 +53,8 @@ function ransomware_test() {
 		set_ranflood_start_delay $delay
 		set_shards_created $shards
 		mkdir -p $directory
-		./scripts/launch-both-retry.sh -i $tests_to_do ./ansible/out/$ransomware
-		find ./ansible/out/$ransomware/ -maxdepth 1 -name "192.168.*" -exec mv {} $directory \;
+		./scripts/launch-both-retry.sh -i $tests_to_do ./out/ansible/$ransomware
+		find ./out/ansible/$ransomware/ -maxdepth 1 -name "192.168.*" -exec mv {} $directory \;
 	fi
 }
 

@@ -15,6 +15,7 @@ ansible/files/ransomwares/*
 
 # output & logs
 
+out/*
 terraform/**/*.log
 
 # variables

@@ -1,9 +1,0 @@
-Running 10 tests in 3 batches of 4 tests each...
-Running test 1 of 10
-[Script] Launching in checker mode
-[Terraform] Launching terraform
-[Terraform] Deleting previous VMs
-[Terraform] Deleting only, skipping all.
-[Script] Launching in flood mode
-[Terraform] Launching terraform
-[Terraform] Deleting previous VMs

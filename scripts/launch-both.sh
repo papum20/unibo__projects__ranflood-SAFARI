@@ -37,9 +37,9 @@ timestamp=$(date +'%Y%m%d-%H_%M_%S')
 
 # max number of tests which can be executed in parallel (set manually in terraform)
 tests_parallel=4
-path_out="${PWD}/out/launch-both_${timestamp}.out"
-path_log="${PWD}/out/launch-both_${timestamp}.log"
-mkdir out
+path_out="${PWD}/out/scripts/launch-both_${timestamp}.out"
+path_log="${PWD}/out/scripts/launch-both_${timestamp}.log"
+mkdir -p out
 
 
 

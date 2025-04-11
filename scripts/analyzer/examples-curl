@@ -1,0 +1,80 @@
+curl http://192.168.2.222:5000/upload_any  \
+	-H "api_key:API_KEY" \
+	-F "file=@/home/papum/programm/unibo/projects/SAFARI/test4" \ 
+	-X POST 
+Pss
+
+curl \
+	-F "file=@/home/checker/lockbit/good/192.168.2.123/home/checker/20250128-14_03_09/report20250128-14_03_09" \
+	-F "name_folder=test_operatori""\ 
+	-F "ransomware=lockbit" \
+	-F "delay_contrast=60" \
+	-F "contrast=sssransomware" \
+	-X POST \
+	http://192.168.2.222:5000/upload \
+	-H 'api_key:c687196edcf3fc525c39a0a2db3a36ec'
+
+
+
+curl http://192.168.2.222:5000/upload \
+	-H "api_key:API_KEY" \
+	-X POST \
+	-F "file=@/home/checker/lockbit/good/192.168.2.123/home/checker/20250128-14_03_09/report20250128-14_03_09" \
+	-F "name_folder=test_operatori" \ 
+	-F "ransomware=lockbit" \
+	-F "delay_contrast=60" \
+	-F "contrast=sssransomware" 
+
+curl -X POST http://192.168.2.222:5000/upload \
+	-H "api_key:API_KEY" \
+	-F "name_folder=test_operatori" \ 
+	-F "json_file=@/home/checker/lockbit/good/192.168.2.123/home/checker/20250128-14_03_09/report20250128-14_03_09" \
+	-F "ransomware=lockbit" \
+	-F "delay_contrast=60" \
+	-F "contrast=sss-ransomware" 
+
+curl -X POST http://192.168.2.222:5000/upload \
+	-H "api_key:API_KEY" \
+	-F "contrast=sss-ransomware" \
+	-F "name_folder=test_operatori" \
+	-F "json_file=@${PWD}/test5.json" \
+	-F "ransomware=lockbit" \
+	-F "delay_contrast=60"
+
+
+	out/ansible/lockbit/good/192.168.2.123/home/checker/20250128-14_03_09/cleanWindowsChecksum
+
+curl -X POST http://192.168.2.222:5000/upload \
+	-H "api_key:API_KEY" \
+	-F "contrast=sss_ransomware" \
+	-F "name_folder=test_operatori" \
+	-F "json_file=@${PWD}/report20250128-11_37_16_FLAT.json" \
+	-F "ransomware=wannacry" \
+	-F "delay_contrast=60"
+
+
+curl -X POST http://192.168.2.222:5000/upload_base \
+	-H "api_key:API_KEY" \
+	-F "name_folder=test-sss-filtered" \
+	-F "json_file=@${PWD}/cleanWindowsChecksum_filtered.json"
+
+report20250128-11_37_16.json
+
+curl -X DELETE http://192.168.2.222:5000/delete \
+-H "api_key:API_KEY" \
+-F "name_folder=test_operatori" \
+-F "file_name=wannacry-60-sss-ransomware-1"
+
+curl -X POST http://192.168.2.222:5000/aggregator \
+-H "api_key:API_KEY" \
+-F "name_folder=test_operatori" 
+
+
+convert clean checksum
+
+egrep -zov '\{[^\}]*AppData[^\{]*\}' cleanWindowsChecksum.json
+
+test:
+egrep -zo '\{[^\}]*AppData[^\{]*\}' cleanWindowsChecksum.json | grep '"path": "[^A]'
+
+

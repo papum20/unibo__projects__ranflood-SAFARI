@@ -3,7 +3,7 @@
 function usage() {
   echo "launch-both-retry.sh: launch infected VM and then checker. Retry until all tests pass."
   echo "Usage: launch-both-retry.sh [-m|--manual] [TESTS_N=1] OUT_DIR"
-  echo "    OUT_DIR: directory where ansible produces files (e.g. ansible/out/lockbit/)"
+  echo "    OUT_DIR: directory where ansible produces files (e.g. out/ansible/lockbit/)"
   exit 1
 }
 

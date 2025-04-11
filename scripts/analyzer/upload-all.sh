@@ -37,28 +37,28 @@ curl -X POST http://192.168.2.222:5000/upload_base \
 
 
 # copy to json
-find ansible/out/phobos.bin/good/ -name 'report2*' -not -name '*.json' -exec mv {} {}.json \;
+find out/ansible/phobos.bin/good/ -name 'report2*' -not -name '*.json' -exec mv {} {}.json \;
 # replace \ w/ \\
-find ansible/out/phobos.bin/good/ -name 'report2*' -name '*.json' -exec sed -ri 's/([^\\])\\([^\\])/\1\\\\\2/g' {} \;
+find out/ansible/phobos.bin/good/ -name 'report2*' -name '*.json' -exec sed -ri 's/([^\\])\\([^\\])/\1\\\\\2/g' {} \;
 # flatten filter out
-find ansible/out/phobos.bin/good/ -name 'report2*' -name '*.json' -exec python3 ./scripts/python/report-flatten-filter.py {} \;
+find out/ansible/phobos.bin/good/ -name 'report2*' -name '*.json' -exec python3 ./scripts/python/report-flatten-filter.py {} \;
 # upload
-find ansible/out/phobos.bin/good/ -name 'flattened_filtered_report2*' -exec ./scripts/analyzer/upload.sh ${FOLDER}-phobos {} phobos \;
+find out/ansible/phobos.bin/good/ -name 'flattened_filtered_report2*' -exec ./scripts/analyzer/upload.sh ${FOLDER}-phobos {} phobos \;
 
-find ansible/out/lockbit/good/ -name 'report2*' -not -name '*.json' -exec mv {} {}.json \;
-find ansible/out/lockbit/good/ -name 'report2*' -name '*.json' -exec sed -ri 's/([^\\])\\([^\\])/\1\\\\\2/g' {} \;
-find ansible/out/lockbit/good/ -name 'report2*' -name '*.json' -exec python3 ./scripts/python/report-flatten-filter.py {} \;
-find ansible/out/lockbit/good/ -name 'flattened_filtered_report2*' -exec ./scripts/analyzer/upload.sh ${FOLDER}-lockbit {} lockbit \;
+find out/ansible/lockbit/good/ -name 'report2*' -not -name '*.json' -exec mv {} {}.json \;
+find out/ansible/lockbit/good/ -name 'report2*' -name '*.json' -exec sed -ri 's/([^\\])\\([^\\])/\1\\\\\2/g' {} \;
+find out/ansible/lockbit/good/ -name 'report2*' -name '*.json' -exec python3 ./scripts/python/report-flatten-filter.py {} \;
+find out/ansible/lockbit/good/ -name 'flattened_filtered_report2*' -exec ./scripts/analyzer/upload.sh ${FOLDER}-lockbit {} lockbit \;
 
-find ansible/out/Ransomware.WannaCry/good/ -name 'report2*' -not -name '*.json' -exec mv {} {}.json \;
-find ansible/out/Ransomware.WannaCry/good/ -name 'report2*' -name '*.json' -exec sed -ri 's/([^\\])\\([^\\])/\1\\\\\2/g' {} \;
-find ansible/out/Ransomware.WannaCry/good/ -name 'report2*' -name '*.json' -exec python3 ./scripts/python/report-flatten-filter.py {} \;
-find ansible/out/Ransomware.WannaCry/good/ -name 'flattened_filtered_report2*' -exec ./scripts/analyzer/upload.sh ${FOLDER}-wannacry {} wannacry \;
+find out/ansible/Ransomware.WannaCry/good/ -name 'report2*' -not -name '*.json' -exec mv {} {}.json \;
+find out/ansible/Ransomware.WannaCry/good/ -name 'report2*' -name '*.json' -exec sed -ri 's/([^\\])\\([^\\])/\1\\\\\2/g' {} \;
+find out/ansible/Ransomware.WannaCry/good/ -name 'report2*' -name '*.json' -exec python3 ./scripts/python/report-flatten-filter.py {} \;
+find out/ansible/Ransomware.WannaCry/good/ -name 'flattened_filtered_report2*' -exec ./scripts/analyzer/upload.sh ${FOLDER}-wannacry {} wannacry \;
 
-find ansible/out/Ransomware.Vipasana/good/ -name 'report2*' -not -name '*.json' -exec mv {} {}.json \;
-find ansible/out/Ransomware.Vipasana/good/ -name 'report2*' -name '*.json' -exec sed -ri 's/([^\\])\\([^\\])/\1\\\\\2/g' {} \;
-find ansible/out/Ransomware.Vipasana/good -name 'report2*' -name '*.json' -exec python3 ./scripts/python/report-flatten-filter.py {} \;
-find ansible/out/Ransomware.Vipasana/good/ -name 'flattened_filtered_report2*' -exec ./scripts/analyzer/upload.sh ${FOLDER}-vipasana {} vipasana \;
+find out/ansible/Ransomware.Vipasana/good/ -name 'report2*' -not -name '*.json' -exec mv {} {}.json \;
+find out/ansible/Ransomware.Vipasana/good/ -name 'report2*' -name '*.json' -exec sed -ri 's/([^\\])\\([^\\])/\1\\\\\2/g' {} \;
+find out/ansible/Ransomware.Vipasana/good -name 'report2*' -name '*.json' -exec python3 ./scripts/python/report-flatten-filter.py {} \;
+find out/ansible/Ransomware.Vipasana/good/ -name 'flattened_filtered_report2*' -exec ./scripts/analyzer/upload.sh ${FOLDER}-vipasana {} vipasana \;
 
 
 curl -X POST http://192.168.2.222:5000/aggregator \

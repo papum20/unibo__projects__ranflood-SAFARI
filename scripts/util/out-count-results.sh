@@ -4,7 +4,7 @@ usage() {
 	echo "out-count-results.sh: count the number of results in the out directory."
 	echo "Usage: out-count-results.sh [OUT_DIR]"
 	echo "  OUT_DIR: the directory to search for results."
-	echo "Example: out-count-results.sh ansible/out/Ransomware.WannaCry/"
+	echo "Example: out-count-results.sh out/ansible/Ransomware.WannaCry/"
 	exit 1
 }
 

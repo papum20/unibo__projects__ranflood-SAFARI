@@ -137,6 +137,7 @@ path_ransomware_linux="${remote_working_directory_linux}${name_ransomware}"
 path_settings_ini_linux="${remote_working_directory_linux}${name_settings_ini}"
 
 path_checker_out_dir="${remote_working_directory_checker}${timestamp}/"
+path_local_checker_out_dir="$(realpath ${local_working_directory}/../out)"
 
 ## where output of internal playbook is saved
 path_log_win="${remote_working_directory_win}log${timestamp}.txt"
