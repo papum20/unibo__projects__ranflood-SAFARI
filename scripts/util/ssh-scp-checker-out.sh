@@ -17,7 +17,7 @@ if [[ ! -d out ]]; then
 fi
 
 
-source scripts/read-vms.sh -c
+source scripts/util/read-vms.sh -c
 
 sshpass -pchecker scp -r checker@${vm_ips[0]}:~/report* out
 sshpass -pchecker scp -r checker@${vm_ips[0]}:~/out* out

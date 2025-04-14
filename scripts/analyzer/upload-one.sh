@@ -24,7 +24,7 @@ source scripts/analyzer/analyzer.secret.sh
 curl -X POST http://192.168.2.222:5000/upload_base \
 	-H "api_key:$API_KEY" \
 	-F "name_folder=${REMOTE_FOLDER}" \
-	-F "json_file=@${PWD}/scripts/analyzer/cleanWindowsChecksum_filtered.json"
+	-F "json_file=@${PWD}/scripts/analyzer/res/cleanWindowsChecksum_filtered.json"
 
 
 

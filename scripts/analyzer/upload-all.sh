@@ -18,22 +18,22 @@ FOLDER=test-sss-filtered-4
 curl -X POST http://192.168.2.222:5000/upload_base \
 	-H "api_key:$API_KEY" \
 	-F "name_folder=${FOLDER}-phobos" \
-	-F "json_file=@${PWD}/scripts/analyzer/cleanWindowsChecksum_filtered.json"
+	-F "json_file=@${PWD}/scripts/analyzer/res/cleanWindowsChecksum_filtered.json"
 
 curl -X POST http://192.168.2.222:5000/upload_base \
 	-H "api_key:$API_KEY" \
 	-F "name_folder=${FOLDER}-lockbit" \
-	-F "json_file=@${PWD}/scripts/analyzer/cleanWindowsChecksum_filtered.json"
+	-F "json_file=@${PWD}/scripts/analyzer/res/cleanWindowsChecksum_filtered.json"
 
 curl -X POST http://192.168.2.222:5000/upload_base \
 	-H "api_key:$API_KEY" \
 	-F "name_folder=${FOLDER}-wannacry" \
-	-F "json_file=@${PWD}/scripts/analyzer/cleanWindowsChecksum_filtered.json"
+	-F "json_file=@${PWD}/scripts/analyzer/res/cleanWindowsChecksum_filtered.json"
 
 curl -X POST http://192.168.2.222:5000/upload_base \
 	-H "api_key:$API_KEY" \
 	-F "name_folder=${FOLDER}-vipasana" \
-	-F "json_file=@${PWD}/scripts/analyzer/cleanWindowsChecksum_filtered.json"
+	-F "json_file=@${PWD}/scripts/analyzer/res/cleanWindowsChecksum_filtered.json"
 
 
 # copy to json

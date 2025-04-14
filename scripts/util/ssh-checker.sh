@@ -18,7 +18,7 @@ if [[ ! -d out ]]; then
 fi
 
 
-source scripts/read-vms.sh -c
+source scripts/util/read-vms.sh -c
 
 
 sshpass -pchecker ssh -o StrictHostKeyChecking=no checker@${vm_ips[0]} $@

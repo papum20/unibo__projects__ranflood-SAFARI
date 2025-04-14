@@ -104,9 +104,9 @@ for ((i=1; i<=test_batches_n; i++)); do
   tests_completed=$((tests_completed+tests_parallel))
   echo "Test batch completed: $i (tot: $tests_completed / $tests_n)" | tee -a "$path_log"
   # write down new ips
-  source scripts/read-vms.sh
+  source scripts/util/read-vms.sh
   echo "[$(date +'%Y%m%d-%H_%M_%S')] windows IPs: ${vm_ips[@]}" | tee -a "$path_log" >> "$path_out"
-  source scripts/read-vms.sh -c
+  source scripts/util/read-vms.sh -c
   echo "[$(date +'%Y%m%d-%H_%M_%S')] checker IPs: ${vm_ips[@]}" | tee -a "$path_log" >> "$path_out"
 done
 

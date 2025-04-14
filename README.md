@@ -88,27 +88,26 @@ Other parameters:
 *	`-m` : manual mode, i.e. don't provision with terraform (destroy and recreate) (also refer to [troubleshooting](#troubleshooting))
 
 
-##### auxiliary & implementative scripts
-*	`./scripts/generate.sh` : auto-generate variables files
+##### additional scripts
 *	`./scripts/launch_workaround.sh` : like `launch.sh`, but with a workaround for some old bugs, which have been probably been fixed now.  
-*	`./scripts/read-vms.sh` : read data of the VMs generated with SAFARI's terraform scripts, and export them as variables
 
 
 #### analyzer
 
-Basically, to upload a full ransomware's folder, with the checksum in `./scripts/analyzer/cleanWindowsChecksum_filtered.json`, use :
+Basically, to upload a full ransomware's folder, with the checksum in `./scripts/analyzer/res/cleanWindowsChecksum_filtered.json`, use :
 ```bash
 ./scripts/analyzer/upload-one.sh LOCAL_FOLDER_PATH REMOTE_FOLDER_NAME RANSOMWARE
 ```
 
-*	`./scripts/analyzer/cleanWindowsChecksum*` : a checksum is required for the analyzer scripts; this is the one used in these tests, but could be changed
-*	`./scripts/analyzer/cleanWindowsChecksum.json` : the base one
-*	`./scripts/analyzer/cleanWindowsChecksum_filtered.json` : with some filters
-*	`./scripts/analyzer/cleanWindowsChecksum_no_appdata.json` : removed `AppData`
-*	`./scripts/analyzer/convert*.py` : example scripts used to filter the checksum
 *	`./scripts/analyzer/upload-one.sh` : upload a full ransomware's folder
 *	`./scripts/analyzer/upload-all.sh` : examples of uploading multiple ransomwares (old)
 *	`./scripts/analyzer/upload.sh` : upload a single file
+*	`scripts/analyzer/res/` : additional files and examples
+	*	`./scripts/analyzer/res/cleanWindowsChecksum*` : a checksum is required for the analyzer scripts; this is the one used in these tests, but could be changed
+	*	`./scripts/analyzer/res/cleanWindowsChecksum.json` : the base one
+	*	`./scripts/analyzer/res/cleanWindowsChecksum_filtered.json` : with some filters
+	*	`./scripts/analyzer/res/cleanWindowsChecksum_no_appdata.json` : removed `AppData`
+	*	`./scripts/analyzer/res/convert*.py` : example scripts used to filter the checksum
 
 #### python
 
@@ -119,7 +118,9 @@ Basically, to upload a full ransomware's folder, with the checksum in `./scripts
 
 `ssh` and `scp` scripts only work with 1 VM, reading its info from the appropriate `vm.txt` file.  
 
+*	`./scripts/generate.sh` : auto-generate variables files
 *	`.scripts/util/out-count-results.sh` : count checker results (report files) in the specified folder, not recursive (i.e. search the files recursively in all and only subfolders, of the specified one, in the form of an IP)
+*	`./scripts/read-vms.sh` : read data of the VMs generated with SAFARI's terraform scripts, and export them as variables
 *	`.scripts/util/ssh-checker-check.sh` : launch an internal check in checker
 *	`.scripts/util/ssh-checker.sh` : ssh in checker
 *	`.scripts/util/ssh-scp-checker-out.sh` : scp from checker
@@ -148,6 +149,10 @@ Basically, to upload a full ransomware's folder, with the checksum in `./scripts
 
 
 ### Output
+
+All outputs and logs are stored in the [out/](out) directory.  
+An example of how it looks like, as well as an overview on the directory structure, can be found at: https://github.com/papum20/unibo__projects__unibo-SAFARI-outputs.git.  
+
 
 ### Troubleshooting
 
@@ -185,8 +190,9 @@ Basically, to upload a full ransomware's folder, with the checksum in `./scripts
 	*	`full_playbook.yml` : playbook run on this machine
 	*	`internal_playbook_java.yml` : like `internal_playbook.yml`, but with the java version of ranflood
 	*	`internal_playbook.yml` : playbook transferred and run on the target machines
+*	`doc/` : notes
 *	`out/` : outputs and logs (refer to [output](#output))
-*	`scripts/` : scripts to launch the project or interact with the rig, proxmox etc. (refer to [scripts](scripts))
+*	`scripts/` : scripts to launch the project or interact with the rig, proxmox etc. (refer to [scripts](#scripts))
 *	`terraform/` : terraform scripts to deploy the infrastructure
 	*	`checker/` : checker scripts
 

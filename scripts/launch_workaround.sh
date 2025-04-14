@@ -135,9 +135,9 @@ function launch-function() {
 
   # generate ansible variables
   if [[ $mode == "flood" ]]; then
-    source scripts/read-vms.sh
+    source scripts/util/read-vms.sh
   else 
-    source scripts/read-vms.sh -c
+    source scripts/util/read-vms.sh -c
   fi
 
   {
