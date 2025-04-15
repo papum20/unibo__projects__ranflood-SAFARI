@@ -1,5 +1,6 @@
 /******************************************************************************
  * Copyright 2021 (C) by Tommaso Compagnucci <tommasocompagnucci1@gmail.com>  *
+ * modified in 2025 by Daniele D'Ugo <danieledugo1@gmail.com>                 *
  *                                                                            *
  * This program is free software; you can redistribute it and/or modify       *
  * it under the terms of the GNU Library General Public License as            *
@@ -27,7 +28,7 @@ proxmox_api_url				= "http://192.168.2.11:8006/api2/json"
 proxmox_api_token_id		= "proxmox-token"
 proxmox_api_token_secret	= "secret-token"
 
-vms_count = 1
+vms_count = 4
 
 vm_name	= "WindowsInfected"
 target_nodes = [
@@ -45,13 +46,13 @@ template_clones = {
 }
 is_full_clone = false
 
-vm_memory = 8192
+vm_memory = 12288
 
 vm_sockets	= 1
 vm_cores	= 4
 
 vm_qemu_agent			= 1
-vm_qemu_agent_timeout	= 120
+vm_qemu_agent_timeout	= 180
 
 vm_network_card_model	= "e1000"
 vm_network_bridge		= "vmbr0"
@@ -59,7 +60,7 @@ vm_network_bridge		= "vmbr0"
 vm_bootdisk = "ide0"
 
 vm_disk_storage = "local-lvm"
-vm_disk_size	= "40G"
+vm_disk_size	= "60G"
 
 vm_scsihw = "virtio-scsi-pci"
 
