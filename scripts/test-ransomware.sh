@@ -1,6 +1,13 @@
 #!/bin/bash
 
-# Example of executing some tests in succession
+function usage() {
+	echo "Usage: test-ransomware.sh RANSOMWARE DELAY SHARDS TESTS"
+	echo "	RANSOMWARE: Name of the ransomware to test (same name as the archive file, without extension)"
+	echo "	DELAY: Delay in seconds between the start of ransomware and flooding"
+	echo "	SHARDS: Number of shards to create for Ranflood-SSS"
+	echo "	TESTS: Number of tests to run and complete (won't stop until all tests are present)"
+	exit 1
+}
 
 
 function set_name_ransomware() {
@@ -25,10 +32,9 @@ function set_shards_created() {
 }
 
 function ransomware_test() {
-
+	
 	if [[ $# -ne 4 ]]; then
-		echo "Usage: $0 RANSOMWARE DELAY SHARDS TESTS"
-		exit 1
+		usage
 	fi
 
 	ransomware=$1
@@ -65,26 +71,4 @@ if [[ ! -d scripts ]]; then
 fi
 
 
-# New ones
-# Birele ~ Winlocker , 7ev3n ~ Fantom
-
-# no flooder
-#ransomware_test Birele 620 200 2
-#ransomware_test WinlockerVB6Blacksod 620 200 2
-#ransomware_test 7ev3n 620 200 2
-#ransomware_test Fantom 620 200 2
-#ransomware_test Vichingo455@Annabelle 620 200 5
-ransomware_test Ransomware.Petya 620 200 5
-exit 0
-
-#ransomware_test Birele 1 200 3
-#ransomware_test Birele 60 200 3
-
-#ransomware_test WinlockerVB6Blacksod 1 200 3
-ransomware_test WinlockerVB6Blacksod 60 200 3
-
-#ransomware_test 7ev3n 1 200 3
-ransomware_test 7ev3n 60 200 3
-
-#ransomware_test Fantom 1 200 3
-ransomware_test Fantom 60 200 3
+ransomware_test "$@"

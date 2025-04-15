@@ -2,7 +2,7 @@
 
 #
 # This is an old version of the upload-one script, more hard-coded.
-# Use the other one, which also accepts parameters.
+# Better to use the other one, which also accepts parameters.
 #
 
 if [[ ! -d scripts ]]; then

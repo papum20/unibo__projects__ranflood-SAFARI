@@ -32,12 +32,16 @@ vms_count = 1
 vm_name	= "WindowsInfected"
 target_nodes = [
 	"pve21",
-	"pve22"
+	"pve22",
+	"pve23",
+	"pve24",
 ]
 vm_id = 2000
 template_clones = {
 	pve21 = "windows-java-21-init",
-	pve22 = "windows-java-21-init-pve22"
+	pve22 = "windows-java-21-init-pve22",
+	pve22 = "windows-java-21-init-pve23",
+	pve22 = "windows-java-21-init-pve24",
 }
 is_full_clone = false
 

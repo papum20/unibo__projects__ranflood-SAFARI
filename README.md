@@ -12,7 +12,7 @@ Launching the ansible playbooks through `launch-ansible.sh` optionally downloads
 
 1.	initialize the configuration (refer to [initialization](#initialization));
 2.	you can use the provided scripts; here are the main ones, from the most automated one to the most detailed one (refer to their own section below) :
-	*	[group-tests.sh](#group-tests.sh) : 
+	*	[test-ransomware.sh](#test-ransomware.sh) : 
 	*	[launch-both-retry.sh](#launch-both-retry.sh) :
 	*	[launch-both.sh](#launch-both.sh) :
 	*	[launch.sh](#launch.sh) :
@@ -42,10 +42,6 @@ Or, for the filechecker :
 ```
 
 #### SAFARI
-
-##### group-tests.sh
-
-##### group-uploads.sh
 
 ##### launch-both-retry.sh
 Like [launch-both.sh](#launch-bothsh), but retry until the specified number of tests has been completed successfully; e.g.:  
@@ -87,6 +83,17 @@ Other parameters:
 *	`-l LOG_FILE` : log to file
 *	`-m` : manual mode, i.e. don't provision with terraform (destroy and recreate) (also refer to [troubleshooting](#troubleshooting))
 
+##### test-ransomware.sh
+A wrapper for [launch-both-retry.sh](#launch-both-retry.sh), with the additional conveniences of :
+*	automatically set some parameters (ransomware to test, number of shards)
+*	run the tests until the desired number is obtained
+*	collecting all tests in a subfolder (named after the parameteres)
+
+e.g., for `WannaCry` with 60 shards and 10 tests :
+```bash
+./scripts/test-ransomware.sh Ransomware.WannaCry 60 10
+```
+This is the most automated script, so can be called in sequence to obtain all the desired tests (an example is in [group-tests.sh](#examples)).  
 
 ##### additional scripts
 *	`./scripts/launch_workaround.sh` : like `launch.sh`, but with a workaround for some old bugs, which have been probably been fixed now.  
@@ -100,7 +107,6 @@ Basically, to upload a full ransomware's folder, with the checksum in `./scripts
 ```
 
 *	`./scripts/analyzer/upload-one.sh` : upload a full ransomware's folder
-*	`./scripts/analyzer/upload-all.sh` : examples of uploading multiple ransomwares (old)
 *	`./scripts/analyzer/upload.sh` : upload a single file
 *	`scripts/analyzer/res/` : additional files and examples
 	*	`./scripts/analyzer/res/cleanWindowsChecksum*` : a checksum is required for the analyzer scripts; this is the one used in these tests, but could be changed
@@ -108,6 +114,15 @@ Basically, to upload a full ransomware's folder, with the checksum in `./scripts
 	*	`./scripts/analyzer/res/cleanWindowsChecksum_filtered.json` : with some filters
 	*	`./scripts/analyzer/res/cleanWindowsChecksum_no_appdata.json` : removed `AppData`
 	*	`./scripts/analyzer/res/convert*.py` : example scripts used to filter the checksum
+
+Multiple test batches can be uploaded with a sequence of invocations of `upload-one.sh` (example in [group-uploads.sh](#examples)).  
+
+#### examples
+
+Examples of launching multiple commands in succession :
+*	`./scripts/examples/group-tests.sh` : run multiple tests in succession
+*	`./scripts/examples/group-uploads_old.sh` : upload multiple tests to the analyzer (an older version, more hard-coded)
+*	`./scripts/examples/group-uploads.sh` : upload multiple tests to the analyzer
 
 #### python
 
@@ -154,12 +169,48 @@ All outputs and logs are stored in the [out/](out) directory.
 An example of how it looks like, as well as an overview on the directory structure, can be found at: https://github.com/papum20/unibo__projects__unibo-SAFARI-outputs.git.  
 
 
+#### output directories
+
+*	[analyzer/](analyzer) : output of analyzer (manually downloaded from the remote machine running it)
+*	[ansible/](ansible) : output of ansible, specifically of the filechecker instances
+*	[average/](average) : output of (python) avreages scripts (manually written down from the scripts outputs)
+*	[doc/](doc) : notes
+*	[scripts/](scripts) : output of scripts (e.g. printed output of `launch` scripts)
+
+#### ansible output
+
+The output of the filechecker follows this hierarchy:
+*	ransomware name (e.g. [ansible/Ransomware.WannaCry/](ansible/Ransomware.WannaCry/)) - subfolder automatically created from the exact name of the ransomware executable/archive;
+*	some name to specify the kind of test (e.g. [ansible/Ransomware.WannaCry/1s-5shards/](ansible/Ransomware.WannaCry/1s-5shards/)) - either created manually, or through scipts such as `test-ransomware.sh`;  
+*	IP address of the VM that filechecker was run on;
+*	full hierarchy of the path containing all the outputs on the VM (by default, each filechecker VM stores the output directory in `/home/checker/`);
+*	test folder, automatically named as a timestamp.
+
+The timestamp naming assures that, even if the same VM was to execute more tests, these would display as different output directories (i.e. timestamps), although inside the same IP directory.  
+
+More in detail, each output folder contains these files:
+*	`cleanWindowsChecksum` : checksum created through a ranflood snapshot, before an attack (on the infected VM)
+*	`log_daemon<TIMESTAMP_INFECTED>.txt` : log of the ranflood daemon (on the infected VM), during the attack
+*	`log<TIMESTAMP_INFECTED>.txt` : log of the ansible playbook run internally, on the infected VM, during the attack
+*	`log<TIMESTAMP_CHECKER>.txt` : log of the filechecker, during the check/restore command execution
+*	`out<TIMESTAMP_CHECKER>.txt` : terminal output of the filechecker's check/restore command
+*	`report-shards<TIMESTAMP_CHECKER>` : additional report generated by the filechecker's restore command, containing info on created and corrupted SSS shards
+*	`report<TIMESTAMP_CHECKER>` : final report generated by the filechecker's check/restore command
+
+A `timestamp` is generated at each execution of the `launch.sh` or `launch-ansible.sh` command (namely by `generate.sh`) - either in infected or checker mode -, thus:
+*	the timestamp naming the folder is that of the filechecker
+*	`TIMESTAMP_INFECTED` and `TIMESTAMP_CHECKER` are always different (and the infected one comes first)
+
+
 ### Troubleshooting
 
-*	Terraform doesn't execute provider completely, so `vm.txt` doesn't contain the VM's ip or id:
-	either retry `./scripts/launch.sh -d` or manually edit `vm.txt` and launch `./scripts/launch.sh -m`
-*	When launching ansible alone, if the playbook is stuck on some hosts (e.g. `windows` group), it may be due to the fact that their network interfaces were disabled previously by the playbook: connect from proxmox or recreate them.  
-*	Ranflood 0.7-beta will throw an error for missing `vcruntime140_1.dll` : run the installer from https://learn.microsoft.com/it-it/cpp/windows/latest-supported-vc-redist?view=msvc-170
+*	often, terraform will fail to write a VM's info (missing IP or ID, or a MAC address in the place of the IP) on the output file `vm.txt` :
+	*	option 1 : ignore the error and run everything again
+		*	note: scripts such as `launch-both.sh`, `launch-both-retry.sh` and `test-ransomware.sh` already do repeated tests
+	*	option 2 : retry `./scripts/launch.sh -d`
+	*	option 3 : manually edit `vm.txt` (with the actual values) and launch `./scripts/launch.sh -m`
+*	`Ranflood 0.7-beta` will throw an error for missing `vcruntime140_1.dll` : run the installer from https://learn.microsoft.com/it-it/cpp/windows/latest-supported-vc-redist?view=msvc-170
+	*	note: it's already installed on our VM templates we used
 *	Error in ansible (checker) :  
 	```
 	fatal: [192.168.2.235]: FAILED! => {"msg": "to use the 'ssh' connection type with passwords or pkcs11_provider, you must install the sshpass program"}
