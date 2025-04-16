@@ -99,3 +99,5 @@ sed -r 's/(.*=.*)/set \1/; s/(.*)=["'\''](.*)["'\'']$/\1=\2/; s/^#(.*)/::\1/g' $
 cp ${dir_variables}${variables_user} ${local_working_directory}${local_path_files_transfer}/${name_env_linux}
 
 
+# create out paths
+mkdir -p "$path_local_checker_out_dir"

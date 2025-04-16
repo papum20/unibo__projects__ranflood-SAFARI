@@ -196,7 +196,7 @@ Examples of launching multiple commands in succession :
 
 ### Output
 
-All outputs and logs are stored in the [out/](out) directory.  
+All outputs and logs are stored in the `out/` directory.  
 An example of how they look like, their directories structure, as well as additional outputs, can be found at: https://github.com/papum20/unibo__projects__unibo-SAFARI-outputs.git.  
 
 
