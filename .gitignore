@@ -4,6 +4,10 @@
 
 **/*.exe
 **/*.zip
+**/*.jar
+!ansible/files/other/filechecker.jar
+!ansible/files/other/ranflood-v.0.6-beta_Windows_client.zip
+!ansible/files/other/ranfloodd.jar
 
 ## to transfer
 
